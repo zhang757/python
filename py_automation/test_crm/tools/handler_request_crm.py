@@ -7,7 +7,7 @@ Motto: 不敲代码，就看看你的余额！
 ====================
 """
 import requests
-from CRM_test.login import Login
+from tools.login import Login
 from tools.handler_path import conffiguration_file
 from configparser import ConfigParser
 from tools.handler_log import logger

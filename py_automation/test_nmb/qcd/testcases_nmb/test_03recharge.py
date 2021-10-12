@@ -12,8 +12,10 @@ from tools.handler_excel import CaseFile
 from tools.handler_path import case_file
 from tools.handler_nmb_request import HandlerRequest_nmb
 from tools.handler_variable import set_variable
+from tools.handler_log import logger
 from tools.handler_global import Global
 from tools.handler_assert import assert_req
+from tools.handler_replace import variable_replace
 
 
 @ddt
@@ -35,12 +37,13 @@ class TestRecharge(unittest.TestCase):
         hr = HandlerRequest_nmb()
 
         """第一步：先处理替换数据"""
-        # 替换1:member_id数据
-        if value["data"].find("#member_id#") != -1:
-            value["data"] = value["data"].replace("#member_id#", getattr(Global, "member_id"))
-        # 替换2:leave_amount数据
-        if value["assert_excpt"].find("#leave_amount#") != -1:
-            value["assert_excpt"] = value["assert_excpt"].replace("#leave_amount#", getattr(Global, "leave_amount"))
+        value = variable_replace(value)
+        # # 替换1:member_id数据
+        # if value["data"].find("#member_id#") != -1:
+        #     value["data"] = value["data"].replace("#member_id#", getattr(Global, "member_id"))
+        # # 替换2:leave_amount数据
+        # if value["assert_excpt"].find("#leave_amount#") != -1:
+        #     value["assert_excpt"] = value["assert_excpt"].replace("#leave_amount#", getattr(Global, "leave_amount"))
 
         """第二步：通过全局变量中是否存在token变量来做判断，执行不同的接口请求（有token则把token加入headers中，无则不需要）"""
         if hasattr(Global, "token"):

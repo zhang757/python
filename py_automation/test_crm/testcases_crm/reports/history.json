@@ -1,1 +1,1 @@
-[{"success": 11, "all": 11, "fail": 0, "skip": 0, "error": 0, "runtime": "6.09 S", "begin_time": "2021-09-17 13:07:07", "pass_rate": "100.00"}]
+[{"success": 11, "all": 11, "fail": 0, "skip": 0, "error": 0, "runtime": "6.09 S", "begin_time": "2021-09-17 13:07:07", "pass_rate": "100.00"}, {"success": 13, "all": 13, "fail": 0, "skip": 0, "error": 0, "runtime": "3.99 S", "begin_time": "2021-10-12 11:44:35", "pass_rate": "100.00"}]

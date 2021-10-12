@@ -3307,3 +3307,1733 @@ http://8.129.91.152:8766/futureloan/member/recharge
 2021-09-27 15:15:17.322 | INFO     | tools.handler_assert:assert_req:30 - 实际结果：无权限访问，请检查参数
 2021-09-27 15:15:17.323 | INFO     | tools.handler_assert:assert_req:31 - 期望结果：无权限访问，请检查参数
 2021-09-27 15:15:17.323 | INFO     | tools.handler_assert:assert_req:35 - 断言成功。
+2021-09-28 18:04:10.996 | INFO     | tools.handler_replace:variable_replace:18 - case数据类型：<class 'dict'>
+2021-09-28 18:04:10.997 | INFO     | tools.handler_replace:variable_replace:19 - case数据转换后的类型：<class 'str'>
+2021-09-28 18:04:10.997 | INFO     | tools.handler_replace:variable_replace:23 - 正则获取变量列表：[]
+2021-09-28 18:04:10.998 | INFO     | tools.handler_replace:variable_replace:45 - 用例中所有变量替换后最终显示数据：{'id': 1, 'title': '前置--登陆', 'url': '/member/login', 'method': 'POST', 'data': '{\n    "mobile_phone":"15133181962",\n    "pwd":"12345678"\n}', 'extract': '{"token":"$..token", "member_id":"$..id","leave_amount":"$..leave_amount"}', 'assert_excpt': '[\n  {"actual":"$..code","expect":0,"assert_type":"=="},\n  {"actual":"$..msg","expect":"OK","assert_type":"=="}\n]', 'bug': None}
+2021-09-28 18:04:10.998 | INFO     | tools.handler_nmb_request:send_request:37 - 请求接口：
+http://8.129.91.152:8766/futureloan/member/login
+2021-09-28 18:04:10.998 | INFO     | tools.handler_nmb_request:send_request:38 - 请求方式：POST
+2021-09-28 18:04:10.998 | INFO     | tools.handler_nmb_request:send_request:39 - 请求body体数据：
+{
+    "mobile_phone":"15133181962",
+    "pwd":"12345678"
+}
+2021-09-28 18:04:10.999 | INFO     | tools.handler_nmb_request:send_request:40 - 请求headers：
+{'X-Lemonban-Media-Type': 'lemonban.v2', 'content-type': 'application/json'}
+2021-09-28 18:04:11.205 | INFO     | tools.handler_nmb_request:send_request:46 - http响应状态码：200
+2021-09-28 18:04:11.206 | INFO     | tools.handler_nmb_request:send_request:47 - 响应body体：
+{"code":0,"msg":"OK","data":{"id":1236918855,"leave_amount":6004806.09,"mobile_phone":"15133181962","reg_name":"peter","reg_time":"2021-09-26 14:53:00.0","type":1,"token_info":{"token_type":"Bearer","expires_in":"2021-09-28 18:09:12","token":"eyJhbGciOiJIUzUxMiJ9.eyJtZW1iZXJfaWQiOjEyMzY5MTg4NTUsImV4cCI6MTYzMjgyMzc1Mn0.UYva5arOOOD-LhQbw8Iyq5jMht3ZeUX655NNj3wxn_Ukhz__fahiqW5ZrN-dRlWAj7-WwQKWVwuD1YSNIz21lA"}},"copyright":"Copyright 柠檬班 © 2017-2020 湖南省零檬信息技术有限公司 All Rights Reserved"}
+2021-09-28 18:04:11.207 | INFO     | tools.handler_variable:set_variable:22 - 前置条件提取的数据字典:
+{'token': '$..token', 'member_id': '$..id', 'leave_amount': '$..leave_amount'}
+2021-09-28 18:04:11.209 | INFO     | tools.handler_variable:set_variable:25 - 要提取的字段与值：
+token ：eyJhbGciOiJIUzUxMiJ9.eyJtZW1iZXJfaWQiOjEyMzY5MTg4NTUsImV4cCI6MTYzMjgyMzc1Mn0.UYva5arOOOD-LhQbw8Iyq5jMht3ZeUX655NNj3wxn_Ukhz__fahiqW5ZrN-dRlWAj7-WwQKWVwuD1YSNIz21lA
+2021-09-28 18:04:11.209 | INFO     | tools.handler_variable:set_variable:31 - 全局变量设置成功！
+2021-09-28 18:04:11.210 | INFO     | tools.handler_variable:set_variable:32 - 全局变量有：
+{'__module__': 'tools.handler_global', '__dict__': <attribute '__dict__' of 'Global' objects>, '__weakref__': <attribute '__weakref__' of 'Global' objects>, '__doc__': None, 'token': 'eyJhbGciOiJIUzUxMiJ9.eyJtZW1iZXJfaWQiOjEyMzY5MTg4NTUsImV4cCI6MTYzMjgyMzc1Mn0.UYva5arOOOD-LhQbw8Iyq5jMht3ZeUX655NNj3wxn_Ukhz__fahiqW5ZrN-dRlWAj7-WwQKWVwuD1YSNIz21lA'}
+2021-09-28 18:04:11.210 | INFO     | tools.handler_variable:set_variable:25 - 要提取的字段与值：
+member_id ：1236918855
+2021-09-28 18:04:11.211 | INFO     | tools.handler_variable:set_variable:31 - 全局变量设置成功！
+2021-09-28 18:04:11.211 | INFO     | tools.handler_variable:set_variable:32 - 全局变量有：
+{'__module__': 'tools.handler_global', '__dict__': <attribute '__dict__' of 'Global' objects>, '__weakref__': <attribute '__weakref__' of 'Global' objects>, '__doc__': None, 'token': 'eyJhbGciOiJIUzUxMiJ9.eyJtZW1iZXJfaWQiOjEyMzY5MTg4NTUsImV4cCI6MTYzMjgyMzc1Mn0.UYva5arOOOD-LhQbw8Iyq5jMht3ZeUX655NNj3wxn_Ukhz__fahiqW5ZrN-dRlWAj7-WwQKWVwuD1YSNIz21lA', 'member_id': '1236918855'}
+2021-09-28 18:04:11.212 | INFO     | tools.handler_variable:set_variable:25 - 要提取的字段与值：
+leave_amount ：6004806.09
+2021-09-28 18:04:11.213 | INFO     | tools.handler_variable:set_variable:31 - 全局变量设置成功！
+2021-09-28 18:04:11.214 | INFO     | tools.handler_variable:set_variable:32 - 全局变量有：
+{'__module__': 'tools.handler_global', '__dict__': <attribute '__dict__' of 'Global' objects>, '__weakref__': <attribute '__weakref__' of 'Global' objects>, '__doc__': None, 'token': 'eyJhbGciOiJIUzUxMiJ9.eyJtZW1iZXJfaWQiOjEyMzY5MTg4NTUsImV4cCI6MTYzMjgyMzc1Mn0.UYva5arOOOD-LhQbw8Iyq5jMht3ZeUX655NNj3wxn_Ukhz__fahiqW5ZrN-dRlWAj7-WwQKWVwuD1YSNIz21lA', 'member_id': '1236918855', 'leave_amount': '6004806.09'}
+2021-09-28 18:04:11.214 | INFO     | tools.handler_assert:assert_req:26 - 断言表达式、期望结果和比对方式为：
+{'actual': '$..code', 'expect': 0, 'assert_type': '=='}
+2021-09-28 18:04:11.215 | INFO     | tools.handler_assert:assert_req:27 - 提取实际结果的jsonpath表达式：$..code
+2021-09-28 18:04:11.216 | INFO     | tools.handler_assert:assert_req:28 - 响应数据：
+{'code': 0, 'msg': 'OK', 'data': {'id': 1236918855, 'leave_amount': 6004806.09, 'mobile_phone': '15133181962', 'reg_name': 'peter', 'reg_time': '2021-09-26 14:53:00.0', 'type': 1, 'token_info': {'token_type': 'Bearer', 'expires_in': '2021-09-28 18:09:12', 'token': 'eyJhbGciOiJIUzUxMiJ9.eyJtZW1iZXJfaWQiOjEyMzY5MTg4NTUsImV4cCI6MTYzMjgyMzc1Mn0.UYva5arOOOD-LhQbw8Iyq5jMht3ZeUX655NNj3wxn_Ukhz__fahiqW5ZrN-dRlWAj7-WwQKWVwuD1YSNIz21lA'}}, 'copyright': 'Copyright 柠檬班 © 2017-2020 湖南省零檬信息技术有限公司 All Rights Reserved'}
+2021-09-28 18:04:11.217 | INFO     | tools.handler_assert:assert_req:30 - 实际结果：0
+2021-09-28 18:04:11.217 | INFO     | tools.handler_assert:assert_req:31 - 期望结果：0
+2021-09-28 18:04:11.218 | INFO     | tools.handler_assert:assert_req:35 - 断言成功。
+2021-09-28 18:04:11.218 | INFO     | tools.handler_assert:assert_req:26 - 断言表达式、期望结果和比对方式为：
+{'actual': '$..msg', 'expect': 'OK', 'assert_type': '=='}
+2021-09-28 18:04:11.219 | INFO     | tools.handler_assert:assert_req:27 - 提取实际结果的jsonpath表达式：$..msg
+2021-09-28 18:04:11.219 | INFO     | tools.handler_assert:assert_req:28 - 响应数据：
+{'code': 0, 'msg': 'OK', 'data': {'id': 1236918855, 'leave_amount': 6004806.09, 'mobile_phone': '15133181962', 'reg_name': 'peter', 'reg_time': '2021-09-26 14:53:00.0', 'type': 1, 'token_info': {'token_type': 'Bearer', 'expires_in': '2021-09-28 18:09:12', 'token': 'eyJhbGciOiJIUzUxMiJ9.eyJtZW1iZXJfaWQiOjEyMzY5MTg4NTUsImV4cCI6MTYzMjgyMzc1Mn0.UYva5arOOOD-LhQbw8Iyq5jMht3ZeUX655NNj3wxn_Ukhz__fahiqW5ZrN-dRlWAj7-WwQKWVwuD1YSNIz21lA'}}, 'copyright': 'Copyright 柠檬班 © 2017-2020 湖南省零檬信息技术有限公司 All Rights Reserved'}
+2021-09-28 18:04:11.220 | INFO     | tools.handler_assert:assert_req:30 - 实际结果：OK
+2021-09-28 18:04:11.221 | INFO     | tools.handler_assert:assert_req:31 - 期望结果：OK
+2021-09-28 18:04:11.221 | INFO     | tools.handler_assert:assert_req:35 - 断言成功。
+2021-09-28 18:04:11.237 | INFO     | tools.handler_replace:variable_replace:18 - case数据类型：<class 'dict'>
+2021-09-28 18:04:11.238 | INFO     | tools.handler_replace:variable_replace:19 - case数据转换后的类型：<class 'str'>
+2021-09-28 18:04:11.238 | INFO     | tools.handler_replace:variable_replace:23 - 正则获取变量列表：['member_id', 'leave_amount']
+2021-09-28 18:04:11.239 | INFO     | tools.handler_replace:variable_replace:45 - 用例中所有变量替换后最终显示数据：{'id': 2, 'title': '充值0.01元', 'url': '/member/recharge', 'method': 'POST', 'data': '{\n    "member_id":1236918855,\n    "amount":0.01\n}', 'extract': '{"leave_amount":"$..leave_amount"}', 'assert_excpt': '[\n  {"actual":"$..code","expect":0,"assert_type":"=="},\n  {"actual":"$..msg","expect":"OK","assert_type":"=="},\n{"actual":"$..leave_amount","expect":round(6004806.09+0.01,2),"assert_type":"=="}\n]', 'bug': None}
+2021-09-28 18:04:11.239 | INFO     | tools.handler_nmb_request:send_request:37 - 请求接口：
+http://8.129.91.152:8766/futureloan/member/recharge
+2021-09-28 18:04:11.240 | INFO     | tools.handler_nmb_request:send_request:38 - 请求方式：POST
+2021-09-28 18:04:11.240 | INFO     | tools.handler_nmb_request:send_request:39 - 请求body体数据：
+{
+    "member_id":1236918855,
+    "amount":0.01
+}
+2021-09-28 18:04:11.240 | INFO     | tools.handler_nmb_request:send_request:40 - 请求headers：
+{'X-Lemonban-Media-Type': 'lemonban.v2', 'content-type': 'application/json', 'authorization': 'Bearer eyJhbGciOiJIUzUxMiJ9.eyJtZW1iZXJfaWQiOjEyMzY5MTg4NTUsImV4cCI6MTYzMjgyMzc1Mn0.UYva5arOOOD-LhQbw8Iyq5jMht3ZeUX655NNj3wxn_Ukhz__fahiqW5ZrN-dRlWAj7-WwQKWVwuD1YSNIz21lA'}
+2021-09-28 18:04:11.346 | INFO     | tools.handler_nmb_request:send_request:46 - http响应状态码：200
+2021-09-28 18:04:11.346 | INFO     | tools.handler_nmb_request:send_request:47 - 响应body体：
+{"code":0,"msg":"OK","data":{"id":1236918855,"leave_amount":6004806.1,"mobile_phone":"15133181962","reg_name":"peter","reg_time":"2021-09-26 14:53:00.0","type":1},"copyright":"Copyright 柠檬班 © 2017-2020 湖南省零檬信息技术有限公司 All Rights Reserved"}
+2021-09-28 18:04:11.347 | INFO     | tools.handler_variable:set_variable:22 - 前置条件提取的数据字典:
+{'leave_amount': '$..leave_amount'}
+2021-09-28 18:04:11.348 | INFO     | tools.handler_variable:set_variable:25 - 要提取的字段与值：
+leave_amount ：6004806.1
+2021-09-28 18:04:11.348 | INFO     | tools.handler_variable:set_variable:31 - 全局变量设置成功！
+2021-09-28 18:04:11.349 | INFO     | tools.handler_variable:set_variable:32 - 全局变量有：
+{'__module__': 'tools.handler_global', '__dict__': <attribute '__dict__' of 'Global' objects>, '__weakref__': <attribute '__weakref__' of 'Global' objects>, '__doc__': None, 'token': 'eyJhbGciOiJIUzUxMiJ9.eyJtZW1iZXJfaWQiOjEyMzY5MTg4NTUsImV4cCI6MTYzMjgyMzc1Mn0.UYva5arOOOD-LhQbw8Iyq5jMht3ZeUX655NNj3wxn_Ukhz__fahiqW5ZrN-dRlWAj7-WwQKWVwuD1YSNIz21lA', 'member_id': '1236918855', 'leave_amount': '6004806.1'}
+2021-09-28 18:04:11.349 | INFO     | tools.handler_assert:assert_req:26 - 断言表达式、期望结果和比对方式为：
+{'actual': '$..code', 'expect': 0, 'assert_type': '=='}
+2021-09-28 18:04:11.350 | INFO     | tools.handler_assert:assert_req:27 - 提取实际结果的jsonpath表达式：$..code
+2021-09-28 18:04:11.350 | INFO     | tools.handler_assert:assert_req:28 - 响应数据：
+{'code': 0, 'msg': 'OK', 'data': {'id': 1236918855, 'leave_amount': 6004806.1, 'mobile_phone': '15133181962', 'reg_name': 'peter', 'reg_time': '2021-09-26 14:53:00.0', 'type': 1}, 'copyright': 'Copyright 柠檬班 © 2017-2020 湖南省零檬信息技术有限公司 All Rights Reserved'}
+2021-09-28 18:04:11.351 | INFO     | tools.handler_assert:assert_req:30 - 实际结果：0
+2021-09-28 18:04:11.351 | INFO     | tools.handler_assert:assert_req:31 - 期望结果：0
+2021-09-28 18:04:11.352 | INFO     | tools.handler_assert:assert_req:35 - 断言成功。
+2021-09-28 18:04:11.352 | INFO     | tools.handler_assert:assert_req:26 - 断言表达式、期望结果和比对方式为：
+{'actual': '$..msg', 'expect': 'OK', 'assert_type': '=='}
+2021-09-28 18:04:11.353 | INFO     | tools.handler_assert:assert_req:27 - 提取实际结果的jsonpath表达式：$..msg
+2021-09-28 18:04:11.354 | INFO     | tools.handler_assert:assert_req:28 - 响应数据：
+{'code': 0, 'msg': 'OK', 'data': {'id': 1236918855, 'leave_amount': 6004806.1, 'mobile_phone': '15133181962', 'reg_name': 'peter', 'reg_time': '2021-09-26 14:53:00.0', 'type': 1}, 'copyright': 'Copyright 柠檬班 © 2017-2020 湖南省零檬信息技术有限公司 All Rights Reserved'}
+2021-09-28 18:04:11.355 | INFO     | tools.handler_assert:assert_req:30 - 实际结果：OK
+2021-09-28 18:04:11.355 | INFO     | tools.handler_assert:assert_req:31 - 期望结果：OK
+2021-09-28 18:04:11.356 | INFO     | tools.handler_assert:assert_req:35 - 断言成功。
+2021-09-28 18:04:11.356 | INFO     | tools.handler_assert:assert_req:26 - 断言表达式、期望结果和比对方式为：
+{'actual': '$..leave_amount', 'expect': 6004806.1, 'assert_type': '=='}
+2021-09-28 18:04:11.356 | INFO     | tools.handler_assert:assert_req:27 - 提取实际结果的jsonpath表达式：$..leave_amount
+2021-09-28 18:04:11.357 | INFO     | tools.handler_assert:assert_req:28 - 响应数据：
+{'code': 0, 'msg': 'OK', 'data': {'id': 1236918855, 'leave_amount': 6004806.1, 'mobile_phone': '15133181962', 'reg_name': 'peter', 'reg_time': '2021-09-26 14:53:00.0', 'type': 1}, 'copyright': 'Copyright 柠檬班 © 2017-2020 湖南省零檬信息技术有限公司 All Rights Reserved'}
+2021-09-28 18:04:11.358 | INFO     | tools.handler_assert:assert_req:30 - 实际结果：6004806.1
+2021-09-28 18:04:11.359 | INFO     | tools.handler_assert:assert_req:31 - 期望结果：6004806.1
+2021-09-28 18:04:11.359 | INFO     | tools.handler_assert:assert_req:35 - 断言成功。
+2021-09-28 18:04:11.375 | INFO     | tools.handler_replace:variable_replace:18 - case数据类型：<class 'dict'>
+2021-09-28 18:04:11.376 | INFO     | tools.handler_replace:variable_replace:19 - case数据转换后的类型：<class 'str'>
+2021-09-28 18:04:11.377 | INFO     | tools.handler_replace:variable_replace:23 - 正则获取变量列表：['member_id', 'leave_amount']
+2021-09-28 18:04:11.377 | INFO     | tools.handler_replace:variable_replace:45 - 用例中所有变量替换后最终显示数据：{'id': 3, 'title': '充值1元', 'url': '/member/recharge', 'method': 'POST', 'data': '{\n    "member_id":1236918855,\n    "amount":1\n}', 'extract': '{"leave_amount":"$..leave_amount"}', 'assert_excpt': '[\n  {"actual":"$..code","expect":0,"assert_type":"=="},\n  {"actual":"$..msg","expect":"OK","assert_type":"=="},\n{"actual":"$..leave_amount","expect":round(6004806.1+1,2),"assert_type":"=="}\n]', 'bug': None}
+2021-09-28 18:04:11.378 | INFO     | tools.handler_nmb_request:send_request:37 - 请求接口：
+http://8.129.91.152:8766/futureloan/member/recharge
+2021-09-28 18:04:11.378 | INFO     | tools.handler_nmb_request:send_request:38 - 请求方式：POST
+2021-09-28 18:04:11.379 | INFO     | tools.handler_nmb_request:send_request:39 - 请求body体数据：
+{
+    "member_id":1236918855,
+    "amount":1
+}
+2021-09-28 18:04:11.379 | INFO     | tools.handler_nmb_request:send_request:40 - 请求headers：
+{'X-Lemonban-Media-Type': 'lemonban.v2', 'content-type': 'application/json', 'authorization': 'Bearer eyJhbGciOiJIUzUxMiJ9.eyJtZW1iZXJfaWQiOjEyMzY5MTg4NTUsImV4cCI6MTYzMjgyMzc1Mn0.UYva5arOOOD-LhQbw8Iyq5jMht3ZeUX655NNj3wxn_Ukhz__fahiqW5ZrN-dRlWAj7-WwQKWVwuD1YSNIz21lA'}
+2021-09-28 18:04:11.486 | INFO     | tools.handler_nmb_request:send_request:46 - http响应状态码：200
+2021-09-28 18:04:11.487 | INFO     | tools.handler_nmb_request:send_request:47 - 响应body体：
+{"code":0,"msg":"OK","data":{"id":1236918855,"leave_amount":6004807.1,"mobile_phone":"15133181962","reg_name":"peter","reg_time":"2021-09-26 14:53:00.0","type":1},"copyright":"Copyright 柠檬班 © 2017-2020 湖南省零檬信息技术有限公司 All Rights Reserved"}
+2021-09-28 18:04:11.487 | INFO     | tools.handler_variable:set_variable:22 - 前置条件提取的数据字典:
+{'leave_amount': '$..leave_amount'}
+2021-09-28 18:04:11.488 | INFO     | tools.handler_variable:set_variable:25 - 要提取的字段与值：
+leave_amount ：6004807.1
+2021-09-28 18:04:11.488 | INFO     | tools.handler_variable:set_variable:31 - 全局变量设置成功！
+2021-09-28 18:04:11.489 | INFO     | tools.handler_variable:set_variable:32 - 全局变量有：
+{'__module__': 'tools.handler_global', '__dict__': <attribute '__dict__' of 'Global' objects>, '__weakref__': <attribute '__weakref__' of 'Global' objects>, '__doc__': None, 'token': 'eyJhbGciOiJIUzUxMiJ9.eyJtZW1iZXJfaWQiOjEyMzY5MTg4NTUsImV4cCI6MTYzMjgyMzc1Mn0.UYva5arOOOD-LhQbw8Iyq5jMht3ZeUX655NNj3wxn_Ukhz__fahiqW5ZrN-dRlWAj7-WwQKWVwuD1YSNIz21lA', 'member_id': '1236918855', 'leave_amount': '6004807.1'}
+2021-09-28 18:04:11.489 | INFO     | tools.handler_assert:assert_req:26 - 断言表达式、期望结果和比对方式为：
+{'actual': '$..code', 'expect': 0, 'assert_type': '=='}
+2021-09-28 18:04:11.490 | INFO     | tools.handler_assert:assert_req:27 - 提取实际结果的jsonpath表达式：$..code
+2021-09-28 18:04:11.491 | INFO     | tools.handler_assert:assert_req:28 - 响应数据：
+{'code': 0, 'msg': 'OK', 'data': {'id': 1236918855, 'leave_amount': 6004807.1, 'mobile_phone': '15133181962', 'reg_name': 'peter', 'reg_time': '2021-09-26 14:53:00.0', 'type': 1}, 'copyright': 'Copyright 柠檬班 © 2017-2020 湖南省零檬信息技术有限公司 All Rights Reserved'}
+2021-09-28 18:04:11.491 | INFO     | tools.handler_assert:assert_req:30 - 实际结果：0
+2021-09-28 18:04:11.492 | INFO     | tools.handler_assert:assert_req:31 - 期望结果：0
+2021-09-28 18:04:11.493 | INFO     | tools.handler_assert:assert_req:35 - 断言成功。
+2021-09-28 18:04:11.493 | INFO     | tools.handler_assert:assert_req:26 - 断言表达式、期望结果和比对方式为：
+{'actual': '$..msg', 'expect': 'OK', 'assert_type': '=='}
+2021-09-28 18:04:11.494 | INFO     | tools.handler_assert:assert_req:27 - 提取实际结果的jsonpath表达式：$..msg
+2021-09-28 18:04:11.494 | INFO     | tools.handler_assert:assert_req:28 - 响应数据：
+{'code': 0, 'msg': 'OK', 'data': {'id': 1236918855, 'leave_amount': 6004807.1, 'mobile_phone': '15133181962', 'reg_name': 'peter', 'reg_time': '2021-09-26 14:53:00.0', 'type': 1}, 'copyright': 'Copyright 柠檬班 © 2017-2020 湖南省零檬信息技术有限公司 All Rights Reserved'}
+2021-09-28 18:04:11.495 | INFO     | tools.handler_assert:assert_req:30 - 实际结果：OK
+2021-09-28 18:04:11.495 | INFO     | tools.handler_assert:assert_req:31 - 期望结果：OK
+2021-09-28 18:04:11.496 | INFO     | tools.handler_assert:assert_req:35 - 断言成功。
+2021-09-28 18:04:11.496 | INFO     | tools.handler_assert:assert_req:26 - 断言表达式、期望结果和比对方式为：
+{'actual': '$..leave_amount', 'expect': 6004807.1, 'assert_type': '=='}
+2021-09-28 18:04:11.497 | INFO     | tools.handler_assert:assert_req:27 - 提取实际结果的jsonpath表达式：$..leave_amount
+2021-09-28 18:04:11.497 | INFO     | tools.handler_assert:assert_req:28 - 响应数据：
+{'code': 0, 'msg': 'OK', 'data': {'id': 1236918855, 'leave_amount': 6004807.1, 'mobile_phone': '15133181962', 'reg_name': 'peter', 'reg_time': '2021-09-26 14:53:00.0', 'type': 1}, 'copyright': 'Copyright 柠檬班 © 2017-2020 湖南省零檬信息技术有限公司 All Rights Reserved'}
+2021-09-28 18:04:11.498 | INFO     | tools.handler_assert:assert_req:30 - 实际结果：6004807.1
+2021-09-28 18:04:11.498 | INFO     | tools.handler_assert:assert_req:31 - 期望结果：6004807.1
+2021-09-28 18:04:11.499 | INFO     | tools.handler_assert:assert_req:35 - 断言成功。
+2021-09-28 18:04:11.514 | INFO     | tools.handler_replace:variable_replace:18 - case数据类型：<class 'dict'>
+2021-09-28 18:04:11.514 | INFO     | tools.handler_replace:variable_replace:19 - case数据转换后的类型：<class 'str'>
+2021-09-28 18:04:11.515 | INFO     | tools.handler_replace:variable_replace:23 - 正则获取变量列表：['member_id']
+2021-09-28 18:04:11.515 | INFO     | tools.handler_replace:variable_replace:45 - 用例中所有变量替换后最终显示数据：{'id': 4, 'title': '充值0元', 'url': '/member/recharge', 'method': 'POST', 'data': '{\n    "member_id":1236918855,\n    "amount":0\n}', 'extract': None, 'assert_excpt': '[\n  {"actual":"$..code","expect":2,"assert_type":"=="},\n  {"actual":"$..msg","expect":"余额必须大于0并且小于或者等于500000","assert_type":"=="}\n]', 'bug': 'True：实际充值成功'}
+2021-09-28 18:04:11.516 | INFO     | tools.handler_nmb_request:send_request:37 - 请求接口：
+http://8.129.91.152:8766/futureloan/member/recharge
+2021-09-28 18:04:11.516 | INFO     | tools.handler_nmb_request:send_request:38 - 请求方式：POST
+2021-09-28 18:04:11.517 | INFO     | tools.handler_nmb_request:send_request:39 - 请求body体数据：
+{
+    "member_id":1236918855,
+    "amount":0
+}
+2021-09-28 18:04:11.517 | INFO     | tools.handler_nmb_request:send_request:40 - 请求headers：
+{'X-Lemonban-Media-Type': 'lemonban.v2', 'content-type': 'application/json', 'authorization': 'Bearer eyJhbGciOiJIUzUxMiJ9.eyJtZW1iZXJfaWQiOjEyMzY5MTg4NTUsImV4cCI6MTYzMjgyMzc1Mn0.UYva5arOOOD-LhQbw8Iyq5jMht3ZeUX655NNj3wxn_Ukhz__fahiqW5ZrN-dRlWAj7-WwQKWVwuD1YSNIz21lA'}
+2021-09-28 18:04:11.620 | INFO     | tools.handler_nmb_request:send_request:46 - http响应状态码：200
+2021-09-28 18:04:11.621 | INFO     | tools.handler_nmb_request:send_request:47 - 响应body体：
+{"code":0,"msg":"OK","data":{"id":1236918855,"leave_amount":6004807.1,"mobile_phone":"15133181962","reg_name":"peter","reg_time":"2021-09-26 14:53:00.0","type":1},"copyright":"Copyright 柠檬班 © 2017-2020 湖南省零檬信息技术有限公司 All Rights Reserved"}
+2021-09-28 18:04:11.622 | INFO     | tools.handler_assert:assert_req:26 - 断言表达式、期望结果和比对方式为：
+{'actual': '$..code', 'expect': 2, 'assert_type': '=='}
+2021-09-28 18:04:11.622 | INFO     | tools.handler_assert:assert_req:27 - 提取实际结果的jsonpath表达式：$..code
+2021-09-28 18:04:11.623 | INFO     | tools.handler_assert:assert_req:28 - 响应数据：
+{'code': 0, 'msg': 'OK', 'data': {'id': 1236918855, 'leave_amount': 6004807.1, 'mobile_phone': '15133181962', 'reg_name': 'peter', 'reg_time': '2021-09-26 14:53:00.0', 'type': 1}, 'copyright': 'Copyright 柠檬班 © 2017-2020 湖南省零檬信息技术有限公司 All Rights Reserved'}
+2021-09-28 18:04:11.625 | INFO     | tools.handler_assert:assert_req:30 - 实际结果：0
+2021-09-28 18:04:11.626 | INFO     | tools.handler_assert:assert_req:31 - 期望结果：2
+2021-09-28 18:04:11.626 | ERROR    | tools.handler_assert:assert_req:37 - 实际值与期望值不相等。
+Traceback (most recent call last):
+
+  File "D:\Program Files\Python\PyCharm Community Edition 2020.1.1\plugins\python-ce\helpers\pycharm\_jb_pytest_runner.py", line 43, in <module>
+    sys.exit(pytest.main(args, plugins_to_load + [Plugin]))
+    │   │    │      │    │     │                  └ <class '__main__.Plugin'>
+    │   │    │      │    │     └ [<module 'teamcity.pytest_plugin' from 'D:\\Program Files\\Python\\PyCharm Community Edition 2020.1.1\\plugins\\python-ce\\he...
+    │   │    │      │    └ ['D:/学习资料/github/py_automation/test_nmb/qcd/testcases_nmb/test_03recharge.py']
+    │   │    │      └ <function main at 0x0000025815217310>
+    │   │    └ <module 'pytest' from 'D:\\Program Files\\Python\\lib\\site-packages\\pytest\\__init__.py'>
+    │   └ <built-in function exit>
+    └ <module 'sys' (built-in)>
+
+  File "D:\Program Files\Python\lib\site-packages\_pytest\config\__init__.py", line 162, in main
+    ret: Union[ExitCode, int] = config.hook.pytest_cmdline_main(
+         │     │                │      │    └ <_HookCaller 'pytest_cmdline_main'>
+         │     │                │      └ <pluggy.hooks._HookRelay object at 0x00000258174F72E0>
+         │     │                └ <_pytest.config.Config object at 0x00000258174EDA60>
+         │     └ <enum 'ExitCode'>
+         └ typing.Union
+
+  File "D:\Program Files\Python\lib\site-packages\pluggy\hooks.py", line 286, in __call__
+    return self._hookexec(self, self.get_hookimpls(), kwargs)
+           │    │         │     │    │                └ {'config': <_pytest.config.Config object at 0x00000258174EDA60>}
+           │    │         │     │    └ <function _HookCaller.get_hookimpls at 0x000002581513BA60>
+           │    │         │     └ <_HookCaller 'pytest_cmdline_main'>
+           │    │         └ <_HookCaller 'pytest_cmdline_main'>
+           │    └ <bound method PluginManager._hookexec of <_pytest.config.PytestPluginManager object at 0x00000258174CEC70>>
+           └ <_HookCaller 'pytest_cmdline_main'>
+
+  File "D:\Program Files\Python\lib\site-packages\pluggy\manager.py", line 93, in _hookexec
+    return self._inner_hookexec(hook, methods, kwargs)
+           │    │               │     │        └ {'config': <_pytest.config.Config object at 0x00000258174EDA60>}
+           │    │               │     └ [<HookImpl plugin_name='main', plugin=<module '_pytest.main' from 'D:\\Program Files\\Python\\lib\\site-packages\\_pytest\\ma...
+           │    │               └ <_HookCaller 'pytest_cmdline_main'>
+           │    └ <function PluginManager.__init__.<locals>.<lambda> at 0x0000025814C085E0>
+           └ <_pytest.config.PytestPluginManager object at 0x00000258174CEC70>
+
+  File "D:\Program Files\Python\lib\site-packages\pluggy\manager.py", line 84, in <lambda>
+    self._inner_hookexec = lambda hook, methods, kwargs: hook.multicall(
+                                  │     │        │       │    └ <function _multicall at 0x000002581512AE50>
+                                  │     │        │       └ <_HookCaller 'pytest_cmdline_main'>
+                                  │     │        └ {'config': <_pytest.config.Config object at 0x00000258174EDA60>}
+                                  │     └ [<HookImpl plugin_name='main', plugin=<module '_pytest.main' from 'D:\\Program Files\\Python\\lib\\site-packages\\_pytest\\ma...
+                                  └ <_HookCaller 'pytest_cmdline_main'>
+
+  File "D:\Program Files\Python\lib\site-packages\pluggy\callers.py", line 187, in _multicall
+    res = hook_impl.function(*args)
+          │         │         └ [<_pytest.config.Config object at 0x00000258174EDA60>]
+          │         └ <function pytest_cmdline_main at 0x00000258152CC9D0>
+          └ <HookImpl plugin_name='main', plugin=<module '_pytest.main' from 'D:\\Program Files\\Python\\lib\\site-packages\\_pytest\\mai...
+
+  File "D:\Program Files\Python\lib\site-packages\_pytest\main.py", line 316, in pytest_cmdline_main
+    return wrap_session(config, _main)
+           │            │       └ <function _main at 0x00000258152CCA60>
+           │            └ <_pytest.config.Config object at 0x00000258174EDA60>
+           └ <function wrap_session at 0x00000258152CC940>
+
+  File "D:\Program Files\Python\lib\site-packages\_pytest\main.py", line 269, in wrap_session
+    session.exitstatus = doit(config, session) or 0
+    │       │            │    │       └ <Session testcases_nmb exitstatus=<ExitCode.OK: 0> testsfailed=0 testscollected=9>
+    │       │            │    └ <_pytest.config.Config object at 0x00000258174EDA60>
+    │       │            └ <function _main at 0x00000258152CCA60>
+    │       └ <ExitCode.OK: 0>
+    └ <Session testcases_nmb exitstatus=<ExitCode.OK: 0> testsfailed=0 testscollected=9>
+
+  File "D:\Program Files\Python\lib\site-packages\_pytest\main.py", line 323, in _main
+    config.hook.pytest_runtestloop(session=session)
+    │      │    │                          └ <Session testcases_nmb exitstatus=<ExitCode.OK: 0> testsfailed=0 testscollected=9>
+    │      │    └ <_HookCaller 'pytest_runtestloop'>
+    │      └ <pluggy.hooks._HookRelay object at 0x00000258174F72E0>
+    └ <_pytest.config.Config object at 0x00000258174EDA60>
+
+  File "D:\Program Files\Python\lib\site-packages\pluggy\hooks.py", line 286, in __call__
+    return self._hookexec(self, self.get_hookimpls(), kwargs)
+           │    │         │     │    │                └ {'session': <Session testcases_nmb exitstatus=<ExitCode.OK: 0> testsfailed=0 testscollected=9>}
+           │    │         │     │    └ <function _HookCaller.get_hookimpls at 0x000002581513BA60>
+           │    │         │     └ <_HookCaller 'pytest_runtestloop'>
+           │    │         └ <_HookCaller 'pytest_runtestloop'>
+           │    └ <bound method PluginManager._hookexec of <_pytest.config.PytestPluginManager object at 0x00000258174CEC70>>
+           └ <_HookCaller 'pytest_runtestloop'>
+
+  File "D:\Program Files\Python\lib\site-packages\pluggy\manager.py", line 93, in _hookexec
+    return self._inner_hookexec(hook, methods, kwargs)
+           │    │               │     │        └ {'session': <Session testcases_nmb exitstatus=<ExitCode.OK: 0> testsfailed=0 testscollected=9>}
+           │    │               │     └ [<HookImpl plugin_name='main', plugin=<module '_pytest.main' from 'D:\\Program Files\\Python\\lib\\site-packages\\_pytest\\ma...
+           │    │               └ <_HookCaller 'pytest_runtestloop'>
+           │    └ <function PluginManager.__init__.<locals>.<lambda> at 0x0000025814C085E0>
+           └ <_pytest.config.PytestPluginManager object at 0x00000258174CEC70>
+
+  File "D:\Program Files\Python\lib\site-packages\pluggy\manager.py", line 84, in <lambda>
+    self._inner_hookexec = lambda hook, methods, kwargs: hook.multicall(
+                                  │     │        │       │    └ <function _multicall at 0x000002581512AE50>
+                                  │     │        │       └ <_HookCaller 'pytest_runtestloop'>
+                                  │     │        └ {'session': <Session testcases_nmb exitstatus=<ExitCode.OK: 0> testsfailed=0 testscollected=9>}
+                                  │     └ [<HookImpl plugin_name='main', plugin=<module '_pytest.main' from 'D:\\Program Files\\Python\\lib\\site-packages\\_pytest\\ma...
+                                  └ <_HookCaller 'pytest_runtestloop'>
+
+  File "D:\Program Files\Python\lib\site-packages\pluggy\callers.py", line 187, in _multicall
+    res = hook_impl.function(*args)
+          │         │         └ [<Session testcases_nmb exitstatus=<ExitCode.OK: 0> testsfailed=0 testscollected=9>]
+          │         └ <function pytest_runtestloop at 0x00000258152CCB80>
+          └ <HookImpl plugin_name='main', plugin=<module '_pytest.main' from 'D:\\Program Files\\Python\\lib\\site-packages\\_pytest\\mai...
+
+  File "D:\Program Files\Python\lib\site-packages\_pytest\main.py", line 348, in pytest_runtestloop
+    item.config.hook.pytest_runtest_protocol(item=item, nextitem=nextitem)
+    │    │                                        │              └ <TestCaseFunction test_recharge_05>
+    │    │                                        └ <TestCaseFunction test_recharge_04>
+    │    └ <member 'config' of 'Node' objects>
+    └ <TestCaseFunction test_recharge_04>
+
+  File "D:\Program Files\Python\lib\site-packages\pluggy\hooks.py", line 286, in __call__
+    return self._hookexec(self, self.get_hookimpls(), kwargs)
+           │    │         │     │    │                └ {'item': <TestCaseFunction test_recharge_04>, 'nextitem': <TestCaseFunction test_recharge_05>}
+           │    │         │     │    └ <function _HookCaller.get_hookimpls at 0x000002581513BA60>
+           │    │         │     └ <_HookCaller 'pytest_runtest_protocol'>
+           │    │         └ <_HookCaller 'pytest_runtest_protocol'>
+           │    └ <bound method PluginManager._hookexec of <_pytest.config.PytestPluginManager object at 0x00000258174CEC70>>
+           └ <_HookCaller 'pytest_runtest_protocol'>
+
+  File "D:\Program Files\Python\lib\site-packages\pluggy\manager.py", line 93, in _hookexec
+    return self._inner_hookexec(hook, methods, kwargs)
+           │    │               │     │        └ {'item': <TestCaseFunction test_recharge_04>, 'nextitem': <TestCaseFunction test_recharge_05>}
+           │    │               │     └ [<HookImpl plugin_name='runner', plugin=<module '_pytest.runner' from 'D:\\Program Files\\Python\\lib\\site-packages\\_pytest...
+           │    │               └ <_HookCaller 'pytest_runtest_protocol'>
+           │    └ <function PluginManager.__init__.<locals>.<lambda> at 0x0000025814C085E0>
+           └ <_pytest.config.PytestPluginManager object at 0x00000258174CEC70>
+
+  File "D:\Program Files\Python\lib\site-packages\pluggy\manager.py", line 84, in <lambda>
+    self._inner_hookexec = lambda hook, methods, kwargs: hook.multicall(
+                                  │     │        │       │    └ <function _multicall at 0x000002581512AE50>
+                                  │     │        │       └ <_HookCaller 'pytest_runtest_protocol'>
+                                  │     │        └ {'item': <TestCaseFunction test_recharge_04>, 'nextitem': <TestCaseFunction test_recharge_05>}
+                                  │     └ [<HookImpl plugin_name='runner', plugin=<module '_pytest.runner' from 'D:\\Program Files\\Python\\lib\\site-packages\\_pytest...
+                                  └ <_HookCaller 'pytest_runtest_protocol'>
+
+  File "D:\Program Files\Python\lib\site-packages\pluggy\callers.py", line 187, in _multicall
+    res = hook_impl.function(*args)
+          │         │         └ [<TestCaseFunction test_recharge_04>, <TestCaseFunction test_recharge_05>]
+          │         └ <function pytest_runtest_protocol at 0x00000258152C7040>
+          └ <HookImpl plugin_name='runner', plugin=<module '_pytest.runner' from 'D:\\Program Files\\Python\\lib\\site-packages\\_pytest\...
+
+  File "D:\Program Files\Python\lib\site-packages\_pytest\runner.py", line 109, in pytest_runtest_protocol
+    runtestprotocol(item, nextitem=nextitem)
+    │               │              └ <TestCaseFunction test_recharge_05>
+    │               └ <TestCaseFunction test_recharge_04>
+    └ <function runtestprotocol at 0x00000258152C70D0>
+
+  File "D:\Program Files\Python\lib\site-packages\_pytest\runner.py", line 126, in runtestprotocol
+    reports.append(call_and_report(item, "call", log))
+    │       │      │               │             └ True
+    │       │      │               └ <TestCaseFunction test_recharge_04>
+    │       │      └ <function call_and_report at 0x00000258152C74C0>
+    │       └ <method 'append' of 'list' objects>
+    └ [<TestReport 'test_03recharge.py::TestRecharge::test_recharge_04' when='setup' outcome='passed'>]
+
+  File "D:\Program Files\Python\lib\site-packages\_pytest\runner.py", line 215, in call_and_report
+    call = call_runtest_hook(item, when, **kwds)
+           │                 │     │       └ {}
+           │                 │     └ 'call'
+           │                 └ <TestCaseFunction test_recharge_04>
+           └ <function call_runtest_hook at 0x00000258152C75E0>
+
+  File "D:\Program Files\Python\lib\site-packages\_pytest\runner.py", line 254, in call_runtest_hook
+    return CallInfo.from_call(
+           │        └ <classmethod object at 0x00000258152C3D00>
+           └ <class '_pytest.runner.CallInfo'>
+
+  File "D:\Program Files\Python\lib\site-packages\_pytest\runner.py", line 311, in from_call
+    result: Optional[TResult] = func()
+            │        │          └ <function call_runtest_hook.<locals>.<lambda> at 0x000002581858DC10>
+            │        └ +TResult
+            └ typing.Optional
+
+  File "D:\Program Files\Python\lib\site-packages\_pytest\runner.py", line 255, in <lambda>
+    lambda: ihook(item=item, **kwds), when=when, reraise=reraise
+            │          │       └ {}
+            │          └ <TestCaseFunction test_recharge_04>
+            └ <_HookCaller 'pytest_runtest_call'>
+
+  File "D:\Program Files\Python\lib\site-packages\pluggy\hooks.py", line 286, in __call__
+    return self._hookexec(self, self.get_hookimpls(), kwargs)
+           │    │         │     │    │                └ {'item': <TestCaseFunction test_recharge_04>}
+           │    │         │     │    └ <function _HookCaller.get_hookimpls at 0x000002581513BA60>
+           │    │         │     └ <_HookCaller 'pytest_runtest_call'>
+           │    │         └ <_HookCaller 'pytest_runtest_call'>
+           │    └ <bound method PluginManager._hookexec of <_pytest.config.PytestPluginManager object at 0x00000258174CEC70>>
+           └ <_HookCaller 'pytest_runtest_call'>
+
+  File "D:\Program Files\Python\lib\site-packages\pluggy\manager.py", line 93, in _hookexec
+    return self._inner_hookexec(hook, methods, kwargs)
+           │    │               │     │        └ {'item': <TestCaseFunction test_recharge_04>}
+           │    │               │     └ [<HookImpl plugin_name='runner', plugin=<module '_pytest.runner' from 'D:\\Program Files\\Python\\lib\\site-packages\\_pytest...
+           │    │               └ <_HookCaller 'pytest_runtest_call'>
+           │    └ <function PluginManager.__init__.<locals>.<lambda> at 0x0000025814C085E0>
+           └ <_pytest.config.PytestPluginManager object at 0x00000258174CEC70>
+
+  File "D:\Program Files\Python\lib\site-packages\pluggy\manager.py", line 84, in <lambda>
+    self._inner_hookexec = lambda hook, methods, kwargs: hook.multicall(
+                                  │     │        │       │    └ <function _multicall at 0x000002581512AE50>
+                                  │     │        │       └ <_HookCaller 'pytest_runtest_call'>
+                                  │     │        └ {'item': <TestCaseFunction test_recharge_04>}
+                                  │     └ [<HookImpl plugin_name='runner', plugin=<module '_pytest.runner' from 'D:\\Program Files\\Python\\lib\\site-packages\\_pytest...
+                                  └ <_HookCaller 'pytest_runtest_call'>
+
+  File "D:\Program Files\Python\lib\site-packages\pluggy\callers.py", line 187, in _multicall
+    res = hook_impl.function(*args)
+          │         │         └ [<TestCaseFunction test_recharge_04>]
+          │         └ <function pytest_runtest_call at 0x00000258152C7280>
+          └ <HookImpl plugin_name='runner', plugin=<module '_pytest.runner' from 'D:\\Program Files\\Python\\lib\\site-packages\\_pytest\...
+
+  File "D:\Program Files\Python\lib\site-packages\_pytest\runner.py", line 162, in pytest_runtest_call
+    item.runtest()
+    │    └ <function TestCaseFunction.runtest at 0x0000025817477040>
+    └ <TestCaseFunction test_recharge_04>
+
+  File "D:\Program Files\Python\lib\site-packages\_pytest\unittest.py", line 321, in runtest
+    self._testcase(result=self)  # type: ignore[arg-type]
+    │    │                └ <TestCaseFunction test_recharge_04>
+    │    └ <test_03recharge.TestRecharge testMethod=test_recharge_04>
+    └ <TestCaseFunction test_recharge_04>
+
+  File "D:\Program Files\Python\lib\unittest\case.py", line 653, in __call__
+    return self.run(*args, **kwds)
+           │    │    │       └ {'result': <TestCaseFunction test_recharge_04>}
+           │    │    └ ()
+           │    └ <function TestCase.run at 0x0000025817427E50>
+           └ <test_03recharge.TestRecharge testMethod=test_recharge_04>
+
+  File "D:\Program Files\Python\lib\unittest\case.py", line 593, in run
+    self._callTestMethod(testMethod)
+    │    │               └ <bound method TestRecharge.test_recharge of <test_03recharge.TestRecharge testMethod=test_recharge_04>>
+    │    └ <function TestCase._callTestMethod at 0x0000025817427CA0>
+    └ <test_03recharge.TestRecharge testMethod=test_recharge_04>
+
+  File "D:\Program Files\Python\lib\unittest\case.py", line 550, in _callTestMethod
+    method()
+    └ <bound method TestRecharge.test_recharge of <test_03recharge.TestRecharge testMethod=test_recharge_04>>
+
+  File "D:\Program Files\Python\lib\site-packages\unittestreport\core\dataDriver.py", line 16, in wrapper
+    return func(self, params, *args, **kwargs)
+           │    │     │        │       └ {}
+           │    │     │        └ ()
+           │    │     └ {'id': 4, 'title': '充值0元', 'url': '/member/recharge', 'method': 'POST', 'data': '{\n    "member_id":#member_id#,\n    "amount...
+           │    └ <test_03recharge.TestRecharge testMethod=test_recharge_04>
+           └ <function TestRecharge.test_recharge at 0x00000258525851F0>
+
+  File "D:\学习资料\github\py_automation\test_nmb\qcd\testcases_nmb\test_03recharge.py", line 61, in test_recharge
+    self.assertTrue(assert_req(resp, value["assert_excpt"]))
+    │    │          │          │     └ {'id': 4, 'title': '充值0元', 'url': '/member/recharge', 'method': 'POST', 'data': '{\n    "member_id":1236918855,\n    "amount"...
+    │    │          │          └ {'code': 0, 'msg': 'OK', 'data': {'id': 1236918855, 'leave_amount': 6004807.1, 'mobile_phone': '15133181962', 'reg_name': 'pe...
+    │    │          └ <function assert_req at 0x0000025852571AF0>
+    │    └ <function TestCase.assertTrue at 0x000002581742C310>
+    └ <test_03recharge.TestRecharge testMethod=test_recharge_04>
+
+> File "D:\学习资料\github\py_automation\test_nmb\qcd\tools\handler_assert.py", line 34, in assert_req
+    assert actual[0] == jsonpath(i, "$..expect")[0]
+           │            │        └ {'actual': '$..code', 'expect': 2, 'assert_type': '=='}
+           │            └ <function jsonpath at 0x0000025852571940>
+           └ [0]
+
+AssertionError: assert actual[0] == jsonpath(i, "$..expect")[0]
+2021-09-28 18:04:12.018 | INFO     | tools.handler_replace:variable_replace:18 - case数据类型：<class 'dict'>
+2021-09-28 18:04:12.019 | INFO     | tools.handler_replace:variable_replace:19 - case数据转换后的类型：<class 'str'>
+2021-09-28 18:04:12.019 | INFO     | tools.handler_replace:variable_replace:23 - 正则获取变量列表：['member_id', 'leave_amount']
+2021-09-28 18:04:12.019 | INFO     | tools.handler_replace:variable_replace:45 - 用例中所有变量替换后最终显示数据：{'id': 5, 'title': '充值边界值两位小数：499999.99', 'url': '/member/recharge', 'method': 'POST', 'data': '{\n    "member_id":1236918855,\n    "amount":499999.99\n}', 'extract': '{"leave_amount":"$..leave_amount"}', 'assert_excpt': '[\n  {"actual":"$..code","expect":0,"assert_type":"=="},\n  {"actual":"$..msg","expect":"OK","assert_type":"=="},\n{"actual":"$..leave_amount","expect":round(6004807.1+499999.99,2),"assert_type":"=="}\n]', 'bug': None}
+2021-09-28 18:04:12.020 | INFO     | tools.handler_nmb_request:send_request:37 - 请求接口：
+http://8.129.91.152:8766/futureloan/member/recharge
+2021-09-28 18:04:12.020 | INFO     | tools.handler_nmb_request:send_request:38 - 请求方式：POST
+2021-09-28 18:04:12.020 | INFO     | tools.handler_nmb_request:send_request:39 - 请求body体数据：
+{
+    "member_id":1236918855,
+    "amount":499999.99
+}
+2021-09-28 18:04:12.020 | INFO     | tools.handler_nmb_request:send_request:40 - 请求headers：
+{'X-Lemonban-Media-Type': 'lemonban.v2', 'content-type': 'application/json', 'authorization': 'Bearer eyJhbGciOiJIUzUxMiJ9.eyJtZW1iZXJfaWQiOjEyMzY5MTg4NTUsImV4cCI6MTYzMjgyMzc1Mn0.UYva5arOOOD-LhQbw8Iyq5jMht3ZeUX655NNj3wxn_Ukhz__fahiqW5ZrN-dRlWAj7-WwQKWVwuD1YSNIz21lA'}
+2021-09-28 18:04:12.126 | INFO     | tools.handler_nmb_request:send_request:46 - http响应状态码：200
+2021-09-28 18:04:12.126 | INFO     | tools.handler_nmb_request:send_request:47 - 响应body体：
+{"code":0,"msg":"OK","data":{"id":1236918855,"leave_amount":6504807.09,"mobile_phone":"15133181962","reg_name":"peter","reg_time":"2021-09-26 14:53:00.0","type":1},"copyright":"Copyright 柠檬班 © 2017-2020 湖南省零檬信息技术有限公司 All Rights Reserved"}
+2021-09-28 18:04:12.127 | INFO     | tools.handler_variable:set_variable:22 - 前置条件提取的数据字典:
+{'leave_amount': '$..leave_amount'}
+2021-09-28 18:04:12.127 | INFO     | tools.handler_variable:set_variable:25 - 要提取的字段与值：
+leave_amount ：6504807.09
+2021-09-28 18:04:12.128 | INFO     | tools.handler_variable:set_variable:31 - 全局变量设置成功！
+2021-09-28 18:04:12.128 | INFO     | tools.handler_variable:set_variable:32 - 全局变量有：
+{'__module__': 'tools.handler_global', '__dict__': <attribute '__dict__' of 'Global' objects>, '__weakref__': <attribute '__weakref__' of 'Global' objects>, '__doc__': None, 'token': 'eyJhbGciOiJIUzUxMiJ9.eyJtZW1iZXJfaWQiOjEyMzY5MTg4NTUsImV4cCI6MTYzMjgyMzc1Mn0.UYva5arOOOD-LhQbw8Iyq5jMht3ZeUX655NNj3wxn_Ukhz__fahiqW5ZrN-dRlWAj7-WwQKWVwuD1YSNIz21lA', 'member_id': '1236918855', 'leave_amount': '6504807.09'}
+2021-09-28 18:04:12.129 | INFO     | tools.handler_assert:assert_req:26 - 断言表达式、期望结果和比对方式为：
+{'actual': '$..code', 'expect': 0, 'assert_type': '=='}
+2021-09-28 18:04:12.129 | INFO     | tools.handler_assert:assert_req:27 - 提取实际结果的jsonpath表达式：$..code
+2021-09-28 18:04:12.130 | INFO     | tools.handler_assert:assert_req:28 - 响应数据：
+{'code': 0, 'msg': 'OK', 'data': {'id': 1236918855, 'leave_amount': 6504807.09, 'mobile_phone': '15133181962', 'reg_name': 'peter', 'reg_time': '2021-09-26 14:53:00.0', 'type': 1}, 'copyright': 'Copyright 柠檬班 © 2017-2020 湖南省零檬信息技术有限公司 All Rights Reserved'}
+2021-09-28 18:04:12.130 | INFO     | tools.handler_assert:assert_req:30 - 实际结果：0
+2021-09-28 18:04:12.131 | INFO     | tools.handler_assert:assert_req:31 - 期望结果：0
+2021-09-28 18:04:12.131 | INFO     | tools.handler_assert:assert_req:35 - 断言成功。
+2021-09-28 18:04:12.131 | INFO     | tools.handler_assert:assert_req:26 - 断言表达式、期望结果和比对方式为：
+{'actual': '$..msg', 'expect': 'OK', 'assert_type': '=='}
+2021-09-28 18:04:12.132 | INFO     | tools.handler_assert:assert_req:27 - 提取实际结果的jsonpath表达式：$..msg
+2021-09-28 18:04:12.132 | INFO     | tools.handler_assert:assert_req:28 - 响应数据：
+{'code': 0, 'msg': 'OK', 'data': {'id': 1236918855, 'leave_amount': 6504807.09, 'mobile_phone': '15133181962', 'reg_name': 'peter', 'reg_time': '2021-09-26 14:53:00.0', 'type': 1}, 'copyright': 'Copyright 柠檬班 © 2017-2020 湖南省零檬信息技术有限公司 All Rights Reserved'}
+2021-09-28 18:04:12.133 | INFO     | tools.handler_assert:assert_req:30 - 实际结果：OK
+2021-09-28 18:04:12.133 | INFO     | tools.handler_assert:assert_req:31 - 期望结果：OK
+2021-09-28 18:04:12.133 | INFO     | tools.handler_assert:assert_req:35 - 断言成功。
+2021-09-28 18:04:12.134 | INFO     | tools.handler_assert:assert_req:26 - 断言表达式、期望结果和比对方式为：
+{'actual': '$..leave_amount', 'expect': 6504807.09, 'assert_type': '=='}
+2021-09-28 18:04:12.134 | INFO     | tools.handler_assert:assert_req:27 - 提取实际结果的jsonpath表达式：$..leave_amount
+2021-09-28 18:04:12.135 | INFO     | tools.handler_assert:assert_req:28 - 响应数据：
+{'code': 0, 'msg': 'OK', 'data': {'id': 1236918855, 'leave_amount': 6504807.09, 'mobile_phone': '15133181962', 'reg_name': 'peter', 'reg_time': '2021-09-26 14:53:00.0', 'type': 1}, 'copyright': 'Copyright 柠檬班 © 2017-2020 湖南省零檬信息技术有限公司 All Rights Reserved'}
+2021-09-28 18:04:12.135 | INFO     | tools.handler_assert:assert_req:30 - 实际结果：6504807.09
+2021-09-28 18:04:12.136 | INFO     | tools.handler_assert:assert_req:31 - 期望结果：6504807.09
+2021-09-28 18:04:12.137 | INFO     | tools.handler_assert:assert_req:35 - 断言成功。
+2021-09-28 18:04:12.159 | INFO     | tools.handler_replace:variable_replace:18 - case数据类型：<class 'dict'>
+2021-09-28 18:04:12.160 | INFO     | tools.handler_replace:variable_replace:19 - case数据转换后的类型：<class 'str'>
+2021-09-28 18:04:12.161 | INFO     | tools.handler_replace:variable_replace:23 - 正则获取变量列表：['member_id']
+2021-09-28 18:04:12.161 | INFO     | tools.handler_replace:variable_replace:45 - 用例中所有变量替换后最终显示数据：{'id': 6, 'title': '充值边界值两位小数：500000.01', 'url': '/member/recharge', 'method': 'POST', 'data': '{\n    "member_id":1236918855,\n    "amount":500000.01\n}', 'extract': None, 'assert_excpt': '[\n  {"actual":"$..code","expect":2,"assert_type":"=="},\n  {"actual":"$..msg","expect":"余额必须大于0并且小于或者等于500000","assert_type":"=="}\n]', 'bug': None}
+2021-09-28 18:04:12.162 | INFO     | tools.handler_nmb_request:send_request:37 - 请求接口：
+http://8.129.91.152:8766/futureloan/member/recharge
+2021-09-28 18:04:12.162 | INFO     | tools.handler_nmb_request:send_request:38 - 请求方式：POST
+2021-09-28 18:04:12.163 | INFO     | tools.handler_nmb_request:send_request:39 - 请求body体数据：
+{
+    "member_id":1236918855,
+    "amount":500000.01
+}
+2021-09-28 18:04:12.163 | INFO     | tools.handler_nmb_request:send_request:40 - 请求headers：
+{'X-Lemonban-Media-Type': 'lemonban.v2', 'content-type': 'application/json', 'authorization': 'Bearer eyJhbGciOiJIUzUxMiJ9.eyJtZW1iZXJfaWQiOjEyMzY5MTg4NTUsImV4cCI6MTYzMjgyMzc1Mn0.UYva5arOOOD-LhQbw8Iyq5jMht3ZeUX655NNj3wxn_Ukhz__fahiqW5ZrN-dRlWAj7-WwQKWVwuD1YSNIz21lA'}
+2021-09-28 18:04:12.266 | INFO     | tools.handler_nmb_request:send_request:46 - http响应状态码：200
+2021-09-28 18:04:12.267 | INFO     | tools.handler_nmb_request:send_request:47 - 响应body体：
+{"code":2,"msg":"余额必须大于0并且小于或者等于500000","data":null,"copyright":"Copyright 柠檬班 © 2017-2020 湖南省零檬信息技术有限公司 All Rights Reserved"}
+2021-09-28 18:04:12.267 | INFO     | tools.handler_assert:assert_req:26 - 断言表达式、期望结果和比对方式为：
+{'actual': '$..code', 'expect': 2, 'assert_type': '=='}
+2021-09-28 18:04:12.268 | INFO     | tools.handler_assert:assert_req:27 - 提取实际结果的jsonpath表达式：$..code
+2021-09-28 18:04:12.268 | INFO     | tools.handler_assert:assert_req:28 - 响应数据：
+{'code': 2, 'msg': '余额必须大于0并且小于或者等于500000', 'data': None, 'copyright': 'Copyright 柠檬班 © 2017-2020 湖南省零檬信息技术有限公司 All Rights Reserved'}
+2021-09-28 18:04:12.269 | INFO     | tools.handler_assert:assert_req:30 - 实际结果：2
+2021-09-28 18:04:12.270 | INFO     | tools.handler_assert:assert_req:31 - 期望结果：2
+2021-09-28 18:04:12.270 | INFO     | tools.handler_assert:assert_req:35 - 断言成功。
+2021-09-28 18:04:12.270 | INFO     | tools.handler_assert:assert_req:26 - 断言表达式、期望结果和比对方式为：
+{'actual': '$..msg', 'expect': '余额必须大于0并且小于或者等于500000', 'assert_type': '=='}
+2021-09-28 18:04:12.271 | INFO     | tools.handler_assert:assert_req:27 - 提取实际结果的jsonpath表达式：$..msg
+2021-09-28 18:04:12.272 | INFO     | tools.handler_assert:assert_req:28 - 响应数据：
+{'code': 2, 'msg': '余额必须大于0并且小于或者等于500000', 'data': None, 'copyright': 'Copyright 柠檬班 © 2017-2020 湖南省零檬信息技术有限公司 All Rights Reserved'}
+2021-09-28 18:04:12.272 | INFO     | tools.handler_assert:assert_req:30 - 实际结果：余额必须大于0并且小于或者等于500000
+2021-09-28 18:04:12.273 | INFO     | tools.handler_assert:assert_req:31 - 期望结果：余额必须大于0并且小于或者等于500000
+2021-09-28 18:04:12.273 | INFO     | tools.handler_assert:assert_req:35 - 断言成功。
+2021-09-28 18:04:12.297 | INFO     | tools.handler_replace:variable_replace:18 - case数据类型：<class 'dict'>
+2021-09-28 18:04:12.298 | INFO     | tools.handler_replace:variable_replace:19 - case数据转换后的类型：<class 'str'>
+2021-09-28 18:04:12.298 | INFO     | tools.handler_replace:variable_replace:23 - 正则获取变量列表：['member_id']
+2021-09-28 18:04:12.298 | INFO     | tools.handler_replace:variable_replace:45 - 用例中所有变量替换后最终显示数据：{'id': 7, 'title': '充值三位小数：400.555', 'url': '/member/recharge', 'method': 'POST', 'data': '{\n    "member_id":1236918855,\n    "amount":400.555\n}', 'extract': None, 'assert_excpt': '[\n  {"actual":"$..code","expect":2,"assert_type":"=="},\n  {"actual":"$..msg","expect":"余额小数超过两位","assert_type":"=="}\n]', 'bug': None}
+2021-09-28 18:04:12.299 | INFO     | tools.handler_nmb_request:send_request:37 - 请求接口：
+http://8.129.91.152:8766/futureloan/member/recharge
+2021-09-28 18:04:12.299 | INFO     | tools.handler_nmb_request:send_request:38 - 请求方式：POST
+2021-09-28 18:04:12.300 | INFO     | tools.handler_nmb_request:send_request:39 - 请求body体数据：
+{
+    "member_id":1236918855,
+    "amount":400.555
+}
+2021-09-28 18:04:12.300 | INFO     | tools.handler_nmb_request:send_request:40 - 请求headers：
+{'X-Lemonban-Media-Type': 'lemonban.v2', 'content-type': 'application/json', 'authorization': 'Bearer eyJhbGciOiJIUzUxMiJ9.eyJtZW1iZXJfaWQiOjEyMzY5MTg4NTUsImV4cCI6MTYzMjgyMzc1Mn0.UYva5arOOOD-LhQbw8Iyq5jMht3ZeUX655NNj3wxn_Ukhz__fahiqW5ZrN-dRlWAj7-WwQKWVwuD1YSNIz21lA'}
+2021-09-28 18:04:12.685 | INFO     | tools.handler_nmb_request:send_request:46 - http响应状态码：200
+2021-09-28 18:04:12.686 | INFO     | tools.handler_nmb_request:send_request:47 - 响应body体：
+{"code":2,"msg":"余额小数超过两位","data":null,"copyright":"Copyright 柠檬班 © 2017-2020 湖南省零檬信息技术有限公司 All Rights Reserved"}
+2021-09-28 18:04:12.686 | INFO     | tools.handler_assert:assert_req:26 - 断言表达式、期望结果和比对方式为：
+{'actual': '$..code', 'expect': 2, 'assert_type': '=='}
+2021-09-28 18:04:12.687 | INFO     | tools.handler_assert:assert_req:27 - 提取实际结果的jsonpath表达式：$..code
+2021-09-28 18:04:12.687 | INFO     | tools.handler_assert:assert_req:28 - 响应数据：
+{'code': 2, 'msg': '余额小数超过两位', 'data': None, 'copyright': 'Copyright 柠檬班 © 2017-2020 湖南省零檬信息技术有限公司 All Rights Reserved'}
+2021-09-28 18:04:12.688 | INFO     | tools.handler_assert:assert_req:30 - 实际结果：2
+2021-09-28 18:04:12.688 | INFO     | tools.handler_assert:assert_req:31 - 期望结果：2
+2021-09-28 18:04:12.689 | INFO     | tools.handler_assert:assert_req:35 - 断言成功。
+2021-09-28 18:04:12.689 | INFO     | tools.handler_assert:assert_req:26 - 断言表达式、期望结果和比对方式为：
+{'actual': '$..msg', 'expect': '余额小数超过两位', 'assert_type': '=='}
+2021-09-28 18:04:12.690 | INFO     | tools.handler_assert:assert_req:27 - 提取实际结果的jsonpath表达式：$..msg
+2021-09-28 18:04:12.690 | INFO     | tools.handler_assert:assert_req:28 - 响应数据：
+{'code': 2, 'msg': '余额小数超过两位', 'data': None, 'copyright': 'Copyright 柠檬班 © 2017-2020 湖南省零檬信息技术有限公司 All Rights Reserved'}
+2021-09-28 18:04:12.691 | INFO     | tools.handler_assert:assert_req:30 - 实际结果：余额小数超过两位
+2021-09-28 18:04:12.691 | INFO     | tools.handler_assert:assert_req:31 - 期望结果：余额小数超过两位
+2021-09-28 18:04:12.693 | INFO     | tools.handler_assert:assert_req:35 - 断言成功。
+2021-09-28 18:04:12.717 | INFO     | tools.handler_replace:variable_replace:18 - case数据类型：<class 'dict'>
+2021-09-28 18:04:12.718 | INFO     | tools.handler_replace:variable_replace:19 - case数据转换后的类型：<class 'str'>
+2021-09-28 18:04:12.718 | INFO     | tools.handler_replace:variable_replace:23 - 正则获取变量列表：['member_id', 'leave_amount']
+2021-09-28 18:04:12.719 | INFO     | tools.handler_replace:variable_replace:45 - 用例中所有变量替换后最终显示数据：{'id': 8, 'title': '充值整数500000', 'url': '/member/recharge', 'method': 'POST', 'data': '{\n    "member_id":1236918855,\n    "amount":500000\n}', 'extract': None, 'assert_excpt': '[\n  {"actual":"$..code","expect":0,"assert_type":"=="},\n  {"actual":"$..msg","expect":"OK","assert_type":"=="},\n{"actual":"$..leave_amount","expect":round(6504807.09+500000,2),"assert_type":"=="}\n]', 'bug': None}
+2021-09-28 18:04:12.719 | INFO     | tools.handler_nmb_request:send_request:37 - 请求接口：
+http://8.129.91.152:8766/futureloan/member/recharge
+2021-09-28 18:04:12.720 | INFO     | tools.handler_nmb_request:send_request:38 - 请求方式：POST
+2021-09-28 18:04:12.720 | INFO     | tools.handler_nmb_request:send_request:39 - 请求body体数据：
+{
+    "member_id":1236918855,
+    "amount":500000
+}
+2021-09-28 18:04:12.720 | INFO     | tools.handler_nmb_request:send_request:40 - 请求headers：
+{'X-Lemonban-Media-Type': 'lemonban.v2', 'content-type': 'application/json', 'authorization': 'Bearer eyJhbGciOiJIUzUxMiJ9.eyJtZW1iZXJfaWQiOjEyMzY5MTg4NTUsImV4cCI6MTYzMjgyMzc1Mn0.UYva5arOOOD-LhQbw8Iyq5jMht3ZeUX655NNj3wxn_Ukhz__fahiqW5ZrN-dRlWAj7-WwQKWVwuD1YSNIz21lA'}
+2021-09-28 18:04:13.105 | INFO     | tools.handler_nmb_request:send_request:46 - http响应状态码：200
+2021-09-28 18:04:13.106 | INFO     | tools.handler_nmb_request:send_request:47 - 响应body体：
+{"code":0,"msg":"OK","data":{"id":1236918855,"leave_amount":7004807.09,"mobile_phone":"15133181962","reg_name":"peter","reg_time":"2021-09-26 14:53:00.0","type":1},"copyright":"Copyright 柠檬班 © 2017-2020 湖南省零檬信息技术有限公司 All Rights Reserved"}
+2021-09-28 18:04:13.106 | INFO     | tools.handler_assert:assert_req:26 - 断言表达式、期望结果和比对方式为：
+{'actual': '$..code', 'expect': 0, 'assert_type': '=='}
+2021-09-28 18:04:13.107 | INFO     | tools.handler_assert:assert_req:27 - 提取实际结果的jsonpath表达式：$..code
+2021-09-28 18:04:13.107 | INFO     | tools.handler_assert:assert_req:28 - 响应数据：
+{'code': 0, 'msg': 'OK', 'data': {'id': 1236918855, 'leave_amount': 7004807.09, 'mobile_phone': '15133181962', 'reg_name': 'peter', 'reg_time': '2021-09-26 14:53:00.0', 'type': 1}, 'copyright': 'Copyright 柠檬班 © 2017-2020 湖南省零檬信息技术有限公司 All Rights Reserved'}
+2021-09-28 18:04:13.107 | INFO     | tools.handler_assert:assert_req:30 - 实际结果：0
+2021-09-28 18:04:13.108 | INFO     | tools.handler_assert:assert_req:31 - 期望结果：0
+2021-09-28 18:04:13.108 | INFO     | tools.handler_assert:assert_req:35 - 断言成功。
+2021-09-28 18:04:13.108 | INFO     | tools.handler_assert:assert_req:26 - 断言表达式、期望结果和比对方式为：
+{'actual': '$..msg', 'expect': 'OK', 'assert_type': '=='}
+2021-09-28 18:04:13.109 | INFO     | tools.handler_assert:assert_req:27 - 提取实际结果的jsonpath表达式：$..msg
+2021-09-28 18:04:13.109 | INFO     | tools.handler_assert:assert_req:28 - 响应数据：
+{'code': 0, 'msg': 'OK', 'data': {'id': 1236918855, 'leave_amount': 7004807.09, 'mobile_phone': '15133181962', 'reg_name': 'peter', 'reg_time': '2021-09-26 14:53:00.0', 'type': 1}, 'copyright': 'Copyright 柠檬班 © 2017-2020 湖南省零檬信息技术有限公司 All Rights Reserved'}
+2021-09-28 18:04:13.109 | INFO     | tools.handler_assert:assert_req:30 - 实际结果：OK
+2021-09-28 18:04:13.109 | INFO     | tools.handler_assert:assert_req:31 - 期望结果：OK
+2021-09-28 18:04:13.110 | INFO     | tools.handler_assert:assert_req:35 - 断言成功。
+2021-09-28 18:04:13.110 | INFO     | tools.handler_assert:assert_req:26 - 断言表达式、期望结果和比对方式为：
+{'actual': '$..leave_amount', 'expect': 7004807.09, 'assert_type': '=='}
+2021-09-28 18:04:13.110 | INFO     | tools.handler_assert:assert_req:27 - 提取实际结果的jsonpath表达式：$..leave_amount
+2021-09-28 18:04:13.111 | INFO     | tools.handler_assert:assert_req:28 - 响应数据：
+{'code': 0, 'msg': 'OK', 'data': {'id': 1236918855, 'leave_amount': 7004807.09, 'mobile_phone': '15133181962', 'reg_name': 'peter', 'reg_time': '2021-09-26 14:53:00.0', 'type': 1}, 'copyright': 'Copyright 柠檬班 © 2017-2020 湖南省零檬信息技术有限公司 All Rights Reserved'}
+2021-09-28 18:04:13.111 | INFO     | tools.handler_assert:assert_req:30 - 实际结果：7004807.09
+2021-09-28 18:04:13.111 | INFO     | tools.handler_assert:assert_req:31 - 期望结果：7004807.09
+2021-09-28 18:04:13.112 | INFO     | tools.handler_assert:assert_req:35 - 断言成功。
+2021-09-28 18:04:13.124 | INFO     | tools.handler_replace:variable_replace:18 - case数据类型：<class 'dict'>
+2021-09-28 18:04:13.124 | INFO     | tools.handler_replace:variable_replace:19 - case数据转换后的类型：<class 'str'>
+2021-09-28 18:04:13.125 | INFO     | tools.handler_replace:variable_replace:23 - 正则获取变量列表：[]
+2021-09-28 18:04:13.125 | INFO     | tools.handler_replace:variable_replace:45 - 用例中所有变量替换后最终显示数据：{'id': 9, 'title': '输入错误的member_id', 'url': '/member/recharge', 'method': 'POST', 'data': '{\n    "member_id":1234567890123456,\n    "amount":1\n}', 'extract': None, 'assert_excpt': '[\n  {"actual":"$..code","expect":1007,"assert_type":"=="},\n  {"actual":"$..msg","expect":"无权限访问，请检查参数","assert_type":"=="}\n]', 'bug': None}
+2021-09-28 18:04:13.126 | INFO     | tools.handler_nmb_request:send_request:37 - 请求接口：
+http://8.129.91.152:8766/futureloan/member/recharge
+2021-09-28 18:04:13.126 | INFO     | tools.handler_nmb_request:send_request:38 - 请求方式：POST
+2021-09-28 18:04:13.126 | INFO     | tools.handler_nmb_request:send_request:39 - 请求body体数据：
+{
+    "member_id":1234567890123456,
+    "amount":1
+}
+2021-09-28 18:04:13.127 | INFO     | tools.handler_nmb_request:send_request:40 - 请求headers：
+{'X-Lemonban-Media-Type': 'lemonban.v2', 'content-type': 'application/json', 'authorization': 'Bearer eyJhbGciOiJIUzUxMiJ9.eyJtZW1iZXJfaWQiOjEyMzY5MTg4NTUsImV4cCI6MTYzMjgyMzc1Mn0.UYva5arOOOD-LhQbw8Iyq5jMht3ZeUX655NNj3wxn_Ukhz__fahiqW5ZrN-dRlWAj7-WwQKWVwuD1YSNIz21lA'}
+2021-09-28 18:04:13.245 | INFO     | tools.handler_nmb_request:send_request:46 - http响应状态码：200
+2021-09-28 18:04:13.246 | INFO     | tools.handler_nmb_request:send_request:47 - 响应body体：
+{"code":1007,"msg":"无权限访问，请检查参数","data":null,"copyright":"Copyright 柠檬班 © 2017-2020 湖南省零檬信息技术有限公司 All Rights Reserved"}
+2021-09-28 18:04:13.246 | INFO     | tools.handler_assert:assert_req:26 - 断言表达式、期望结果和比对方式为：
+{'actual': '$..code', 'expect': 1007, 'assert_type': '=='}
+2021-09-28 18:04:13.247 | INFO     | tools.handler_assert:assert_req:27 - 提取实际结果的jsonpath表达式：$..code
+2021-09-28 18:04:13.247 | INFO     | tools.handler_assert:assert_req:28 - 响应数据：
+{'code': 1007, 'msg': '无权限访问，请检查参数', 'data': None, 'copyright': 'Copyright 柠檬班 © 2017-2020 湖南省零檬信息技术有限公司 All Rights Reserved'}
+2021-09-28 18:04:13.247 | INFO     | tools.handler_assert:assert_req:30 - 实际结果：1007
+2021-09-28 18:04:13.248 | INFO     | tools.handler_assert:assert_req:31 - 期望结果：1007
+2021-09-28 18:04:13.248 | INFO     | tools.handler_assert:assert_req:35 - 断言成功。
+2021-09-28 18:04:13.248 | INFO     | tools.handler_assert:assert_req:26 - 断言表达式、期望结果和比对方式为：
+{'actual': '$..msg', 'expect': '无权限访问，请检查参数', 'assert_type': '=='}
+2021-09-28 18:04:13.249 | INFO     | tools.handler_assert:assert_req:27 - 提取实际结果的jsonpath表达式：$..msg
+2021-09-28 18:04:13.249 | INFO     | tools.handler_assert:assert_req:28 - 响应数据：
+{'code': 1007, 'msg': '无权限访问，请检查参数', 'data': None, 'copyright': 'Copyright 柠檬班 © 2017-2020 湖南省零檬信息技术有限公司 All Rights Reserved'}
+2021-09-28 18:04:13.250 | INFO     | tools.handler_assert:assert_req:30 - 实际结果：无权限访问，请检查参数
+2021-09-28 18:04:13.250 | INFO     | tools.handler_assert:assert_req:31 - 期望结果：无权限访问，请检查参数
+2021-09-28 18:04:13.250 | INFO     | tools.handler_assert:assert_req:35 - 断言成功。
+2021-10-12 11:20:13.469 | INFO     | tools.handler_mysql:__init__:32 - 数据库连接成功！
+2021-10-12 11:20:13.470 | INFO     | tools.handler_mysql:get_database_data:48 - 查询sql语句:
+select * from member where mobile_phone = '15720851217';
+2021-10-12 11:20:13.629 | INFO     | tools.handler_mysql:get_database_data:50 - 查询数据条目数:0 条
+2021-10-12 11:20:13.631 | INFO     | tools.handler_nmb_request:send_request:37 - 请求接口：
+http://8.129.91.152:8766/futureloan/member/register
+2021-10-12 11:20:13.631 | INFO     | tools.handler_nmb_request:send_request:38 - 请求方式：POST
+2021-10-12 11:20:13.632 | INFO     | tools.handler_nmb_request:send_request:39 - 请求body体数据：
+{"mobile_phone":"15720851217","pwd":"12345678"}
+2021-10-12 11:20:13.632 | INFO     | tools.handler_nmb_request:send_request:40 - 请求headers：
+{'X-Lemonban-Media-Type': 'lemonban.v2', 'content-type': 'application/json'}
+2021-10-12 11:20:13.837 | INFO     | tools.handler_nmb_request:send_request:46 - http响应状态码：200
+2021-10-12 11:20:13.838 | INFO     | tools.handler_nmb_request:send_request:47 - 响应body体：
+{"code":0,"msg":"OK","data":{"id":1236984009,"reg_name":"小柠檬","mobile_phone":"15720851217"},"copyright":"Copyright 柠檬班 © 2017-2020 湖南省零檬信息技术有限公司 All Rights Reserved"}
+2021-10-12 11:20:13.838 | INFO     | tools.handler_assert:assert_req:26 - 断言表达式、期望结果和比对方式为：
+{'actual': '$..code', 'expect': 0, 'assert_type': '=='}
+2021-10-12 11:20:13.839 | INFO     | tools.handler_assert:assert_req:27 - 提取实际结果的jsonpath表达式：$..code
+2021-10-12 11:20:13.840 | INFO     | tools.handler_assert:assert_req:28 - 响应数据：
+{'code': 0, 'msg': 'OK', 'data': {'id': 1236984009, 'reg_name': '小柠檬', 'mobile_phone': '15720851217'}, 'copyright': 'Copyright 柠檬班 © 2017-2020 湖南省零檬信息技术有限公司 All Rights Reserved'}
+2021-10-12 11:20:13.840 | INFO     | tools.handler_assert:assert_req:30 - 实际结果：0
+2021-10-12 11:20:13.840 | INFO     | tools.handler_assert:assert_req:31 - 期望结果：0
+2021-10-12 11:20:13.840 | INFO     | tools.handler_assert:assert_req:35 - 断言成功。
+2021-10-12 11:20:13.841 | INFO     | tools.handler_assert:assert_req:26 - 断言表达式、期望结果和比对方式为：
+{'actual': '$..msg', 'expect': 'OK', 'assert_type': '=='}
+2021-10-12 11:20:13.841 | INFO     | tools.handler_assert:assert_req:27 - 提取实际结果的jsonpath表达式：$..msg
+2021-10-12 11:20:13.841 | INFO     | tools.handler_assert:assert_req:28 - 响应数据：
+{'code': 0, 'msg': 'OK', 'data': {'id': 1236984009, 'reg_name': '小柠檬', 'mobile_phone': '15720851217'}, 'copyright': 'Copyright 柠檬班 © 2017-2020 湖南省零檬信息技术有限公司 All Rights Reserved'}
+2021-10-12 11:20:13.841 | INFO     | tools.handler_assert:assert_req:30 - 实际结果：OK
+2021-10-12 11:20:13.842 | INFO     | tools.handler_assert:assert_req:31 - 期望结果：OK
+2021-10-12 11:20:13.842 | INFO     | tools.handler_assert:assert_req:35 - 断言成功。
+2021-10-12 11:20:13.986 | INFO     | tools.handler_mysql:__init__:32 - 数据库连接成功！
+2021-10-12 11:20:13.986 | INFO     | tools.handler_mysql:get_database_data:48 - 查询sql语句:
+select * from member where mobile_phone = '15231894681';
+2021-10-12 11:20:14.151 | INFO     | tools.handler_mysql:get_database_data:50 - 查询数据条目数:0 条
+2021-10-12 11:20:14.152 | INFO     | tools.handler_nmb_request:send_request:37 - 请求接口：
+http://8.129.91.152:8766/futureloan/member/register
+2021-10-12 11:20:14.153 | INFO     | tools.handler_nmb_request:send_request:38 - 请求方式：POST
+2021-10-12 11:20:14.153 | INFO     | tools.handler_nmb_request:send_request:39 - 请求body体数据：
+{"mobile_phone":"15231894681","pwd":"12345678","type":0}
+2021-10-12 11:20:14.153 | INFO     | tools.handler_nmb_request:send_request:40 - 请求headers：
+{'X-Lemonban-Media-Type': 'lemonban.v2', 'content-type': 'application/json'}
+2021-10-12 11:20:14.364 | INFO     | tools.handler_nmb_request:send_request:46 - http响应状态码：200
+2021-10-12 11:20:14.364 | INFO     | tools.handler_nmb_request:send_request:47 - 响应body体：
+{"code":0,"msg":"OK","data":{"id":1236984010,"reg_name":"小柠檬","mobile_phone":"15231894681"},"copyright":"Copyright 柠檬班 © 2017-2020 湖南省零檬信息技术有限公司 All Rights Reserved"}
+2021-10-12 11:20:14.365 | INFO     | tools.handler_assert:assert_req:26 - 断言表达式、期望结果和比对方式为：
+{'actual': '$..code', 'expect': 0, 'assert_type': '=='}
+2021-10-12 11:20:14.365 | INFO     | tools.handler_assert:assert_req:27 - 提取实际结果的jsonpath表达式：$..code
+2021-10-12 11:20:14.366 | INFO     | tools.handler_assert:assert_req:28 - 响应数据：
+{'code': 0, 'msg': 'OK', 'data': {'id': 1236984010, 'reg_name': '小柠檬', 'mobile_phone': '15231894681'}, 'copyright': 'Copyright 柠檬班 © 2017-2020 湖南省零檬信息技术有限公司 All Rights Reserved'}
+2021-10-12 11:20:14.366 | INFO     | tools.handler_assert:assert_req:30 - 实际结果：0
+2021-10-12 11:20:14.367 | INFO     | tools.handler_assert:assert_req:31 - 期望结果：0
+2021-10-12 11:20:14.367 | INFO     | tools.handler_assert:assert_req:35 - 断言成功。
+2021-10-12 11:20:14.367 | INFO     | tools.handler_assert:assert_req:26 - 断言表达式、期望结果和比对方式为：
+{'actual': '$..msg', 'expect': 'OK', 'assert_type': '=='}
+2021-10-12 11:20:14.368 | INFO     | tools.handler_assert:assert_req:27 - 提取实际结果的jsonpath表达式：$..msg
+2021-10-12 11:20:14.368 | INFO     | tools.handler_assert:assert_req:28 - 响应数据：
+{'code': 0, 'msg': 'OK', 'data': {'id': 1236984010, 'reg_name': '小柠檬', 'mobile_phone': '15231894681'}, 'copyright': 'Copyright 柠檬班 © 2017-2020 湖南省零檬信息技术有限公司 All Rights Reserved'}
+2021-10-12 11:20:14.368 | INFO     | tools.handler_assert:assert_req:30 - 实际结果：OK
+2021-10-12 11:20:14.369 | INFO     | tools.handler_assert:assert_req:31 - 期望结果：OK
+2021-10-12 11:20:14.369 | INFO     | tools.handler_assert:assert_req:35 - 断言成功。
+2021-10-12 11:20:14.375 | INFO     | tools.handler_nmb_request:send_request:37 - 请求接口：
+http://8.129.91.152:8766/futureloan/member/register
+2021-10-12 11:20:14.375 | INFO     | tools.handler_nmb_request:send_request:38 - 请求方式：POST
+2021-10-12 11:20:14.376 | INFO     | tools.handler_nmb_request:send_request:39 - 请求body体数据：
+{"mobile_phone":"133333333333","pwd":"12345678"}
+2021-10-12 11:20:14.376 | INFO     | tools.handler_nmb_request:send_request:40 - 请求headers：
+{'X-Lemonban-Media-Type': 'lemonban.v2', 'content-type': 'application/json'}
+2021-10-12 11:20:14.452 | INFO     | tools.handler_nmb_request:send_request:46 - http响应状态码：200
+2021-10-12 11:20:14.453 | INFO     | tools.handler_nmb_request:send_request:47 - 响应body体：
+{"code":2,"msg":"无效的手机格式","data":null,"copyright":"Copyright 柠檬班 © 2017-2020 湖南省零檬信息技术有限公司 All Rights Reserved"}
+2021-10-12 11:20:14.453 | INFO     | tools.handler_assert:assert_req:26 - 断言表达式、期望结果和比对方式为：
+{'actual': '$..code', 'expect': 2, 'assert_type': '=='}
+2021-10-12 11:20:14.454 | INFO     | tools.handler_assert:assert_req:27 - 提取实际结果的jsonpath表达式：$..code
+2021-10-12 11:20:14.454 | INFO     | tools.handler_assert:assert_req:28 - 响应数据：
+{'code': 2, 'msg': '无效的手机格式', 'data': None, 'copyright': 'Copyright 柠檬班 © 2017-2020 湖南省零檬信息技术有限公司 All Rights Reserved'}
+2021-10-12 11:20:14.454 | INFO     | tools.handler_assert:assert_req:30 - 实际结果：2
+2021-10-12 11:20:14.454 | INFO     | tools.handler_assert:assert_req:31 - 期望结果：2
+2021-10-12 11:20:14.455 | INFO     | tools.handler_assert:assert_req:35 - 断言成功。
+2021-10-12 11:20:14.455 | INFO     | tools.handler_assert:assert_req:26 - 断言表达式、期望结果和比对方式为：
+{'actual': '$..msg', 'expect': '无效的手机格式', 'assert_type': '=='}
+2021-10-12 11:20:14.455 | INFO     | tools.handler_assert:assert_req:27 - 提取实际结果的jsonpath表达式：$..msg
+2021-10-12 11:20:14.455 | INFO     | tools.handler_assert:assert_req:28 - 响应数据：
+{'code': 2, 'msg': '无效的手机格式', 'data': None, 'copyright': 'Copyright 柠檬班 © 2017-2020 湖南省零檬信息技术有限公司 All Rights Reserved'}
+2021-10-12 11:20:14.455 | INFO     | tools.handler_assert:assert_req:30 - 实际结果：无效的手机格式
+2021-10-12 11:20:14.456 | INFO     | tools.handler_assert:assert_req:31 - 期望结果：无效的手机格式
+2021-10-12 11:20:14.456 | INFO     | tools.handler_assert:assert_req:35 - 断言成功。
+2021-10-12 11:20:14.457 | INFO     | tools.handler_nmb_request:send_request:37 - 请求接口：
+http://8.129.91.152:8766/futureloan/member/register
+2021-10-12 11:20:14.458 | INFO     | tools.handler_nmb_request:send_request:38 - 请求方式：POST
+2021-10-12 11:20:14.458 | INFO     | tools.handler_nmb_request:send_request:39 - 请求body体数据：
+{"mobile_phone":"1333333333","pwd":"12345678"}
+2021-10-12 11:20:14.458 | INFO     | tools.handler_nmb_request:send_request:40 - 请求headers：
+{'X-Lemonban-Media-Type': 'lemonban.v2', 'content-type': 'application/json'}
+2021-10-12 11:20:14.532 | INFO     | tools.handler_nmb_request:send_request:46 - http响应状态码：200
+2021-10-12 11:20:14.532 | INFO     | tools.handler_nmb_request:send_request:47 - 响应body体：
+{"code":2,"msg":"无效的手机格式","data":null,"copyright":"Copyright 柠檬班 © 2017-2020 湖南省零檬信息技术有限公司 All Rights Reserved"}
+2021-10-12 11:20:14.532 | INFO     | tools.handler_assert:assert_req:26 - 断言表达式、期望结果和比对方式为：
+{'actual': '$..code', 'expect': 2, 'assert_type': '=='}
+2021-10-12 11:20:14.533 | INFO     | tools.handler_assert:assert_req:27 - 提取实际结果的jsonpath表达式：$..code
+2021-10-12 11:20:14.533 | INFO     | tools.handler_assert:assert_req:28 - 响应数据：
+{'code': 2, 'msg': '无效的手机格式', 'data': None, 'copyright': 'Copyright 柠檬班 © 2017-2020 湖南省零檬信息技术有限公司 All Rights Reserved'}
+2021-10-12 11:20:14.533 | INFO     | tools.handler_assert:assert_req:30 - 实际结果：2
+2021-10-12 11:20:14.533 | INFO     | tools.handler_assert:assert_req:31 - 期望结果：2
+2021-10-12 11:20:14.534 | INFO     | tools.handler_assert:assert_req:35 - 断言成功。
+2021-10-12 11:20:14.534 | INFO     | tools.handler_assert:assert_req:26 - 断言表达式、期望结果和比对方式为：
+{'actual': '$..msg', 'expect': '无效的手机格式', 'assert_type': '=='}
+2021-10-12 11:20:14.534 | INFO     | tools.handler_assert:assert_req:27 - 提取实际结果的jsonpath表达式：$..msg
+2021-10-12 11:20:14.534 | INFO     | tools.handler_assert:assert_req:28 - 响应数据：
+{'code': 2, 'msg': '无效的手机格式', 'data': None, 'copyright': 'Copyright 柠檬班 © 2017-2020 湖南省零檬信息技术有限公司 All Rights Reserved'}
+2021-10-12 11:20:14.534 | INFO     | tools.handler_assert:assert_req:30 - 实际结果：无效的手机格式
+2021-10-12 11:20:14.534 | INFO     | tools.handler_assert:assert_req:31 - 期望结果：无效的手机格式
+2021-10-12 11:20:14.535 | INFO     | tools.handler_assert:assert_req:35 - 断言成功。
+2021-10-12 11:20:14.536 | INFO     | tools.handler_nmb_request:send_request:37 - 请求接口：
+http://8.129.91.152:8766/futureloan/member/register
+2021-10-12 11:20:14.537 | INFO     | tools.handler_nmb_request:send_request:38 - 请求方式：POST
+2021-10-12 11:20:14.537 | INFO     | tools.handler_nmb_request:send_request:39 - 请求body体数据：
+{"mobile_phone":"12012348976","pwd":"12345678"}
+2021-10-12 11:20:14.537 | INFO     | tools.handler_nmb_request:send_request:40 - 请求headers：
+{'X-Lemonban-Media-Type': 'lemonban.v2', 'content-type': 'application/json'}
+2021-10-12 11:20:14.609 | INFO     | tools.handler_nmb_request:send_request:46 - http响应状态码：200
+2021-10-12 11:20:14.609 | INFO     | tools.handler_nmb_request:send_request:47 - 响应body体：
+{"code":2,"msg":"无效的手机格式","data":null,"copyright":"Copyright 柠檬班 © 2017-2020 湖南省零檬信息技术有限公司 All Rights Reserved"}
+2021-10-12 11:20:14.610 | INFO     | tools.handler_assert:assert_req:26 - 断言表达式、期望结果和比对方式为：
+{'actual': '$..code', 'expect': 2, 'assert_type': '=='}
+2021-10-12 11:20:14.610 | INFO     | tools.handler_assert:assert_req:27 - 提取实际结果的jsonpath表达式：$..code
+2021-10-12 11:20:14.611 | INFO     | tools.handler_assert:assert_req:28 - 响应数据：
+{'code': 2, 'msg': '无效的手机格式', 'data': None, 'copyright': 'Copyright 柠檬班 © 2017-2020 湖南省零檬信息技术有限公司 All Rights Reserved'}
+2021-10-12 11:20:14.611 | INFO     | tools.handler_assert:assert_req:30 - 实际结果：2
+2021-10-12 11:20:14.611 | INFO     | tools.handler_assert:assert_req:31 - 期望结果：2
+2021-10-12 11:20:14.612 | INFO     | tools.handler_assert:assert_req:35 - 断言成功。
+2021-10-12 11:20:14.612 | INFO     | tools.handler_assert:assert_req:26 - 断言表达式、期望结果和比对方式为：
+{'actual': '$..msg', 'expect': '无效的手机格式', 'assert_type': '=='}
+2021-10-12 11:20:14.612 | INFO     | tools.handler_assert:assert_req:27 - 提取实际结果的jsonpath表达式：$..msg
+2021-10-12 11:20:14.612 | INFO     | tools.handler_assert:assert_req:28 - 响应数据：
+{'code': 2, 'msg': '无效的手机格式', 'data': None, 'copyright': 'Copyright 柠檬班 © 2017-2020 湖南省零檬信息技术有限公司 All Rights Reserved'}
+2021-10-12 11:20:14.613 | INFO     | tools.handler_assert:assert_req:30 - 实际结果：无效的手机格式
+2021-10-12 11:20:14.613 | INFO     | tools.handler_assert:assert_req:31 - 期望结果：无效的手机格式
+2021-10-12 11:20:14.614 | INFO     | tools.handler_assert:assert_req:35 - 断言成功。
+2021-10-12 11:20:14.616 | INFO     | tools.handler_nmb_request:send_request:37 - 请求接口：
+http://8.129.91.152:8766/futureloan/member/register
+2021-10-12 11:20:14.616 | INFO     | tools.handler_nmb_request:send_request:38 - 请求方式：POST
+2021-10-12 11:20:14.617 | INFO     | tools.handler_nmb_request:send_request:39 - 请求body体数据：
+{"mobile_phone":"11012348976","pwd":"12345678"}
+2021-10-12 11:20:14.617 | INFO     | tools.handler_nmb_request:send_request:40 - 请求headers：
+{'X-Lemonban-Media-Type': 'lemonban.v2', 'content-type': 'application/json'}
+2021-10-12 11:20:14.708 | INFO     | tools.handler_nmb_request:send_request:46 - http响应状态码：200
+2021-10-12 11:20:14.709 | INFO     | tools.handler_nmb_request:send_request:47 - 响应body体：
+{"code":2,"msg":"无效的手机格式","data":null,"copyright":"Copyright 柠檬班 © 2017-2020 湖南省零檬信息技术有限公司 All Rights Reserved"}
+2021-10-12 11:20:14.709 | INFO     | tools.handler_assert:assert_req:26 - 断言表达式、期望结果和比对方式为：
+{'actual': '$..code', 'expect': 2, 'assert_type': '=='}
+2021-10-12 11:20:14.710 | INFO     | tools.handler_assert:assert_req:27 - 提取实际结果的jsonpath表达式：$..code
+2021-10-12 11:20:14.710 | INFO     | tools.handler_assert:assert_req:28 - 响应数据：
+{'code': 2, 'msg': '无效的手机格式', 'data': None, 'copyright': 'Copyright 柠檬班 © 2017-2020 湖南省零檬信息技术有限公司 All Rights Reserved'}
+2021-10-12 11:20:14.710 | INFO     | tools.handler_assert:assert_req:30 - 实际结果：2
+2021-10-12 11:20:14.711 | INFO     | tools.handler_assert:assert_req:31 - 期望结果：2
+2021-10-12 11:20:14.711 | INFO     | tools.handler_assert:assert_req:35 - 断言成功。
+2021-10-12 11:20:14.711 | INFO     | tools.handler_assert:assert_req:26 - 断言表达式、期望结果和比对方式为：
+{'actual': '$..msg', 'expect': '无效的手机格式', 'assert_type': '=='}
+2021-10-12 11:20:14.711 | INFO     | tools.handler_assert:assert_req:27 - 提取实际结果的jsonpath表达式：$..msg
+2021-10-12 11:20:14.712 | INFO     | tools.handler_assert:assert_req:28 - 响应数据：
+{'code': 2, 'msg': '无效的手机格式', 'data': None, 'copyright': 'Copyright 柠檬班 © 2017-2020 湖南省零檬信息技术有限公司 All Rights Reserved'}
+2021-10-12 11:20:14.712 | INFO     | tools.handler_assert:assert_req:30 - 实际结果：无效的手机格式
+2021-10-12 11:20:14.712 | INFO     | tools.handler_assert:assert_req:31 - 期望结果：无效的手机格式
+2021-10-12 11:20:14.713 | INFO     | tools.handler_assert:assert_req:35 - 断言成功。
+2021-10-12 11:20:14.715 | INFO     | tools.handler_nmb_request:send_request:37 - 请求接口：
+http://8.129.91.152:8766/futureloan/member/register
+2021-10-12 11:20:14.716 | INFO     | tools.handler_nmb_request:send_request:38 - 请求方式：POST
+2021-10-12 11:20:14.716 | INFO     | tools.handler_nmb_request:send_request:39 - 请求body体数据：
+{"mobile_phone":"19933333333","pwd":"12345678"}
+2021-10-12 11:20:14.716 | INFO     | tools.handler_nmb_request:send_request:40 - 请求headers：
+{'X-Lemonban-Media-Type': 'lemonban.v2', 'content-type': 'application/json'}
+2021-10-12 11:20:14.787 | INFO     | tools.handler_nmb_request:send_request:46 - http响应状态码：200
+2021-10-12 11:20:14.788 | INFO     | tools.handler_nmb_request:send_request:47 - 响应body体：
+{"code":2,"msg":"无效的手机格式","data":null,"copyright":"Copyright 柠檬班 © 2017-2020 湖南省零檬信息技术有限公司 All Rights Reserved"}
+2021-10-12 11:20:14.788 | INFO     | tools.handler_assert:assert_req:26 - 断言表达式、期望结果和比对方式为：
+{'actual': '$..code', 'expect': 2, 'assert_type': '=='}
+2021-10-12 11:20:14.788 | INFO     | tools.handler_assert:assert_req:27 - 提取实际结果的jsonpath表达式：$..code
+2021-10-12 11:20:14.788 | INFO     | tools.handler_assert:assert_req:28 - 响应数据：
+{'code': 2, 'msg': '无效的手机格式', 'data': None, 'copyright': 'Copyright 柠檬班 © 2017-2020 湖南省零檬信息技术有限公司 All Rights Reserved'}
+2021-10-12 11:20:14.789 | INFO     | tools.handler_assert:assert_req:30 - 实际结果：2
+2021-10-12 11:20:14.789 | INFO     | tools.handler_assert:assert_req:31 - 期望结果：2
+2021-10-12 11:20:14.789 | INFO     | tools.handler_assert:assert_req:35 - 断言成功。
+2021-10-12 11:20:14.790 | INFO     | tools.handler_assert:assert_req:26 - 断言表达式、期望结果和比对方式为：
+{'actual': '$..msg', 'expect': '无效的手机格式', 'assert_type': '=='}
+2021-10-12 11:20:14.791 | INFO     | tools.handler_assert:assert_req:27 - 提取实际结果的jsonpath表达式：$..msg
+2021-10-12 11:20:14.791 | INFO     | tools.handler_assert:assert_req:28 - 响应数据：
+{'code': 2, 'msg': '无效的手机格式', 'data': None, 'copyright': 'Copyright 柠檬班 © 2017-2020 湖南省零檬信息技术有限公司 All Rights Reserved'}
+2021-10-12 11:20:14.792 | INFO     | tools.handler_assert:assert_req:30 - 实际结果：无效的手机格式
+2021-10-12 11:20:14.792 | INFO     | tools.handler_assert:assert_req:31 - 期望结果：无效的手机格式
+2021-10-12 11:20:14.793 | INFO     | tools.handler_assert:assert_req:35 - 断言成功。
+2021-10-12 11:20:14.795 | INFO     | tools.handler_nmb_request:send_request:37 - 请求接口：
+http://8.129.91.152:8766/futureloan/member/register
+2021-10-12 11:20:14.796 | INFO     | tools.handler_nmb_request:send_request:38 - 请求方式：POST
+2021-10-12 11:20:14.796 | INFO     | tools.handler_nmb_request:send_request:39 - 请求body体数据：
+{"mobile_phone":"13333333333","pwd":"12345678"}
+2021-10-12 11:20:14.796 | INFO     | tools.handler_nmb_request:send_request:40 - 请求headers：
+{'X-Lemonban-Media-Type': 'lemonban.v2', 'content-type': 'application/json'}
+2021-10-12 11:20:15.009 | INFO     | tools.handler_nmb_request:send_request:46 - http响应状态码：200
+2021-10-12 11:20:15.010 | INFO     | tools.handler_nmb_request:send_request:47 - 响应body体：
+{"code":2,"msg":"账号已存在","data":null,"copyright":"Copyright 柠檬班 © 2017-2020 湖南省零檬信息技术有限公司 All Rights Reserved"}
+2021-10-12 11:20:15.010 | INFO     | tools.handler_assert:assert_req:26 - 断言表达式、期望结果和比对方式为：
+{'actual': '$..code', 'expect': 2, 'assert_type': '=='}
+2021-10-12 11:20:15.011 | INFO     | tools.handler_assert:assert_req:27 - 提取实际结果的jsonpath表达式：$..code
+2021-10-12 11:20:15.011 | INFO     | tools.handler_assert:assert_req:28 - 响应数据：
+{'code': 2, 'msg': '账号已存在', 'data': None, 'copyright': 'Copyright 柠檬班 © 2017-2020 湖南省零檬信息技术有限公司 All Rights Reserved'}
+2021-10-12 11:20:15.012 | INFO     | tools.handler_assert:assert_req:30 - 实际结果：2
+2021-10-12 11:20:15.012 | INFO     | tools.handler_assert:assert_req:31 - 期望结果：2
+2021-10-12 11:20:15.012 | INFO     | tools.handler_assert:assert_req:35 - 断言成功。
+2021-10-12 11:20:15.013 | INFO     | tools.handler_assert:assert_req:26 - 断言表达式、期望结果和比对方式为：
+{'actual': '$..msg', 'expect': '账号已存在', 'assert_type': '=='}
+2021-10-12 11:20:15.013 | INFO     | tools.handler_assert:assert_req:27 - 提取实际结果的jsonpath表达式：$..msg
+2021-10-12 11:20:15.013 | INFO     | tools.handler_assert:assert_req:28 - 响应数据：
+{'code': 2, 'msg': '账号已存在', 'data': None, 'copyright': 'Copyright 柠檬班 © 2017-2020 湖南省零檬信息技术有限公司 All Rights Reserved'}
+2021-10-12 11:20:15.013 | INFO     | tools.handler_assert:assert_req:30 - 实际结果：账号已存在
+2021-10-12 11:20:15.014 | INFO     | tools.handler_assert:assert_req:31 - 期望结果：账号已存在
+2021-10-12 11:20:15.014 | INFO     | tools.handler_assert:assert_req:35 - 断言成功。
+2021-10-12 11:20:15.016 | INFO     | tools.handler_nmb_request:send_request:37 - 请求接口：
+http://8.129.91.152:8766/futureloan/member/register
+2021-10-12 11:20:15.016 | INFO     | tools.handler_nmb_request:send_request:38 - 请求方式：POST
+2021-10-12 11:20:15.017 | INFO     | tools.handler_nmb_request:send_request:39 - 请求body体数据：
+{"mobile_phone":"","pwd":"12345678"}
+2021-10-12 11:20:15.017 | INFO     | tools.handler_nmb_request:send_request:40 - 请求headers：
+{'X-Lemonban-Media-Type': 'lemonban.v2', 'content-type': 'application/json'}
+2021-10-12 11:20:15.105 | INFO     | tools.handler_nmb_request:send_request:46 - http响应状态码：200
+2021-10-12 11:20:15.105 | INFO     | tools.handler_nmb_request:send_request:47 - 响应body体：
+{"code":1,"msg":"手机号为空","data":null,"copyright":"Copyright 柠檬班 © 2017-2020 湖南省零檬信息技术有限公司 All Rights Reserved"}
+2021-10-12 11:20:15.106 | INFO     | tools.handler_assert:assert_req:26 - 断言表达式、期望结果和比对方式为：
+{'actual': '$..code', 'expect': 1, 'assert_type': '=='}
+2021-10-12 11:20:15.106 | INFO     | tools.handler_assert:assert_req:27 - 提取实际结果的jsonpath表达式：$..code
+2021-10-12 11:20:15.106 | INFO     | tools.handler_assert:assert_req:28 - 响应数据：
+{'code': 1, 'msg': '手机号为空', 'data': None, 'copyright': 'Copyright 柠檬班 © 2017-2020 湖南省零檬信息技术有限公司 All Rights Reserved'}
+2021-10-12 11:20:15.107 | INFO     | tools.handler_assert:assert_req:30 - 实际结果：1
+2021-10-12 11:20:15.107 | INFO     | tools.handler_assert:assert_req:31 - 期望结果：1
+2021-10-12 11:20:15.108 | INFO     | tools.handler_assert:assert_req:35 - 断言成功。
+2021-10-12 11:20:15.108 | INFO     | tools.handler_assert:assert_req:26 - 断言表达式、期望结果和比对方式为：
+{'actual': '$..msg', 'expect': '手机号为空', 'assert_type': '=='}
+2021-10-12 11:20:15.108 | INFO     | tools.handler_assert:assert_req:27 - 提取实际结果的jsonpath表达式：$..msg
+2021-10-12 11:20:15.108 | INFO     | tools.handler_assert:assert_req:28 - 响应数据：
+{'code': 1, 'msg': '手机号为空', 'data': None, 'copyright': 'Copyright 柠檬班 © 2017-2020 湖南省零檬信息技术有限公司 All Rights Reserved'}
+2021-10-12 11:20:15.108 | INFO     | tools.handler_assert:assert_req:30 - 实际结果：手机号为空
+2021-10-12 11:20:15.109 | INFO     | tools.handler_assert:assert_req:31 - 期望结果：手机号为空
+2021-10-12 11:20:15.109 | INFO     | tools.handler_assert:assert_req:35 - 断言成功。
+2021-10-12 11:20:15.254 | INFO     | tools.handler_mysql:__init__:32 - 数据库连接成功！
+2021-10-12 11:20:15.254 | INFO     | tools.handler_mysql:get_database_data:48 - 查询sql语句:
+select * from member where mobile_phone = '15993785710';
+2021-10-12 11:20:15.411 | INFO     | tools.handler_mysql:get_database_data:50 - 查询数据条目数:0 条
+2021-10-12 11:20:15.413 | INFO     | tools.handler_nmb_request:send_request:37 - 请求接口：
+http://8.129.91.152:8766/futureloan/member/register
+2021-10-12 11:20:15.413 | INFO     | tools.handler_nmb_request:send_request:38 - 请求方式：POST
+2021-10-12 11:20:15.413 | INFO     | tools.handler_nmb_request:send_request:39 - 请求body体数据：
+{"mobile_phone":"15993785710","pwd":""}
+2021-10-12 11:20:15.414 | INFO     | tools.handler_nmb_request:send_request:40 - 请求headers：
+{'X-Lemonban-Media-Type': 'lemonban.v2', 'content-type': 'application/json'}
+2021-10-12 11:20:15.492 | INFO     | tools.handler_nmb_request:send_request:46 - http响应状态码：200
+2021-10-12 11:20:15.493 | INFO     | tools.handler_nmb_request:send_request:47 - 响应body体：
+{"code":1,"msg":"密码为空","data":null,"copyright":"Copyright 柠檬班 © 2017-2020 湖南省零檬信息技术有限公司 All Rights Reserved"}
+2021-10-12 11:20:15.493 | INFO     | tools.handler_assert:assert_req:26 - 断言表达式、期望结果和比对方式为：
+{'actual': '$..code', 'expect': 1, 'assert_type': '=='}
+2021-10-12 11:20:15.493 | INFO     | tools.handler_assert:assert_req:27 - 提取实际结果的jsonpath表达式：$..code
+2021-10-12 11:20:15.494 | INFO     | tools.handler_assert:assert_req:28 - 响应数据：
+{'code': 1, 'msg': '密码为空', 'data': None, 'copyright': 'Copyright 柠檬班 © 2017-2020 湖南省零檬信息技术有限公司 All Rights Reserved'}
+2021-10-12 11:20:15.494 | INFO     | tools.handler_assert:assert_req:30 - 实际结果：1
+2021-10-12 11:20:15.494 | INFO     | tools.handler_assert:assert_req:31 - 期望结果：1
+2021-10-12 11:20:15.495 | INFO     | tools.handler_assert:assert_req:35 - 断言成功。
+2021-10-12 11:20:15.495 | INFO     | tools.handler_assert:assert_req:26 - 断言表达式、期望结果和比对方式为：
+{'actual': '$..msg', 'expect': '密码为空', 'assert_type': '=='}
+2021-10-12 11:20:15.495 | INFO     | tools.handler_assert:assert_req:27 - 提取实际结果的jsonpath表达式：$..msg
+2021-10-12 11:20:15.495 | INFO     | tools.handler_assert:assert_req:28 - 响应数据：
+{'code': 1, 'msg': '密码为空', 'data': None, 'copyright': 'Copyright 柠檬班 © 2017-2020 湖南省零檬信息技术有限公司 All Rights Reserved'}
+2021-10-12 11:20:15.496 | INFO     | tools.handler_assert:assert_req:30 - 实际结果：密码为空
+2021-10-12 11:20:15.496 | INFO     | tools.handler_assert:assert_req:31 - 期望结果：密码为空
+2021-10-12 11:20:15.496 | INFO     | tools.handler_assert:assert_req:35 - 断言成功。
+2021-10-12 11:20:15.644 | INFO     | tools.handler_mysql:__init__:32 - 数据库连接成功！
+2021-10-12 11:20:15.644 | INFO     | tools.handler_mysql:get_database_data:48 - 查询sql语句:
+select * from member where mobile_phone = '15067807317';
+2021-10-12 11:20:15.804 | INFO     | tools.handler_mysql:get_database_data:50 - 查询数据条目数:0 条
+2021-10-12 11:20:15.807 | INFO     | tools.handler_nmb_request:send_request:37 - 请求接口：
+http://8.129.91.152:8766/futureloan/member/register
+2021-10-12 11:20:15.807 | INFO     | tools.handler_nmb_request:send_request:38 - 请求方式：POST
+2021-10-12 11:20:15.808 | INFO     | tools.handler_nmb_request:send_request:39 - 请求body体数据：
+{"mobile_phone":"15067807317","pwd":"1234567"}
+2021-10-12 11:20:15.808 | INFO     | tools.handler_nmb_request:send_request:40 - 请求headers：
+{'X-Lemonban-Media-Type': 'lemonban.v2', 'content-type': 'application/json'}
+2021-10-12 11:20:17.129 | INFO     | tools.handler_nmb_request:send_request:46 - http响应状态码：200
+2021-10-12 11:20:17.130 | INFO     | tools.handler_nmb_request:send_request:47 - 响应body体：
+{"code":2,"msg":"密码格式为8到16位","data":null,"copyright":"Copyright 柠檬班 © 2017-2020 湖南省零檬信息技术有限公司 All Rights Reserved"}
+2021-10-12 11:20:17.130 | INFO     | tools.handler_assert:assert_req:26 - 断言表达式、期望结果和比对方式为：
+{'actual': '$..code', 'expect': 2, 'assert_type': '=='}
+2021-10-12 11:20:17.130 | INFO     | tools.handler_assert:assert_req:27 - 提取实际结果的jsonpath表达式：$..code
+2021-10-12 11:20:17.131 | INFO     | tools.handler_assert:assert_req:28 - 响应数据：
+{'code': 2, 'msg': '密码格式为8到16位', 'data': None, 'copyright': 'Copyright 柠檬班 © 2017-2020 湖南省零檬信息技术有限公司 All Rights Reserved'}
+2021-10-12 11:20:17.131 | INFO     | tools.handler_assert:assert_req:30 - 实际结果：2
+2021-10-12 11:20:17.131 | INFO     | tools.handler_assert:assert_req:31 - 期望结果：2
+2021-10-12 11:20:17.131 | INFO     | tools.handler_assert:assert_req:35 - 断言成功。
+2021-10-12 11:20:17.132 | INFO     | tools.handler_assert:assert_req:26 - 断言表达式、期望结果和比对方式为：
+{'actual': '$..msg', 'expect': '密码格式为8到16位', 'assert_type': '=='}
+2021-10-12 11:20:17.132 | INFO     | tools.handler_assert:assert_req:27 - 提取实际结果的jsonpath表达式：$..msg
+2021-10-12 11:20:17.132 | INFO     | tools.handler_assert:assert_req:28 - 响应数据：
+{'code': 2, 'msg': '密码格式为8到16位', 'data': None, 'copyright': 'Copyright 柠檬班 © 2017-2020 湖南省零檬信息技术有限公司 All Rights Reserved'}
+2021-10-12 11:20:17.132 | INFO     | tools.handler_assert:assert_req:30 - 实际结果：密码格式为8到16位
+2021-10-12 11:20:17.133 | INFO     | tools.handler_assert:assert_req:31 - 期望结果：密码格式为8到16位
+2021-10-12 11:20:17.133 | INFO     | tools.handler_assert:assert_req:35 - 断言成功。
+2021-10-12 11:20:17.282 | INFO     | tools.handler_mysql:__init__:32 - 数据库连接成功！
+2021-10-12 11:20:17.282 | INFO     | tools.handler_mysql:get_database_data:48 - 查询sql语句:
+select * from member where mobile_phone = '18956012024';
+2021-10-12 11:20:17.437 | INFO     | tools.handler_mysql:get_database_data:50 - 查询数据条目数:0 条
+2021-10-12 11:20:17.438 | INFO     | tools.handler_nmb_request:send_request:37 - 请求接口：
+http://8.129.91.152:8766/futureloan/member/register
+2021-10-12 11:20:17.438 | INFO     | tools.handler_nmb_request:send_request:38 - 请求方式：POST
+2021-10-12 11:20:17.439 | INFO     | tools.handler_nmb_request:send_request:39 - 请求body体数据：
+{"mobile_phone":"18956012024","pwd":"!@#zxc12"}
+2021-10-12 11:20:17.439 | INFO     | tools.handler_nmb_request:send_request:40 - 请求headers：
+{'X-Lemonban-Media-Type': 'lemonban.v2', 'content-type': 'application/json'}
+2021-10-12 11:20:17.645 | INFO     | tools.handler_nmb_request:send_request:46 - http响应状态码：200
+2021-10-12 11:20:17.646 | INFO     | tools.handler_nmb_request:send_request:47 - 响应body体：
+{"code":0,"msg":"OK","data":{"id":1236984011,"reg_name":"小柠檬","mobile_phone":"18956012024"},"copyright":"Copyright 柠檬班 © 2017-2020 湖南省零檬信息技术有限公司 All Rights Reserved"}
+2021-10-12 11:20:17.646 | INFO     | tools.handler_assert:assert_req:26 - 断言表达式、期望结果和比对方式为：
+{'actual': '$..code', 'expect': 0, 'assert_type': '=='}
+2021-10-12 11:20:17.646 | INFO     | tools.handler_assert:assert_req:27 - 提取实际结果的jsonpath表达式：$..code
+2021-10-12 11:20:17.647 | INFO     | tools.handler_assert:assert_req:28 - 响应数据：
+{'code': 0, 'msg': 'OK', 'data': {'id': 1236984011, 'reg_name': '小柠檬', 'mobile_phone': '18956012024'}, 'copyright': 'Copyright 柠檬班 © 2017-2020 湖南省零檬信息技术有限公司 All Rights Reserved'}
+2021-10-12 11:20:17.647 | INFO     | tools.handler_assert:assert_req:30 - 实际结果：0
+2021-10-12 11:20:17.647 | INFO     | tools.handler_assert:assert_req:31 - 期望结果：0
+2021-10-12 11:20:17.648 | INFO     | tools.handler_assert:assert_req:35 - 断言成功。
+2021-10-12 11:20:17.648 | INFO     | tools.handler_assert:assert_req:26 - 断言表达式、期望结果和比对方式为：
+{'actual': '$..msg', 'expect': 'OK', 'assert_type': '=='}
+2021-10-12 11:20:17.648 | INFO     | tools.handler_assert:assert_req:27 - 提取实际结果的jsonpath表达式：$..msg
+2021-10-12 11:20:17.648 | INFO     | tools.handler_assert:assert_req:28 - 响应数据：
+{'code': 0, 'msg': 'OK', 'data': {'id': 1236984011, 'reg_name': '小柠檬', 'mobile_phone': '18956012024'}, 'copyright': 'Copyright 柠檬班 © 2017-2020 湖南省零檬信息技术有限公司 All Rights Reserved'}
+2021-10-12 11:20:17.648 | INFO     | tools.handler_assert:assert_req:30 - 实际结果：OK
+2021-10-12 11:20:17.649 | INFO     | tools.handler_assert:assert_req:31 - 期望结果：OK
+2021-10-12 11:20:17.649 | INFO     | tools.handler_assert:assert_req:35 - 断言成功。
+2021-10-12 11:20:17.805 | INFO     | tools.handler_mysql:__init__:32 - 数据库连接成功！
+2021-10-12 11:20:17.805 | INFO     | tools.handler_mysql:get_database_data:48 - 查询sql语句:
+select * from member where mobile_phone = '18032610202';
+2021-10-12 11:20:17.968 | INFO     | tools.handler_mysql:get_database_data:50 - 查询数据条目数:0 条
+2021-10-12 11:20:17.970 | INFO     | tools.handler_nmb_request:send_request:37 - 请求接口：
+http://8.129.91.152:8766/futureloan/member/register
+2021-10-12 11:20:17.971 | INFO     | tools.handler_nmb_request:send_request:38 - 请求方式：POST
+2021-10-12 11:20:17.971 | INFO     | tools.handler_nmb_request:send_request:39 - 请求body体数据：
+{"mobile_phone":"18032610202","pwd":"1234567890zxcv,."}
+2021-10-12 11:20:17.971 | INFO     | tools.handler_nmb_request:send_request:40 - 请求headers：
+{'X-Lemonban-Media-Type': 'lemonban.v2', 'content-type': 'application/json'}
+2021-10-12 11:20:18.192 | INFO     | tools.handler_nmb_request:send_request:46 - http响应状态码：200
+2021-10-12 11:20:18.192 | INFO     | tools.handler_nmb_request:send_request:47 - 响应body体：
+{"code":0,"msg":"OK","data":{"id":1236984012,"reg_name":"小柠檬","mobile_phone":"18032610202"},"copyright":"Copyright 柠檬班 © 2017-2020 湖南省零檬信息技术有限公司 All Rights Reserved"}
+2021-10-12 11:20:18.193 | INFO     | tools.handler_assert:assert_req:26 - 断言表达式、期望结果和比对方式为：
+{'actual': '$..code', 'expect': 0, 'assert_type': '=='}
+2021-10-12 11:20:18.193 | INFO     | tools.handler_assert:assert_req:27 - 提取实际结果的jsonpath表达式：$..code
+2021-10-12 11:20:18.193 | INFO     | tools.handler_assert:assert_req:28 - 响应数据：
+{'code': 0, 'msg': 'OK', 'data': {'id': 1236984012, 'reg_name': '小柠檬', 'mobile_phone': '18032610202'}, 'copyright': 'Copyright 柠檬班 © 2017-2020 湖南省零檬信息技术有限公司 All Rights Reserved'}
+2021-10-12 11:20:18.194 | INFO     | tools.handler_assert:assert_req:30 - 实际结果：0
+2021-10-12 11:20:18.194 | INFO     | tools.handler_assert:assert_req:31 - 期望结果：0
+2021-10-12 11:20:18.195 | INFO     | tools.handler_assert:assert_req:35 - 断言成功。
+2021-10-12 11:20:18.195 | INFO     | tools.handler_assert:assert_req:26 - 断言表达式、期望结果和比对方式为：
+{'actual': '$..msg', 'expect': 'OK', 'assert_type': '=='}
+2021-10-12 11:20:18.195 | INFO     | tools.handler_assert:assert_req:27 - 提取实际结果的jsonpath表达式：$..msg
+2021-10-12 11:20:18.195 | INFO     | tools.handler_assert:assert_req:28 - 响应数据：
+{'code': 0, 'msg': 'OK', 'data': {'id': 1236984012, 'reg_name': '小柠檬', 'mobile_phone': '18032610202'}, 'copyright': 'Copyright 柠檬班 © 2017-2020 湖南省零檬信息技术有限公司 All Rights Reserved'}
+2021-10-12 11:20:18.195 | INFO     | tools.handler_assert:assert_req:30 - 实际结果：OK
+2021-10-12 11:20:18.196 | INFO     | tools.handler_assert:assert_req:31 - 期望结果：OK
+2021-10-12 11:20:18.196 | INFO     | tools.handler_assert:assert_req:35 - 断言成功。
+2021-10-12 11:20:18.327 | INFO     | tools.handler_mysql:__init__:32 - 数据库连接成功！
+2021-10-12 11:20:18.328 | INFO     | tools.handler_mysql:get_database_data:48 - 查询sql语句:
+select * from member where mobile_phone = '18118211205';
+2021-10-12 11:20:18.506 | INFO     | tools.handler_mysql:get_database_data:50 - 查询数据条目数:0 条
+2021-10-12 11:20:18.508 | INFO     | tools.handler_nmb_request:send_request:37 - 请求接口：
+http://8.129.91.152:8766/futureloan/member/register
+2021-10-12 11:20:18.508 | INFO     | tools.handler_nmb_request:send_request:38 - 请求方式：POST
+2021-10-12 11:20:18.509 | INFO     | tools.handler_nmb_request:send_request:39 - 请求body体数据：
+{"mobile_phone":"18118211205","pwd":"1234567890zasdc;'"}
+2021-10-12 11:20:18.509 | INFO     | tools.handler_nmb_request:send_request:40 - 请求headers：
+{'X-Lemonban-Media-Type': 'lemonban.v2', 'content-type': 'application/json'}
+2021-10-12 11:20:18.581 | INFO     | tools.handler_nmb_request:send_request:46 - http响应状态码：200
+2021-10-12 11:20:18.581 | INFO     | tools.handler_nmb_request:send_request:47 - 响应body体：
+{"code":2,"msg":"密码格式为8到16位","data":null,"copyright":"Copyright 柠檬班 © 2017-2020 湖南省零檬信息技术有限公司 All Rights Reserved"}
+2021-10-12 11:20:18.581 | INFO     | tools.handler_assert:assert_req:26 - 断言表达式、期望结果和比对方式为：
+{'actual': '$..code', 'expect': 2, 'assert_type': '=='}
+2021-10-12 11:20:18.581 | INFO     | tools.handler_assert:assert_req:27 - 提取实际结果的jsonpath表达式：$..code
+2021-10-12 11:20:18.582 | INFO     | tools.handler_assert:assert_req:28 - 响应数据：
+{'code': 2, 'msg': '密码格式为8到16位', 'data': None, 'copyright': 'Copyright 柠檬班 © 2017-2020 湖南省零檬信息技术有限公司 All Rights Reserved'}
+2021-10-12 11:20:18.582 | INFO     | tools.handler_assert:assert_req:30 - 实际结果：2
+2021-10-12 11:20:18.582 | INFO     | tools.handler_assert:assert_req:31 - 期望结果：2
+2021-10-12 11:20:18.582 | INFO     | tools.handler_assert:assert_req:35 - 断言成功。
+2021-10-12 11:20:18.583 | INFO     | tools.handler_assert:assert_req:26 - 断言表达式、期望结果和比对方式为：
+{'actual': '$..msg', 'expect': '密码格式为8到16位', 'assert_type': '=='}
+2021-10-12 11:20:18.583 | INFO     | tools.handler_assert:assert_req:27 - 提取实际结果的jsonpath表达式：$..msg
+2021-10-12 11:20:18.583 | INFO     | tools.handler_assert:assert_req:28 - 响应数据：
+{'code': 2, 'msg': '密码格式为8到16位', 'data': None, 'copyright': 'Copyright 柠檬班 © 2017-2020 湖南省零檬信息技术有限公司 All Rights Reserved'}
+2021-10-12 11:20:18.583 | INFO     | tools.handler_assert:assert_req:30 - 实际结果：密码格式为8到16位
+2021-10-12 11:20:18.584 | INFO     | tools.handler_assert:assert_req:31 - 期望结果：密码格式为8到16位
+2021-10-12 11:20:18.584 | INFO     | tools.handler_assert:assert_req:35 - 断言成功。
+2021-10-12 11:20:18.586 | INFO     | tools.handler_nmb_request:send_request:37 - 请求接口：
+http://8.129.91.152:8766/futureloan/member/login
+2021-10-12 11:20:18.586 | INFO     | tools.handler_nmb_request:send_request:38 - 请求方式：POST
+2021-10-12 11:20:18.587 | INFO     | tools.handler_nmb_request:send_request:39 - 请求body体数据：
+{
+    "mobile_phone":"15133181962",
+    "pwd":"12345678"
+}
+2021-10-12 11:20:18.587 | INFO     | tools.handler_nmb_request:send_request:40 - 请求headers：
+{'X-Lemonban-Media-Type': 'lemonban.v2', 'content-type': 'application/json'}
+2021-10-12 11:20:18.783 | INFO     | tools.handler_nmb_request:send_request:46 - http响应状态码：200
+2021-10-12 11:20:18.784 | INFO     | tools.handler_nmb_request:send_request:47 - 响应body体：
+{"code":0,"msg":"OK","data":{"id":1236918855,"leave_amount":9004809.09,"mobile_phone":"15133181962","reg_name":"peter","reg_time":"2021-09-26 14:53:00.0","type":1,"token_info":{"token_type":"Bearer","expires_in":"2021-10-12 11:25:19","token":"eyJhbGciOiJIUzUxMiJ9.eyJtZW1iZXJfaWQiOjEyMzY5MTg4NTUsImV4cCI6MTYzNDAwOTExOX0.EEVvoqnVxnFeovDnT20Hpk2WvV8zyGz7XMsizP54lzY08nmiwxeHTNp72jySkl4EOqjnKZOdigaThdOIc5HZwQ"}},"copyright":"Copyright 柠檬班 © 2017-2020 湖南省零檬信息技术有限公司 All Rights Reserved"}
+2021-10-12 11:20:18.784 | INFO     | tools.handler_assert:assert_req:26 - 断言表达式、期望结果和比对方式为：
+{'actual': '$..code', 'expect': 0, 'assert_type': '=='}
+2021-10-12 11:20:18.785 | INFO     | tools.handler_assert:assert_req:27 - 提取实际结果的jsonpath表达式：$..code
+2021-10-12 11:20:18.785 | INFO     | tools.handler_assert:assert_req:28 - 响应数据：
+{'code': 0, 'msg': 'OK', 'data': {'id': 1236918855, 'leave_amount': 9004809.09, 'mobile_phone': '15133181962', 'reg_name': 'peter', 'reg_time': '2021-09-26 14:53:00.0', 'type': 1, 'token_info': {'token_type': 'Bearer', 'expires_in': '2021-10-12 11:25:19', 'token': 'eyJhbGciOiJIUzUxMiJ9.eyJtZW1iZXJfaWQiOjEyMzY5MTg4NTUsImV4cCI6MTYzNDAwOTExOX0.EEVvoqnVxnFeovDnT20Hpk2WvV8zyGz7XMsizP54lzY08nmiwxeHTNp72jySkl4EOqjnKZOdigaThdOIc5HZwQ'}}, 'copyright': 'Copyright 柠檬班 © 2017-2020 湖南省零檬信息技术有限公司 All Rights Reserved'}
+2021-10-12 11:20:18.785 | INFO     | tools.handler_assert:assert_req:30 - 实际结果：0
+2021-10-12 11:20:18.786 | INFO     | tools.handler_assert:assert_req:31 - 期望结果：0
+2021-10-12 11:20:18.786 | INFO     | tools.handler_assert:assert_req:35 - 断言成功。
+2021-10-12 11:20:18.786 | INFO     | tools.handler_assert:assert_req:26 - 断言表达式、期望结果和比对方式为：
+{'actual': '$..msg', 'expect': 'OK', 'assert_type': '=='}
+2021-10-12 11:20:18.786 | INFO     | tools.handler_assert:assert_req:27 - 提取实际结果的jsonpath表达式：$..msg
+2021-10-12 11:20:18.787 | INFO     | tools.handler_assert:assert_req:28 - 响应数据：
+{'code': 0, 'msg': 'OK', 'data': {'id': 1236918855, 'leave_amount': 9004809.09, 'mobile_phone': '15133181962', 'reg_name': 'peter', 'reg_time': '2021-09-26 14:53:00.0', 'type': 1, 'token_info': {'token_type': 'Bearer', 'expires_in': '2021-10-12 11:25:19', 'token': 'eyJhbGciOiJIUzUxMiJ9.eyJtZW1iZXJfaWQiOjEyMzY5MTg4NTUsImV4cCI6MTYzNDAwOTExOX0.EEVvoqnVxnFeovDnT20Hpk2WvV8zyGz7XMsizP54lzY08nmiwxeHTNp72jySkl4EOqjnKZOdigaThdOIc5HZwQ'}}, 'copyright': 'Copyright 柠檬班 © 2017-2020 湖南省零檬信息技术有限公司 All Rights Reserved'}
+2021-10-12 11:20:18.787 | INFO     | tools.handler_assert:assert_req:30 - 实际结果：OK
+2021-10-12 11:20:18.787 | INFO     | tools.handler_assert:assert_req:31 - 期望结果：OK
+2021-10-12 11:20:18.787 | INFO     | tools.handler_assert:assert_req:35 - 断言成功。
+2021-10-12 11:20:18.790 | INFO     | tools.handler_nmb_request:send_request:37 - 请求接口：
+http://8.129.91.152:8766/futureloan/member/login
+2021-10-12 11:20:18.790 | INFO     | tools.handler_nmb_request:send_request:38 - 请求方式：POST
+2021-10-12 11:20:18.790 | INFO     | tools.handler_nmb_request:send_request:39 - 请求body体数据：
+{
+    "mobile_phone":"151331819621",
+    "pwd":"12345678"
+}
+2021-10-12 11:20:18.791 | INFO     | tools.handler_nmb_request:send_request:40 - 请求headers：
+{'X-Lemonban-Media-Type': 'lemonban.v2', 'content-type': 'application/json'}
+2021-10-12 11:20:18.870 | INFO     | tools.handler_nmb_request:send_request:46 - http响应状态码：200
+2021-10-12 11:20:18.870 | INFO     | tools.handler_nmb_request:send_request:47 - 响应body体：
+{"code":2,"msg":"无效的手机格式","data":null,"copyright":"Copyright 柠檬班 © 2017-2020 湖南省零檬信息技术有限公司 All Rights Reserved"}
+2021-10-12 11:20:18.870 | INFO     | tools.handler_assert:assert_req:26 - 断言表达式、期望结果和比对方式为：
+{'actual': '$..code', 'expect': 2, 'assert_type': '=='}
+2021-10-12 11:20:18.871 | INFO     | tools.handler_assert:assert_req:27 - 提取实际结果的jsonpath表达式：$..code
+2021-10-12 11:20:18.872 | INFO     | tools.handler_assert:assert_req:28 - 响应数据：
+{'code': 2, 'msg': '无效的手机格式', 'data': None, 'copyright': 'Copyright 柠檬班 © 2017-2020 湖南省零檬信息技术有限公司 All Rights Reserved'}
+2021-10-12 11:20:18.872 | INFO     | tools.handler_assert:assert_req:30 - 实际结果：2
+2021-10-12 11:20:18.873 | INFO     | tools.handler_assert:assert_req:31 - 期望结果：2
+2021-10-12 11:20:18.874 | INFO     | tools.handler_assert:assert_req:35 - 断言成功。
+2021-10-12 11:20:18.875 | INFO     | tools.handler_assert:assert_req:26 - 断言表达式、期望结果和比对方式为：
+{'actual': '$..msg', 'expect': '无效的手机格式', 'assert_type': '=='}
+2021-10-12 11:20:18.875 | INFO     | tools.handler_assert:assert_req:27 - 提取实际结果的jsonpath表达式：$..msg
+2021-10-12 11:20:18.876 | INFO     | tools.handler_assert:assert_req:28 - 响应数据：
+{'code': 2, 'msg': '无效的手机格式', 'data': None, 'copyright': 'Copyright 柠檬班 © 2017-2020 湖南省零檬信息技术有限公司 All Rights Reserved'}
+2021-10-12 11:20:18.876 | INFO     | tools.handler_assert:assert_req:30 - 实际结果：无效的手机格式
+2021-10-12 11:20:18.877 | INFO     | tools.handler_assert:assert_req:31 - 期望结果：无效的手机格式
+2021-10-12 11:20:18.877 | INFO     | tools.handler_assert:assert_req:35 - 断言成功。
+2021-10-12 11:20:18.879 | INFO     | tools.handler_nmb_request:send_request:37 - 请求接口：
+http://8.129.91.152:8766/futureloan/member/login
+2021-10-12 11:20:18.879 | INFO     | tools.handler_nmb_request:send_request:38 - 请求方式：POST
+2021-10-12 11:20:18.880 | INFO     | tools.handler_nmb_request:send_request:39 - 请求body体数据：
+{
+    "mobile_phone":"1513318196",
+    "pwd":"12345678"
+}
+2021-10-12 11:20:18.880 | INFO     | tools.handler_nmb_request:send_request:40 - 请求headers：
+{'X-Lemonban-Media-Type': 'lemonban.v2', 'content-type': 'application/json'}
+2021-10-12 11:20:18.960 | INFO     | tools.handler_nmb_request:send_request:46 - http响应状态码：200
+2021-10-12 11:20:18.961 | INFO     | tools.handler_nmb_request:send_request:47 - 响应body体：
+{"code":2,"msg":"无效的手机格式","data":null,"copyright":"Copyright 柠檬班 © 2017-2020 湖南省零檬信息技术有限公司 All Rights Reserved"}
+2021-10-12 11:20:18.961 | INFO     | tools.handler_assert:assert_req:26 - 断言表达式、期望结果和比对方式为：
+{'actual': '$..code', 'expect': 2, 'assert_type': '=='}
+2021-10-12 11:20:18.961 | INFO     | tools.handler_assert:assert_req:27 - 提取实际结果的jsonpath表达式：$..code
+2021-10-12 11:20:18.962 | INFO     | tools.handler_assert:assert_req:28 - 响应数据：
+{'code': 2, 'msg': '无效的手机格式', 'data': None, 'copyright': 'Copyright 柠檬班 © 2017-2020 湖南省零檬信息技术有限公司 All Rights Reserved'}
+2021-10-12 11:20:18.962 | INFO     | tools.handler_assert:assert_req:30 - 实际结果：2
+2021-10-12 11:20:18.962 | INFO     | tools.handler_assert:assert_req:31 - 期望结果：2
+2021-10-12 11:20:18.963 | INFO     | tools.handler_assert:assert_req:35 - 断言成功。
+2021-10-12 11:20:18.963 | INFO     | tools.handler_assert:assert_req:26 - 断言表达式、期望结果和比对方式为：
+{'actual': '$..msg', 'expect': '无效的手机格式', 'assert_type': '=='}
+2021-10-12 11:20:18.963 | INFO     | tools.handler_assert:assert_req:27 - 提取实际结果的jsonpath表达式：$..msg
+2021-10-12 11:20:18.963 | INFO     | tools.handler_assert:assert_req:28 - 响应数据：
+{'code': 2, 'msg': '无效的手机格式', 'data': None, 'copyright': 'Copyright 柠檬班 © 2017-2020 湖南省零檬信息技术有限公司 All Rights Reserved'}
+2021-10-12 11:20:18.964 | INFO     | tools.handler_assert:assert_req:30 - 实际结果：无效的手机格式
+2021-10-12 11:20:18.964 | INFO     | tools.handler_assert:assert_req:31 - 期望结果：无效的手机格式
+2021-10-12 11:20:18.964 | INFO     | tools.handler_assert:assert_req:35 - 断言成功。
+2021-10-12 11:20:18.966 | INFO     | tools.handler_nmb_request:send_request:37 - 请求接口：
+http://8.129.91.152:8766/futureloan/member/login
+2021-10-12 11:20:18.966 | INFO     | tools.handler_nmb_request:send_request:38 - 请求方式：POST
+2021-10-12 11:20:18.966 | INFO     | tools.handler_nmb_request:send_request:39 - 请求body体数据：
+{
+    "mobile_phone":"",
+    "pwd":"12345678"
+}
+2021-10-12 11:20:18.967 | INFO     | tools.handler_nmb_request:send_request:40 - 请求headers：
+{'X-Lemonban-Media-Type': 'lemonban.v2', 'content-type': 'application/json'}
+2021-10-12 11:20:19.068 | INFO     | tools.handler_nmb_request:send_request:46 - http响应状态码：200
+2021-10-12 11:20:19.068 | INFO     | tools.handler_nmb_request:send_request:47 - 响应body体：
+{"code":1,"msg":"手机号码为空","data":null,"copyright":"Copyright 柠檬班 © 2017-2020 湖南省零檬信息技术有限公司 All Rights Reserved"}
+2021-10-12 11:20:19.068 | INFO     | tools.handler_assert:assert_req:26 - 断言表达式、期望结果和比对方式为：
+{'actual': '$..code', 'expect': 1, 'assert_type': '=='}
+2021-10-12 11:20:19.069 | INFO     | tools.handler_assert:assert_req:27 - 提取实际结果的jsonpath表达式：$..code
+2021-10-12 11:20:19.069 | INFO     | tools.handler_assert:assert_req:28 - 响应数据：
+{'code': 1, 'msg': '手机号码为空', 'data': None, 'copyright': 'Copyright 柠檬班 © 2017-2020 湖南省零檬信息技术有限公司 All Rights Reserved'}
+2021-10-12 11:20:19.070 | INFO     | tools.handler_assert:assert_req:30 - 实际结果：1
+2021-10-12 11:20:19.070 | INFO     | tools.handler_assert:assert_req:31 - 期望结果：1
+2021-10-12 11:20:19.071 | INFO     | tools.handler_assert:assert_req:35 - 断言成功。
+2021-10-12 11:20:19.071 | INFO     | tools.handler_assert:assert_req:26 - 断言表达式、期望结果和比对方式为：
+{'actual': '$..msg', 'expect': '手机号码为空', 'assert_type': '=='}
+2021-10-12 11:20:19.071 | INFO     | tools.handler_assert:assert_req:27 - 提取实际结果的jsonpath表达式：$..msg
+2021-10-12 11:20:19.072 | INFO     | tools.handler_assert:assert_req:28 - 响应数据：
+{'code': 1, 'msg': '手机号码为空', 'data': None, 'copyright': 'Copyright 柠檬班 © 2017-2020 湖南省零檬信息技术有限公司 All Rights Reserved'}
+2021-10-12 11:20:19.072 | INFO     | tools.handler_assert:assert_req:30 - 实际结果：手机号码为空
+2021-10-12 11:20:19.073 | INFO     | tools.handler_assert:assert_req:31 - 期望结果：手机号码为空
+2021-10-12 11:20:19.074 | INFO     | tools.handler_assert:assert_req:35 - 断言成功。
+2021-10-12 11:20:19.076 | INFO     | tools.handler_nmb_request:send_request:37 - 请求接口：
+http://8.129.91.152:8766/futureloan/member/login
+2021-10-12 11:20:19.077 | INFO     | tools.handler_nmb_request:send_request:38 - 请求方式：POST
+2021-10-12 11:20:19.077 | INFO     | tools.handler_nmb_request:send_request:39 - 请求body体数据：
+{
+    "mobile_phone":"15233181962",
+    "pwd":"12345678"
+}
+2021-10-12 11:20:19.077 | INFO     | tools.handler_nmb_request:send_request:40 - 请求headers：
+{'X-Lemonban-Media-Type': 'lemonban.v2', 'content-type': 'application/json'}
+2021-10-12 11:20:19.288 | INFO     | tools.handler_nmb_request:send_request:46 - http响应状态码：200
+2021-10-12 11:20:19.289 | INFO     | tools.handler_nmb_request:send_request:47 - 响应body体：
+{"code":1001,"msg":"账号信息错误","data":null,"copyright":"Copyright 柠檬班 © 2017-2020 湖南省零檬信息技术有限公司 All Rights Reserved"}
+2021-10-12 11:20:19.289 | INFO     | tools.handler_assert:assert_req:26 - 断言表达式、期望结果和比对方式为：
+{'actual': '$..code', 'expect': 1001, 'assert_type': '=='}
+2021-10-12 11:20:19.290 | INFO     | tools.handler_assert:assert_req:27 - 提取实际结果的jsonpath表达式：$..code
+2021-10-12 11:20:19.290 | INFO     | tools.handler_assert:assert_req:28 - 响应数据：
+{'code': 1001, 'msg': '账号信息错误', 'data': None, 'copyright': 'Copyright 柠檬班 © 2017-2020 湖南省零檬信息技术有限公司 All Rights Reserved'}
+2021-10-12 11:20:19.290 | INFO     | tools.handler_assert:assert_req:30 - 实际结果：1001
+2021-10-12 11:20:19.290 | INFO     | tools.handler_assert:assert_req:31 - 期望结果：1001
+2021-10-12 11:20:19.290 | INFO     | tools.handler_assert:assert_req:35 - 断言成功。
+2021-10-12 11:20:19.291 | INFO     | tools.handler_assert:assert_req:26 - 断言表达式、期望结果和比对方式为：
+{'actual': '$..msg', 'expect': '账号信息错误', 'assert_type': '=='}
+2021-10-12 11:20:19.291 | INFO     | tools.handler_assert:assert_req:27 - 提取实际结果的jsonpath表达式：$..msg
+2021-10-12 11:20:19.291 | INFO     | tools.handler_assert:assert_req:28 - 响应数据：
+{'code': 1001, 'msg': '账号信息错误', 'data': None, 'copyright': 'Copyright 柠檬班 © 2017-2020 湖南省零檬信息技术有限公司 All Rights Reserved'}
+2021-10-12 11:20:19.291 | INFO     | tools.handler_assert:assert_req:30 - 实际结果：账号信息错误
+2021-10-12 11:20:19.291 | INFO     | tools.handler_assert:assert_req:31 - 期望结果：账号信息错误
+2021-10-12 11:20:19.291 | INFO     | tools.handler_assert:assert_req:35 - 断言成功。
+2021-10-12 11:20:19.293 | INFO     | tools.handler_nmb_request:send_request:37 - 请求接口：
+http://8.129.91.152:8766/futureloan/member/login
+2021-10-12 11:20:19.293 | INFO     | tools.handler_nmb_request:send_request:38 - 请求方式：POST
+2021-10-12 11:20:19.293 | INFO     | tools.handler_nmb_request:send_request:39 - 请求body体数据：
+{
+    "mobile_phone":"15133181962",
+    "pwd":"123456789"
+}
+2021-10-12 11:20:19.294 | INFO     | tools.handler_nmb_request:send_request:40 - 请求headers：
+{'X-Lemonban-Media-Type': 'lemonban.v2', 'content-type': 'application/json'}
+2021-10-12 11:20:19.494 | INFO     | tools.handler_nmb_request:send_request:46 - http响应状态码：200
+2021-10-12 11:20:19.494 | INFO     | tools.handler_nmb_request:send_request:47 - 响应body体：
+{"code":1001,"msg":"账号信息错误","data":null,"copyright":"Copyright 柠檬班 © 2017-2020 湖南省零檬信息技术有限公司 All Rights Reserved"}
+2021-10-12 11:20:19.495 | INFO     | tools.handler_assert:assert_req:26 - 断言表达式、期望结果和比对方式为：
+{'actual': '$..code', 'expect': 1001, 'assert_type': '=='}
+2021-10-12 11:20:19.495 | INFO     | tools.handler_assert:assert_req:27 - 提取实际结果的jsonpath表达式：$..code
+2021-10-12 11:20:19.495 | INFO     | tools.handler_assert:assert_req:28 - 响应数据：
+{'code': 1001, 'msg': '账号信息错误', 'data': None, 'copyright': 'Copyright 柠檬班 © 2017-2020 湖南省零檬信息技术有限公司 All Rights Reserved'}
+2021-10-12 11:20:19.495 | INFO     | tools.handler_assert:assert_req:30 - 实际结果：1001
+2021-10-12 11:20:19.495 | INFO     | tools.handler_assert:assert_req:31 - 期望结果：1001
+2021-10-12 11:20:19.496 | INFO     | tools.handler_assert:assert_req:35 - 断言成功。
+2021-10-12 11:20:19.496 | INFO     | tools.handler_assert:assert_req:26 - 断言表达式、期望结果和比对方式为：
+{'actual': '$..msg', 'expect': '账号信息错误', 'assert_type': '=='}
+2021-10-12 11:20:19.496 | INFO     | tools.handler_assert:assert_req:27 - 提取实际结果的jsonpath表达式：$..msg
+2021-10-12 11:20:19.496 | INFO     | tools.handler_assert:assert_req:28 - 响应数据：
+{'code': 1001, 'msg': '账号信息错误', 'data': None, 'copyright': 'Copyright 柠檬班 © 2017-2020 湖南省零檬信息技术有限公司 All Rights Reserved'}
+2021-10-12 11:20:19.496 | INFO     | tools.handler_assert:assert_req:30 - 实际结果：账号信息错误
+2021-10-12 11:20:19.496 | INFO     | tools.handler_assert:assert_req:31 - 期望结果：账号信息错误
+2021-10-12 11:20:19.497 | INFO     | tools.handler_assert:assert_req:35 - 断言成功。
+2021-10-12 11:20:19.499 | INFO     | tools.handler_nmb_request:send_request:37 - 请求接口：
+http://8.129.91.152:8766/futureloan/member/login
+2021-10-12 11:20:19.499 | INFO     | tools.handler_nmb_request:send_request:38 - 请求方式：POST
+2021-10-12 11:20:19.499 | INFO     | tools.handler_nmb_request:send_request:39 - 请求body体数据：
+{
+    "mobile_phone":"15133181962",
+    "pwd":"1234567"
+}
+2021-10-12 11:20:19.499 | INFO     | tools.handler_nmb_request:send_request:40 - 请求headers：
+{'X-Lemonban-Media-Type': 'lemonban.v2', 'content-type': 'application/json'}
+2021-10-12 11:20:19.703 | INFO     | tools.handler_nmb_request:send_request:46 - http响应状态码：200
+2021-10-12 11:20:19.703 | INFO     | tools.handler_nmb_request:send_request:47 - 响应body体：
+{"code":1001,"msg":"账号信息错误","data":null,"copyright":"Copyright 柠檬班 © 2017-2020 湖南省零檬信息技术有限公司 All Rights Reserved"}
+2021-10-12 11:20:19.703 | INFO     | tools.handler_assert:assert_req:26 - 断言表达式、期望结果和比对方式为：
+{'actual': '$..code', 'expect': 1001, 'assert_type': '=='}
+2021-10-12 11:20:19.704 | INFO     | tools.handler_assert:assert_req:27 - 提取实际结果的jsonpath表达式：$..code
+2021-10-12 11:20:19.704 | INFO     | tools.handler_assert:assert_req:28 - 响应数据：
+{'code': 1001, 'msg': '账号信息错误', 'data': None, 'copyright': 'Copyright 柠檬班 © 2017-2020 湖南省零檬信息技术有限公司 All Rights Reserved'}
+2021-10-12 11:20:19.704 | INFO     | tools.handler_assert:assert_req:30 - 实际结果：1001
+2021-10-12 11:20:19.705 | INFO     | tools.handler_assert:assert_req:31 - 期望结果：1001
+2021-10-12 11:20:19.705 | INFO     | tools.handler_assert:assert_req:35 - 断言成功。
+2021-10-12 11:20:19.705 | INFO     | tools.handler_assert:assert_req:26 - 断言表达式、期望结果和比对方式为：
+{'actual': '$..msg', 'expect': '账号信息错误', 'assert_type': '=='}
+2021-10-12 11:20:19.705 | INFO     | tools.handler_assert:assert_req:27 - 提取实际结果的jsonpath表达式：$..msg
+2021-10-12 11:20:19.705 | INFO     | tools.handler_assert:assert_req:28 - 响应数据：
+{'code': 1001, 'msg': '账号信息错误', 'data': None, 'copyright': 'Copyright 柠檬班 © 2017-2020 湖南省零檬信息技术有限公司 All Rights Reserved'}
+2021-10-12 11:20:19.706 | INFO     | tools.handler_assert:assert_req:30 - 实际结果：账号信息错误
+2021-10-12 11:20:19.706 | INFO     | tools.handler_assert:assert_req:31 - 期望结果：账号信息错误
+2021-10-12 11:20:19.706 | INFO     | tools.handler_assert:assert_req:35 - 断言成功。
+2021-10-12 11:20:19.707 | INFO     | tools.handler_nmb_request:send_request:37 - 请求接口：
+http://8.129.91.152:8766/futureloan/member/login
+2021-10-12 11:20:19.708 | INFO     | tools.handler_nmb_request:send_request:38 - 请求方式：POST
+2021-10-12 11:20:19.708 | INFO     | tools.handler_nmb_request:send_request:39 - 请求body体数据：
+{
+    "mobile_phone":"15133181962",
+    "pwd":"12345679"
+}
+2021-10-12 11:20:19.708 | INFO     | tools.handler_nmb_request:send_request:40 - 请求headers：
+{'X-Lemonban-Media-Type': 'lemonban.v2', 'content-type': 'application/json'}
+2021-10-12 11:20:19.915 | INFO     | tools.handler_nmb_request:send_request:46 - http响应状态码：200
+2021-10-12 11:20:19.915 | INFO     | tools.handler_nmb_request:send_request:47 - 响应body体：
+{"code":1001,"msg":"账号信息错误","data":null,"copyright":"Copyright 柠檬班 © 2017-2020 湖南省零檬信息技术有限公司 All Rights Reserved"}
+2021-10-12 11:20:19.916 | INFO     | tools.handler_assert:assert_req:26 - 断言表达式、期望结果和比对方式为：
+{'actual': '$..code', 'expect': 1001, 'assert_type': '=='}
+2021-10-12 11:20:19.916 | INFO     | tools.handler_assert:assert_req:27 - 提取实际结果的jsonpath表达式：$..code
+2021-10-12 11:20:19.916 | INFO     | tools.handler_assert:assert_req:28 - 响应数据：
+{'code': 1001, 'msg': '账号信息错误', 'data': None, 'copyright': 'Copyright 柠檬班 © 2017-2020 湖南省零檬信息技术有限公司 All Rights Reserved'}
+2021-10-12 11:20:19.917 | INFO     | tools.handler_assert:assert_req:30 - 实际结果：1001
+2021-10-12 11:20:19.917 | INFO     | tools.handler_assert:assert_req:31 - 期望结果：1001
+2021-10-12 11:20:19.917 | INFO     | tools.handler_assert:assert_req:35 - 断言成功。
+2021-10-12 11:20:19.918 | INFO     | tools.handler_assert:assert_req:26 - 断言表达式、期望结果和比对方式为：
+{'actual': '$..msg', 'expect': '账号信息错误', 'assert_type': '=='}
+2021-10-12 11:20:19.918 | INFO     | tools.handler_assert:assert_req:27 - 提取实际结果的jsonpath表达式：$..msg
+2021-10-12 11:20:19.918 | INFO     | tools.handler_assert:assert_req:28 - 响应数据：
+{'code': 1001, 'msg': '账号信息错误', 'data': None, 'copyright': 'Copyright 柠檬班 © 2017-2020 湖南省零檬信息技术有限公司 All Rights Reserved'}
+2021-10-12 11:20:19.918 | INFO     | tools.handler_assert:assert_req:30 - 实际结果：账号信息错误
+2021-10-12 11:20:19.919 | INFO     | tools.handler_assert:assert_req:31 - 期望结果：账号信息错误
+2021-10-12 11:20:19.919 | INFO     | tools.handler_assert:assert_req:35 - 断言成功。
+2021-10-12 11:20:19.921 | INFO     | tools.handler_nmb_request:send_request:37 - 请求接口：
+http://8.129.91.152:8766/futureloan/member/login
+2021-10-12 11:20:19.921 | INFO     | tools.handler_nmb_request:send_request:38 - 请求方式：POST
+2021-10-12 11:20:19.921 | INFO     | tools.handler_nmb_request:send_request:39 - 请求body体数据：
+{
+    "mobile_phone":"15133181962",
+    "pwd":""
+}
+2021-10-12 11:20:19.921 | INFO     | tools.handler_nmb_request:send_request:40 - 请求headers：
+{'X-Lemonban-Media-Type': 'lemonban.v2', 'content-type': 'application/json'}
+2021-10-12 11:20:19.993 | INFO     | tools.handler_nmb_request:send_request:46 - http响应状态码：200
+2021-10-12 11:20:19.994 | INFO     | tools.handler_nmb_request:send_request:47 - 响应body体：
+{"code":1,"msg":"密码为空","data":null,"copyright":"Copyright 柠檬班 © 2017-2020 湖南省零檬信息技术有限公司 All Rights Reserved"}
+2021-10-12 11:20:19.995 | INFO     | tools.handler_assert:assert_req:26 - 断言表达式、期望结果和比对方式为：
+{'actual': '$..code', 'expect': 1, 'assert_type': '=='}
+2021-10-12 11:20:19.995 | INFO     | tools.handler_assert:assert_req:27 - 提取实际结果的jsonpath表达式：$..code
+2021-10-12 11:20:19.995 | INFO     | tools.handler_assert:assert_req:28 - 响应数据：
+{'code': 1, 'msg': '密码为空', 'data': None, 'copyright': 'Copyright 柠檬班 © 2017-2020 湖南省零檬信息技术有限公司 All Rights Reserved'}
+2021-10-12 11:20:19.996 | INFO     | tools.handler_assert:assert_req:30 - 实际结果：1
+2021-10-12 11:20:19.996 | INFO     | tools.handler_assert:assert_req:31 - 期望结果：1
+2021-10-12 11:20:19.996 | INFO     | tools.handler_assert:assert_req:35 - 断言成功。
+2021-10-12 11:20:19.997 | INFO     | tools.handler_assert:assert_req:26 - 断言表达式、期望结果和比对方式为：
+{'actual': '$..msg', 'expect': '密码为空', 'assert_type': '=='}
+2021-10-12 11:20:19.997 | INFO     | tools.handler_assert:assert_req:27 - 提取实际结果的jsonpath表达式：$..msg
+2021-10-12 11:20:19.997 | INFO     | tools.handler_assert:assert_req:28 - 响应数据：
+{'code': 1, 'msg': '密码为空', 'data': None, 'copyright': 'Copyright 柠檬班 © 2017-2020 湖南省零檬信息技术有限公司 All Rights Reserved'}
+2021-10-12 11:20:19.997 | INFO     | tools.handler_assert:assert_req:30 - 实际结果：密码为空
+2021-10-12 11:20:19.998 | INFO     | tools.handler_assert:assert_req:31 - 期望结果：密码为空
+2021-10-12 11:20:19.998 | INFO     | tools.handler_assert:assert_req:35 - 断言成功。
+2021-10-12 11:20:19.999 | INFO     | tools.handler_replace:variable_replace:18 - case数据类型：<class 'dict'>
+2021-10-12 11:20:20.000 | INFO     | tools.handler_replace:variable_replace:19 - case数据转换后的类型：<class 'str'>
+2021-10-12 11:20:20.000 | INFO     | tools.handler_replace:variable_replace:23 - 正则获取变量列表：
+[]
+2021-10-12 11:20:20.000 | INFO     | tools.handler_replace:variable_replace:45 - 用例中所有变量替换后最终显示数据：
+{'id': 1, 'title': '前置--登陆', 'url': '/member/login', 'method': 'POST', 'data': '{\n    "mobile_phone":"15133181962",\n    "pwd":"12345678"\n}', 'extract': '{"token":"$..token", "member_id":"$..id","leave_amount":"$..leave_amount"}', 'assert_excpt': '[\n  {"actual":"$..code","expect":0,"assert_type":"=="},\n  {"actual":"$..msg","expect":"OK","assert_type":"=="}\n]', 'bug': None}
+2021-10-12 11:20:20.000 | INFO     | tools.handler_nmb_request:send_request:37 - 请求接口：
+http://8.129.91.152:8766/futureloan/member/login
+2021-10-12 11:20:20.001 | INFO     | tools.handler_nmb_request:send_request:38 - 请求方式：POST
+2021-10-12 11:20:20.005 | INFO     | tools.handler_nmb_request:send_request:39 - 请求body体数据：
+{
+    "mobile_phone":"15133181962",
+    "pwd":"12345678"
+}
+2021-10-12 11:20:20.006 | INFO     | tools.handler_nmb_request:send_request:40 - 请求headers：
+{'X-Lemonban-Media-Type': 'lemonban.v2', 'content-type': 'application/json'}
+2021-10-12 11:20:20.090 | INFO     | tools.handler_nmb_request:send_request:46 - http响应状态码：200
+2021-10-12 11:20:20.090 | INFO     | tools.handler_nmb_request:send_request:47 - 响应body体：
+{"code":0,"msg":"OK","data":{"id":1236918855,"leave_amount":9004809.09,"mobile_phone":"15133181962","reg_name":"peter","reg_time":"2021-09-26 14:53:00.0","type":1,"token_info":{"token_type":"Bearer","expires_in":"2021-10-12 11:25:20","token":"eyJhbGciOiJIUzUxMiJ9.eyJtZW1iZXJfaWQiOjEyMzY5MTg4NTUsImV4cCI6MTYzNDAwOTEyMH0.4Iibb0aA8cW-SRmALTTlS7bSxiVfcmYHveZ1ICfrmxY9-dLYpTJE0wWJjimugIe0jU432lvb7UzlaBC68lN8AA"}},"copyright":"Copyright 柠檬班 © 2017-2020 湖南省零檬信息技术有限公司 All Rights Reserved"}
+2021-10-12 11:20:20.091 | INFO     | tools.handler_variable:set_variable:22 - 前置条件提取的数据字典:
+{'token': '$..token', 'member_id': '$..id', 'leave_amount': '$..leave_amount'}
+2021-10-12 11:20:20.091 | INFO     | tools.handler_variable:set_variable:25 - 要提取的字段与值：
+token ：eyJhbGciOiJIUzUxMiJ9.eyJtZW1iZXJfaWQiOjEyMzY5MTg4NTUsImV4cCI6MTYzNDAwOTEyMH0.4Iibb0aA8cW-SRmALTTlS7bSxiVfcmYHveZ1ICfrmxY9-dLYpTJE0wWJjimugIe0jU432lvb7UzlaBC68lN8AA
+2021-10-12 11:20:20.091 | INFO     | tools.handler_variable:set_variable:31 - 全局变量设置成功！
+2021-10-12 11:20:20.101 | INFO     | tools.handler_variable:set_variable:32 - 全局变量有：
+{'__module__': 'tools.handler_global', '__dict__': <attribute '__dict__' of 'Global' objects>, '__weakref__': <attribute '__weakref__' of 'Global' objects>, '__doc__': None, 'token': 'eyJhbGciOiJIUzUxMiJ9.eyJtZW1iZXJfaWQiOjEyMzY5MTg4NTUsImV4cCI6MTYzNDAwOTEyMH0.4Iibb0aA8cW-SRmALTTlS7bSxiVfcmYHveZ1ICfrmxY9-dLYpTJE0wWJjimugIe0jU432lvb7UzlaBC68lN8AA'}
+2021-10-12 11:20:20.102 | INFO     | tools.handler_variable:set_variable:25 - 要提取的字段与值：
+member_id ：1236918855
+2021-10-12 11:20:20.102 | INFO     | tools.handler_variable:set_variable:31 - 全局变量设置成功！
+2021-10-12 11:20:20.102 | INFO     | tools.handler_variable:set_variable:32 - 全局变量有：
+{'__module__': 'tools.handler_global', '__dict__': <attribute '__dict__' of 'Global' objects>, '__weakref__': <attribute '__weakref__' of 'Global' objects>, '__doc__': None, 'token': 'eyJhbGciOiJIUzUxMiJ9.eyJtZW1iZXJfaWQiOjEyMzY5MTg4NTUsImV4cCI6MTYzNDAwOTEyMH0.4Iibb0aA8cW-SRmALTTlS7bSxiVfcmYHveZ1ICfrmxY9-dLYpTJE0wWJjimugIe0jU432lvb7UzlaBC68lN8AA', 'member_id': '1236918855'}
+2021-10-12 11:20:20.102 | INFO     | tools.handler_variable:set_variable:25 - 要提取的字段与值：
+leave_amount ：9004809.09
+2021-10-12 11:20:20.103 | INFO     | tools.handler_variable:set_variable:31 - 全局变量设置成功！
+2021-10-12 11:20:20.103 | INFO     | tools.handler_variable:set_variable:32 - 全局变量有：
+{'__module__': 'tools.handler_global', '__dict__': <attribute '__dict__' of 'Global' objects>, '__weakref__': <attribute '__weakref__' of 'Global' objects>, '__doc__': None, 'token': 'eyJhbGciOiJIUzUxMiJ9.eyJtZW1iZXJfaWQiOjEyMzY5MTg4NTUsImV4cCI6MTYzNDAwOTEyMH0.4Iibb0aA8cW-SRmALTTlS7bSxiVfcmYHveZ1ICfrmxY9-dLYpTJE0wWJjimugIe0jU432lvb7UzlaBC68lN8AA', 'member_id': '1236918855', 'leave_amount': '9004809.09'}
+2021-10-12 11:20:20.103 | INFO     | tools.handler_assert:assert_req:26 - 断言表达式、期望结果和比对方式为：
+{'actual': '$..code', 'expect': 0, 'assert_type': '=='}
+2021-10-12 11:20:20.103 | INFO     | tools.handler_assert:assert_req:27 - 提取实际结果的jsonpath表达式：$..code
+2021-10-12 11:20:20.104 | INFO     | tools.handler_assert:assert_req:28 - 响应数据：
+{'code': 0, 'msg': 'OK', 'data': {'id': 1236918855, 'leave_amount': 9004809.09, 'mobile_phone': '15133181962', 'reg_name': 'peter', 'reg_time': '2021-09-26 14:53:00.0', 'type': 1, 'token_info': {'token_type': 'Bearer', 'expires_in': '2021-10-12 11:25:20', 'token': 'eyJhbGciOiJIUzUxMiJ9.eyJtZW1iZXJfaWQiOjEyMzY5MTg4NTUsImV4cCI6MTYzNDAwOTEyMH0.4Iibb0aA8cW-SRmALTTlS7bSxiVfcmYHveZ1ICfrmxY9-dLYpTJE0wWJjimugIe0jU432lvb7UzlaBC68lN8AA'}}, 'copyright': 'Copyright 柠檬班 © 2017-2020 湖南省零檬信息技术有限公司 All Rights Reserved'}
+2021-10-12 11:20:20.104 | INFO     | tools.handler_assert:assert_req:30 - 实际结果：0
+2021-10-12 11:20:20.104 | INFO     | tools.handler_assert:assert_req:31 - 期望结果：0
+2021-10-12 11:20:20.105 | INFO     | tools.handler_assert:assert_req:35 - 断言成功。
+2021-10-12 11:20:20.105 | INFO     | tools.handler_assert:assert_req:26 - 断言表达式、期望结果和比对方式为：
+{'actual': '$..msg', 'expect': 'OK', 'assert_type': '=='}
+2021-10-12 11:20:20.105 | INFO     | tools.handler_assert:assert_req:27 - 提取实际结果的jsonpath表达式：$..msg
+2021-10-12 11:20:20.114 | INFO     | tools.handler_assert:assert_req:28 - 响应数据：
+{'code': 0, 'msg': 'OK', 'data': {'id': 1236918855, 'leave_amount': 9004809.09, 'mobile_phone': '15133181962', 'reg_name': 'peter', 'reg_time': '2021-09-26 14:53:00.0', 'type': 1, 'token_info': {'token_type': 'Bearer', 'expires_in': '2021-10-12 11:25:20', 'token': 'eyJhbGciOiJIUzUxMiJ9.eyJtZW1iZXJfaWQiOjEyMzY5MTg4NTUsImV4cCI6MTYzNDAwOTEyMH0.4Iibb0aA8cW-SRmALTTlS7bSxiVfcmYHveZ1ICfrmxY9-dLYpTJE0wWJjimugIe0jU432lvb7UzlaBC68lN8AA'}}, 'copyright': 'Copyright 柠檬班 © 2017-2020 湖南省零檬信息技术有限公司 All Rights Reserved'}
+2021-10-12 11:20:20.114 | INFO     | tools.handler_assert:assert_req:30 - 实际结果：OK
+2021-10-12 11:20:20.115 | INFO     | tools.handler_assert:assert_req:31 - 期望结果：OK
+2021-10-12 11:20:20.115 | INFO     | tools.handler_assert:assert_req:35 - 断言成功。
+2021-10-12 11:20:20.117 | INFO     | tools.handler_replace:variable_replace:18 - case数据类型：<class 'dict'>
+2021-10-12 11:20:20.117 | INFO     | tools.handler_replace:variable_replace:19 - case数据转换后的类型：<class 'str'>
+2021-10-12 11:20:20.117 | INFO     | tools.handler_replace:variable_replace:23 - 正则获取变量列表：
+['member_id', 'leave_amount']
+2021-10-12 11:20:20.117 | INFO     | tools.handler_replace:variable_replace:45 - 用例中所有变量替换后最终显示数据：
+{'id': 2, 'title': '充值0.01元', 'url': '/member/recharge', 'method': 'POST', 'data': '{\n    "member_id":1236918855,\n    "amount":0.01\n}', 'extract': '{"leave_amount":"$..leave_amount"}', 'assert_excpt': '[\n  {"actual":"$..code","expect":0,"assert_type":"=="},\n  {"actual":"$..msg","expect":"OK","assert_type":"=="},\n{"actual":"$..leave_amount","expect":round(9004809.09+0.01,2),"assert_type":"=="}\n]', 'bug': None}
+2021-10-12 11:20:20.118 | INFO     | tools.handler_nmb_request:send_request:37 - 请求接口：
+http://8.129.91.152:8766/futureloan/member/recharge
+2021-10-12 11:20:20.118 | INFO     | tools.handler_nmb_request:send_request:38 - 请求方式：POST
+2021-10-12 11:20:20.118 | INFO     | tools.handler_nmb_request:send_request:39 - 请求body体数据：
+{
+    "member_id":1236918855,
+    "amount":0.01
+}
+2021-10-12 11:20:20.118 | INFO     | tools.handler_nmb_request:send_request:40 - 请求headers：
+{'X-Lemonban-Media-Type': 'lemonban.v2', 'content-type': 'application/json', 'authorization': 'Bearer eyJhbGciOiJIUzUxMiJ9.eyJtZW1iZXJfaWQiOjEyMzY5MTg4NTUsImV4cCI6MTYzNDAwOTEyMH0.4Iibb0aA8cW-SRmALTTlS7bSxiVfcmYHveZ1ICfrmxY9-dLYpTJE0wWJjimugIe0jU432lvb7UzlaBC68lN8AA'}
+2021-10-12 11:20:20.232 | INFO     | tools.handler_nmb_request:send_request:46 - http响应状态码：200
+2021-10-12 11:20:20.233 | INFO     | tools.handler_nmb_request:send_request:47 - 响应body体：
+{"code":0,"msg":"OK","data":{"id":1236918855,"leave_amount":9004809.1,"mobile_phone":"15133181962","reg_name":"peter","reg_time":"2021-09-26 14:53:00.0","type":1},"copyright":"Copyright 柠檬班 © 2017-2020 湖南省零檬信息技术有限公司 All Rights Reserved"}
+2021-10-12 11:20:20.233 | INFO     | tools.handler_variable:set_variable:22 - 前置条件提取的数据字典:
+{'leave_amount': '$..leave_amount'}
+2021-10-12 11:20:20.233 | INFO     | tools.handler_variable:set_variable:25 - 要提取的字段与值：
+leave_amount ：9004809.1
+2021-10-12 11:20:20.234 | INFO     | tools.handler_variable:set_variable:31 - 全局变量设置成功！
+2021-10-12 11:20:20.234 | INFO     | tools.handler_variable:set_variable:32 - 全局变量有：
+{'__module__': 'tools.handler_global', '__dict__': <attribute '__dict__' of 'Global' objects>, '__weakref__': <attribute '__weakref__' of 'Global' objects>, '__doc__': None, 'token': 'eyJhbGciOiJIUzUxMiJ9.eyJtZW1iZXJfaWQiOjEyMzY5MTg4NTUsImV4cCI6MTYzNDAwOTEyMH0.4Iibb0aA8cW-SRmALTTlS7bSxiVfcmYHveZ1ICfrmxY9-dLYpTJE0wWJjimugIe0jU432lvb7UzlaBC68lN8AA', 'member_id': '1236918855', 'leave_amount': '9004809.1'}
+2021-10-12 11:20:20.234 | INFO     | tools.handler_assert:assert_req:26 - 断言表达式、期望结果和比对方式为：
+{'actual': '$..code', 'expect': 0, 'assert_type': '=='}
+2021-10-12 11:20:20.234 | INFO     | tools.handler_assert:assert_req:27 - 提取实际结果的jsonpath表达式：$..code
+2021-10-12 11:20:20.235 | INFO     | tools.handler_assert:assert_req:28 - 响应数据：
+{'code': 0, 'msg': 'OK', 'data': {'id': 1236918855, 'leave_amount': 9004809.1, 'mobile_phone': '15133181962', 'reg_name': 'peter', 'reg_time': '2021-09-26 14:53:00.0', 'type': 1}, 'copyright': 'Copyright 柠檬班 © 2017-2020 湖南省零檬信息技术有限公司 All Rights Reserved'}
+2021-10-12 11:20:20.235 | INFO     | tools.handler_assert:assert_req:30 - 实际结果：0
+2021-10-12 11:20:20.235 | INFO     | tools.handler_assert:assert_req:31 - 期望结果：0
+2021-10-12 11:20:20.235 | INFO     | tools.handler_assert:assert_req:35 - 断言成功。
+2021-10-12 11:20:20.235 | INFO     | tools.handler_assert:assert_req:26 - 断言表达式、期望结果和比对方式为：
+{'actual': '$..msg', 'expect': 'OK', 'assert_type': '=='}
+2021-10-12 11:20:20.236 | INFO     | tools.handler_assert:assert_req:27 - 提取实际结果的jsonpath表达式：$..msg
+2021-10-12 11:20:20.236 | INFO     | tools.handler_assert:assert_req:28 - 响应数据：
+{'code': 0, 'msg': 'OK', 'data': {'id': 1236918855, 'leave_amount': 9004809.1, 'mobile_phone': '15133181962', 'reg_name': 'peter', 'reg_time': '2021-09-26 14:53:00.0', 'type': 1}, 'copyright': 'Copyright 柠檬班 © 2017-2020 湖南省零檬信息技术有限公司 All Rights Reserved'}
+2021-10-12 11:20:20.236 | INFO     | tools.handler_assert:assert_req:30 - 实际结果：OK
+2021-10-12 11:20:20.236 | INFO     | tools.handler_assert:assert_req:31 - 期望结果：OK
+2021-10-12 11:20:20.237 | INFO     | tools.handler_assert:assert_req:35 - 断言成功。
+2021-10-12 11:20:20.240 | INFO     | tools.handler_assert:assert_req:26 - 断言表达式、期望结果和比对方式为：
+{'actual': '$..leave_amount', 'expect': 9004809.1, 'assert_type': '=='}
+2021-10-12 11:20:20.240 | INFO     | tools.handler_assert:assert_req:27 - 提取实际结果的jsonpath表达式：$..leave_amount
+2021-10-12 11:20:20.241 | INFO     | tools.handler_assert:assert_req:28 - 响应数据：
+{'code': 0, 'msg': 'OK', 'data': {'id': 1236918855, 'leave_amount': 9004809.1, 'mobile_phone': '15133181962', 'reg_name': 'peter', 'reg_time': '2021-09-26 14:53:00.0', 'type': 1}, 'copyright': 'Copyright 柠檬班 © 2017-2020 湖南省零檬信息技术有限公司 All Rights Reserved'}
+2021-10-12 11:20:20.241 | INFO     | tools.handler_assert:assert_req:30 - 实际结果：9004809.1
+2021-10-12 11:20:20.242 | INFO     | tools.handler_assert:assert_req:31 - 期望结果：9004809.1
+2021-10-12 11:20:20.242 | INFO     | tools.handler_assert:assert_req:35 - 断言成功。
+2021-10-12 11:20:20.243 | INFO     | tools.handler_replace:variable_replace:18 - case数据类型：<class 'dict'>
+2021-10-12 11:20:20.243 | INFO     | tools.handler_replace:variable_replace:19 - case数据转换后的类型：<class 'str'>
+2021-10-12 11:20:20.244 | INFO     | tools.handler_replace:variable_replace:23 - 正则获取变量列表：
+['member_id', 'leave_amount']
+2021-10-12 11:20:20.244 | INFO     | tools.handler_replace:variable_replace:45 - 用例中所有变量替换后最终显示数据：
+{'id': 3, 'title': '充值1元', 'url': '/member/recharge', 'method': 'POST', 'data': '{\n    "member_id":1236918855,\n    "amount":1\n}', 'extract': '{"leave_amount":"$..leave_amount"}', 'assert_excpt': '[\n  {"actual":"$..code","expect":0,"assert_type":"=="},\n  {"actual":"$..msg","expect":"OK","assert_type":"=="},\n{"actual":"$..leave_amount","expect":round(9004809.1+1,2),"assert_type":"=="}\n]', 'bug': None}
+2021-10-12 11:20:20.244 | INFO     | tools.handler_nmb_request:send_request:37 - 请求接口：
+http://8.129.91.152:8766/futureloan/member/recharge
+2021-10-12 11:20:20.244 | INFO     | tools.handler_nmb_request:send_request:38 - 请求方式：POST
+2021-10-12 11:20:20.246 | INFO     | tools.handler_nmb_request:send_request:39 - 请求body体数据：
+{
+    "member_id":1236918855,
+    "amount":1
+}
+2021-10-12 11:20:20.246 | INFO     | tools.handler_nmb_request:send_request:40 - 请求headers：
+{'X-Lemonban-Media-Type': 'lemonban.v2', 'content-type': 'application/json', 'authorization': 'Bearer eyJhbGciOiJIUzUxMiJ9.eyJtZW1iZXJfaWQiOjEyMzY5MTg4NTUsImV4cCI6MTYzNDAwOTEyMH0.4Iibb0aA8cW-SRmALTTlS7bSxiVfcmYHveZ1ICfrmxY9-dLYpTJE0wWJjimugIe0jU432lvb7UzlaBC68lN8AA'}
+2021-10-12 11:20:20.327 | INFO     | tools.handler_nmb_request:send_request:46 - http响应状态码：200
+2021-10-12 11:20:20.327 | INFO     | tools.handler_nmb_request:send_request:47 - 响应body体：
+{"code":0,"msg":"OK","data":{"id":1236918855,"leave_amount":9004810.1,"mobile_phone":"15133181962","reg_name":"peter","reg_time":"2021-09-26 14:53:00.0","type":1},"copyright":"Copyright 柠檬班 © 2017-2020 湖南省零檬信息技术有限公司 All Rights Reserved"}
+2021-10-12 11:20:20.328 | INFO     | tools.handler_variable:set_variable:22 - 前置条件提取的数据字典:
+{'leave_amount': '$..leave_amount'}
+2021-10-12 11:20:20.328 | INFO     | tools.handler_variable:set_variable:25 - 要提取的字段与值：
+leave_amount ：9004810.1
+2021-10-12 11:20:20.329 | INFO     | tools.handler_variable:set_variable:31 - 全局变量设置成功！
+2021-10-12 11:20:20.329 | INFO     | tools.handler_variable:set_variable:32 - 全局变量有：
+{'__module__': 'tools.handler_global', '__dict__': <attribute '__dict__' of 'Global' objects>, '__weakref__': <attribute '__weakref__' of 'Global' objects>, '__doc__': None, 'token': 'eyJhbGciOiJIUzUxMiJ9.eyJtZW1iZXJfaWQiOjEyMzY5MTg4NTUsImV4cCI6MTYzNDAwOTEyMH0.4Iibb0aA8cW-SRmALTTlS7bSxiVfcmYHveZ1ICfrmxY9-dLYpTJE0wWJjimugIe0jU432lvb7UzlaBC68lN8AA', 'member_id': '1236918855', 'leave_amount': '9004810.1'}
+2021-10-12 11:20:20.329 | INFO     | tools.handler_assert:assert_req:26 - 断言表达式、期望结果和比对方式为：
+{'actual': '$..code', 'expect': 0, 'assert_type': '=='}
+2021-10-12 11:20:20.329 | INFO     | tools.handler_assert:assert_req:27 - 提取实际结果的jsonpath表达式：$..code
+2021-10-12 11:20:20.330 | INFO     | tools.handler_assert:assert_req:28 - 响应数据：
+{'code': 0, 'msg': 'OK', 'data': {'id': 1236918855, 'leave_amount': 9004810.1, 'mobile_phone': '15133181962', 'reg_name': 'peter', 'reg_time': '2021-09-26 14:53:00.0', 'type': 1}, 'copyright': 'Copyright 柠檬班 © 2017-2020 湖南省零檬信息技术有限公司 All Rights Reserved'}
+2021-10-12 11:20:20.330 | INFO     | tools.handler_assert:assert_req:30 - 实际结果：0
+2021-10-12 11:20:20.330 | INFO     | tools.handler_assert:assert_req:31 - 期望结果：0
+2021-10-12 11:20:20.330 | INFO     | tools.handler_assert:assert_req:35 - 断言成功。
+2021-10-12 11:20:20.331 | INFO     | tools.handler_assert:assert_req:26 - 断言表达式、期望结果和比对方式为：
+{'actual': '$..msg', 'expect': 'OK', 'assert_type': '=='}
+2021-10-12 11:20:20.331 | INFO     | tools.handler_assert:assert_req:27 - 提取实际结果的jsonpath表达式：$..msg
+2021-10-12 11:20:20.331 | INFO     | tools.handler_assert:assert_req:28 - 响应数据：
+{'code': 0, 'msg': 'OK', 'data': {'id': 1236918855, 'leave_amount': 9004810.1, 'mobile_phone': '15133181962', 'reg_name': 'peter', 'reg_time': '2021-09-26 14:53:00.0', 'type': 1}, 'copyright': 'Copyright 柠檬班 © 2017-2020 湖南省零檬信息技术有限公司 All Rights Reserved'}
+2021-10-12 11:20:20.331 | INFO     | tools.handler_assert:assert_req:30 - 实际结果：OK
+2021-10-12 11:20:20.331 | INFO     | tools.handler_assert:assert_req:31 - 期望结果：OK
+2021-10-12 11:20:20.332 | INFO     | tools.handler_assert:assert_req:35 - 断言成功。
+2021-10-12 11:20:20.333 | INFO     | tools.handler_assert:assert_req:26 - 断言表达式、期望结果和比对方式为：
+{'actual': '$..leave_amount', 'expect': 9004810.1, 'assert_type': '=='}
+2021-10-12 11:20:20.333 | INFO     | tools.handler_assert:assert_req:27 - 提取实际结果的jsonpath表达式：$..leave_amount
+2021-10-12 11:20:20.333 | INFO     | tools.handler_assert:assert_req:28 - 响应数据：
+{'code': 0, 'msg': 'OK', 'data': {'id': 1236918855, 'leave_amount': 9004810.1, 'mobile_phone': '15133181962', 'reg_name': 'peter', 'reg_time': '2021-09-26 14:53:00.0', 'type': 1}, 'copyright': 'Copyright 柠檬班 © 2017-2020 湖南省零檬信息技术有限公司 All Rights Reserved'}
+2021-10-12 11:20:20.334 | INFO     | tools.handler_assert:assert_req:30 - 实际结果：9004810.1
+2021-10-12 11:20:20.334 | INFO     | tools.handler_assert:assert_req:31 - 期望结果：9004810.1
+2021-10-12 11:20:20.334 | INFO     | tools.handler_assert:assert_req:35 - 断言成功。
+2021-10-12 11:20:20.336 | INFO     | tools.handler_replace:variable_replace:18 - case数据类型：<class 'dict'>
+2021-10-12 11:20:20.336 | INFO     | tools.handler_replace:variable_replace:19 - case数据转换后的类型：<class 'str'>
+2021-10-12 11:20:20.336 | INFO     | tools.handler_replace:variable_replace:23 - 正则获取变量列表：
+['member_id']
+2021-10-12 11:20:20.337 | INFO     | tools.handler_replace:variable_replace:45 - 用例中所有变量替换后最终显示数据：
+{'id': 4, 'title': '充值0元', 'url': '/member/recharge', 'method': 'POST', 'data': '{\n    "member_id":1236918855,\n    "amount":0\n}', 'extract': None, 'assert_excpt': '[\n  {"actual":"$..code","expect":2,"assert_type":"=="},\n  {"actual":"$..msg","expect":"余额必须大于0并且小于或者等于500000","assert_type":"=="}\n]', 'bug': 'True：实际充值成功'}
+2021-10-12 11:20:20.337 | INFO     | tools.handler_nmb_request:send_request:37 - 请求接口：
+http://8.129.91.152:8766/futureloan/member/recharge
+2021-10-12 11:20:20.337 | INFO     | tools.handler_nmb_request:send_request:38 - 请求方式：POST
+2021-10-12 11:20:20.337 | INFO     | tools.handler_nmb_request:send_request:39 - 请求body体数据：
+{
+    "member_id":1236918855,
+    "amount":0
+}
+2021-10-12 11:20:20.337 | INFO     | tools.handler_nmb_request:send_request:40 - 请求headers：
+{'X-Lemonban-Media-Type': 'lemonban.v2', 'content-type': 'application/json', 'authorization': 'Bearer eyJhbGciOiJIUzUxMiJ9.eyJtZW1iZXJfaWQiOjEyMzY5MTg4NTUsImV4cCI6MTYzNDAwOTEyMH0.4Iibb0aA8cW-SRmALTTlS7bSxiVfcmYHveZ1ICfrmxY9-dLYpTJE0wWJjimugIe0jU432lvb7UzlaBC68lN8AA'}
+2021-10-12 11:20:20.417 | INFO     | tools.handler_nmb_request:send_request:46 - http响应状态码：200
+2021-10-12 11:20:20.418 | INFO     | tools.handler_nmb_request:send_request:47 - 响应body体：
+{"code":0,"msg":"OK","data":{"id":1236918855,"leave_amount":9004810.1,"mobile_phone":"15133181962","reg_name":"peter","reg_time":"2021-09-26 14:53:00.0","type":1},"copyright":"Copyright 柠檬班 © 2017-2020 湖南省零檬信息技术有限公司 All Rights Reserved"}
+2021-10-12 11:20:20.418 | INFO     | tools.handler_assert:assert_req:26 - 断言表达式、期望结果和比对方式为：
+{'actual': '$..code', 'expect': 2, 'assert_type': '=='}
+2021-10-12 11:20:20.419 | INFO     | tools.handler_assert:assert_req:27 - 提取实际结果的jsonpath表达式：$..code
+2021-10-12 11:20:20.419 | INFO     | tools.handler_assert:assert_req:28 - 响应数据：
+{'code': 0, 'msg': 'OK', 'data': {'id': 1236918855, 'leave_amount': 9004810.1, 'mobile_phone': '15133181962', 'reg_name': 'peter', 'reg_time': '2021-09-26 14:53:00.0', 'type': 1}, 'copyright': 'Copyright 柠檬班 © 2017-2020 湖南省零檬信息技术有限公司 All Rights Reserved'}
+2021-10-12 11:20:20.420 | INFO     | tools.handler_assert:assert_req:30 - 实际结果：0
+2021-10-12 11:20:20.420 | INFO     | tools.handler_assert:assert_req:31 - 期望结果：2
+2021-10-12 11:20:20.420 | ERROR    | tools.handler_assert:assert_req:37 - 实际值与期望值不相等。
+Traceback (most recent call last):
+
+  File "D:\Program Files\Python\lib\threading.py", line 908, in _bootstrap
+    self._bootstrap_inner()
+    │    └ <function Thread._bootstrap_inner at 0x000001B56721CDC0>
+    └ <Thread(ThreadPoolExecutor-0_0, started 3884)>
+
+  File "D:\Program Files\Python\lib\threading.py", line 950, in _bootstrap_inner
+    self.run()
+    │    └ <function Thread.run at 0x000001B56721CAF0>
+    └ <Thread(ThreadPoolExecutor-0_0, started 3884)>
+
+  File "D:\Program Files\Python\lib\threading.py", line 888, in run
+    self._target(*self._args, **self._kwargs)
+    │    │        │    │        │    └ {}
+    │    │        │    │        └ <Thread(ThreadPoolExecutor-0_0, started 3884)>
+    │    │        │    └ (<weakref at 0x000001B57B24B8B0; to 'ThreadPoolExecutor' at 0x000001B57B2B01F0>, <_queue.SimpleQueue object at 0x000001B566C1...
+    │    │        └ <Thread(ThreadPoolExecutor-0_0, started 3884)>
+    │    └ <function _worker at 0x000001B56723B3A0>
+    └ <Thread(ThreadPoolExecutor-0_0, started 3884)>
+
+  File "D:\Program Files\Python\lib\concurrent\futures\thread.py", line 77, in _worker
+    work_item.run()
+    │         └ <function _WorkItem.run at 0x000001B56723B4C0>
+    └ <concurrent.futures.thread._WorkItem object at 0x000001B57B2A71F0>
+
+  File "D:\Program Files\Python\lib\concurrent\futures\thread.py", line 52, in run
+    result = self.fn(*self.args, **self.kwargs)
+             │    │   │    │       │    └ {'result': <unittestreport.core.testResult.ReRunResult run=4 errors=0 failures=0>}
+             │    │   │    │       └ <concurrent.futures.thread._WorkItem object at 0x000001B57B2A71F0>
+             │    │   │    └ ()
+             │    │   └ <concurrent.futures.thread._WorkItem object at 0x000001B57B2A71F0>
+             │    └ <bound method TestSuite.run of <unittest.suite.TestSuite tests=[None, None, None, <test_03recharge.TestRecharge testMethod=te...
+             └ <concurrent.futures.thread._WorkItem object at 0x000001B57B2A71F0>
+
+  File "D:\Program Files\Python\lib\unittest\suite.py", line 122, in run
+    test(result)
+    │    └ <unittestreport.core.testResult.ReRunResult run=4 errors=0 failures=0>
+    └ <test_03recharge.TestRecharge testMethod=test_recharge_04>
+
+  File "D:\Program Files\Python\lib\unittest\case.py", line 653, in __call__
+    return self.run(*args, **kwds)
+           │    │    │       └ {}
+           │    │    └ (<unittestreport.core.testResult.ReRunResult run=4 errors=0 failures=0>,)
+           │    └ <function TestCase.run at 0x000001B566F3C430>
+           └ <test_03recharge.TestRecharge testMethod=test_recharge_04>
+
+  File "D:\Program Files\Python\lib\unittest\case.py", line 593, in run
+    self._callTestMethod(testMethod)
+    │    │               └ <bound method TestRecharge.test_recharge of <test_03recharge.TestRecharge testMethod=test_recharge_04>>
+    │    └ <function TestCase._callTestMethod at 0x000001B566F3C280>
+    └ <test_03recharge.TestRecharge testMethod=test_recharge_04>
+
+  File "D:\Program Files\Python\lib\unittest\case.py", line 550, in _callTestMethod
+    method()
+    └ <bound method TestRecharge.test_recharge of <test_03recharge.TestRecharge testMethod=test_recharge_04>>
+
+  File "D:\Program Files\Python\lib\site-packages\unittestreport\core\dataDriver.py", line 16, in wrapper
+    return func(self, params, *args, **kwargs)
+           │    │     │        │       └ {}
+           │    │     │        └ ()
+           │    │     └ {'id': 4, 'title': '充值0元', 'url': '/member/recharge', 'method': 'POST', 'data': '{\n    "member_id":#member_id#,\n    "amount...
+           │    └ <test_03recharge.TestRecharge testMethod=test_recharge_04>
+           └ <function TestRecharge.test_recharge at 0x000001B57B24E8B0>
+
+  File "D:\学习资料\github\py_automation\test_nmb\qcd\testcases_nmb\test_03recharge.py", line 62, in test_recharge
+    self.assertTrue(assert_req(resp, value["assert_excpt"]))
+    │    │          │          │     └ {'id': 4, 'title': '充值0元', 'url': '/member/recharge', 'method': 'POST', 'data': '{\n    "member_id":1236918855,\n    "amount"...
+    │    │          │          └ {'code': 0, 'msg': 'OK', 'data': {'id': 1236918855, 'leave_amount': 9004810.1, 'mobile_phone': '15133181962', 'reg_name': 'pe...
+    │    │          └ <function assert_req at 0x000001B57B0AAB80>
+    │    └ <function TestCase.assertTrue at 0x000001B566F3C8B0>
+    └ <test_03recharge.TestRecharge testMethod=test_recharge_04>
+
+> File "D:\学习资料\github\py_automation\test_nmb\qcd\tools\handler_assert.py", line 34, in assert_req
+    assert actual[0] == jsonpath(i, "$..expect")[0]
+           │            │        └ {'actual': '$..code', 'expect': 2, 'assert_type': '=='}
+           │            └ <function jsonpath at 0x000001B57B0AADC0>
+           └ [0]
+
+AssertionError: assert actual[0] == jsonpath(i, "$..expect")[0]
+2021-10-12 11:20:20.478 | INFO     | tools.handler_replace:variable_replace:18 - case数据类型：<class 'dict'>
+2021-10-12 11:20:20.479 | INFO     | tools.handler_replace:variable_replace:19 - case数据转换后的类型：<class 'str'>
+2021-10-12 11:20:20.479 | INFO     | tools.handler_replace:variable_replace:23 - 正则获取变量列表：
+['member_id', 'leave_amount']
+2021-10-12 11:20:20.479 | INFO     | tools.handler_replace:variable_replace:45 - 用例中所有变量替换后最终显示数据：
+{'id': 5, 'title': '充值边界值两位小数：499999.99', 'url': '/member/recharge', 'method': 'POST', 'data': '{\n    "member_id":1236918855,\n    "amount":499999.99\n}', 'extract': '{"leave_amount":"$..leave_amount"}', 'assert_excpt': '[\n  {"actual":"$..code","expect":0,"assert_type":"=="},\n  {"actual":"$..msg","expect":"OK","assert_type":"=="},\n{"actual":"$..leave_amount","expect":round(9004810.1+499999.99,2),"assert_type":"=="}\n]', 'bug': None}
+2021-10-12 11:20:20.480 | INFO     | tools.handler_nmb_request:send_request:37 - 请求接口：
+http://8.129.91.152:8766/futureloan/member/recharge
+2021-10-12 11:20:20.480 | INFO     | tools.handler_nmb_request:send_request:38 - 请求方式：POST
+2021-10-12 11:20:20.480 | INFO     | tools.handler_nmb_request:send_request:39 - 请求body体数据：
+{
+    "member_id":1236918855,
+    "amount":499999.99
+}
+2021-10-12 11:20:20.480 | INFO     | tools.handler_nmb_request:send_request:40 - 请求headers：
+{'X-Lemonban-Media-Type': 'lemonban.v2', 'content-type': 'application/json', 'authorization': 'Bearer eyJhbGciOiJIUzUxMiJ9.eyJtZW1iZXJfaWQiOjEyMzY5MTg4NTUsImV4cCI6MTYzNDAwOTEyMH0.4Iibb0aA8cW-SRmALTTlS7bSxiVfcmYHveZ1ICfrmxY9-dLYpTJE0wWJjimugIe0jU432lvb7UzlaBC68lN8AA'}
+2021-10-12 11:20:20.595 | INFO     | tools.handler_nmb_request:send_request:46 - http响应状态码：200
+2021-10-12 11:20:20.596 | INFO     | tools.handler_nmb_request:send_request:47 - 响应body体：
+{"code":0,"msg":"OK","data":{"id":1236918855,"leave_amount":9504810.09,"mobile_phone":"15133181962","reg_name":"peter","reg_time":"2021-09-26 14:53:00.0","type":1},"copyright":"Copyright 柠檬班 © 2017-2020 湖南省零檬信息技术有限公司 All Rights Reserved"}
+2021-10-12 11:20:20.596 | INFO     | tools.handler_variable:set_variable:22 - 前置条件提取的数据字典:
+{'leave_amount': '$..leave_amount'}
+2021-10-12 11:20:20.596 | INFO     | tools.handler_variable:set_variable:25 - 要提取的字段与值：
+leave_amount ：9504810.09
+2021-10-12 11:20:20.597 | INFO     | tools.handler_variable:set_variable:31 - 全局变量设置成功！
+2021-10-12 11:20:20.597 | INFO     | tools.handler_variable:set_variable:32 - 全局变量有：
+{'__module__': 'tools.handler_global', '__dict__': <attribute '__dict__' of 'Global' objects>, '__weakref__': <attribute '__weakref__' of 'Global' objects>, '__doc__': None, 'token': 'eyJhbGciOiJIUzUxMiJ9.eyJtZW1iZXJfaWQiOjEyMzY5MTg4NTUsImV4cCI6MTYzNDAwOTEyMH0.4Iibb0aA8cW-SRmALTTlS7bSxiVfcmYHveZ1ICfrmxY9-dLYpTJE0wWJjimugIe0jU432lvb7UzlaBC68lN8AA', 'member_id': '1236918855', 'leave_amount': '9504810.09'}
+2021-10-12 11:20:20.597 | INFO     | tools.handler_assert:assert_req:26 - 断言表达式、期望结果和比对方式为：
+{'actual': '$..code', 'expect': 0, 'assert_type': '=='}
+2021-10-12 11:20:20.598 | INFO     | tools.handler_assert:assert_req:27 - 提取实际结果的jsonpath表达式：$..code
+2021-10-12 11:20:20.598 | INFO     | tools.handler_assert:assert_req:28 - 响应数据：
+{'code': 0, 'msg': 'OK', 'data': {'id': 1236918855, 'leave_amount': 9504810.09, 'mobile_phone': '15133181962', 'reg_name': 'peter', 'reg_time': '2021-09-26 14:53:00.0', 'type': 1}, 'copyright': 'Copyright 柠檬班 © 2017-2020 湖南省零檬信息技术有限公司 All Rights Reserved'}
+2021-10-12 11:20:20.599 | INFO     | tools.handler_assert:assert_req:30 - 实际结果：0
+2021-10-12 11:20:20.600 | INFO     | tools.handler_assert:assert_req:31 - 期望结果：0
+2021-10-12 11:20:20.600 | INFO     | tools.handler_assert:assert_req:35 - 断言成功。
+2021-10-12 11:20:20.600 | INFO     | tools.handler_assert:assert_req:26 - 断言表达式、期望结果和比对方式为：
+{'actual': '$..msg', 'expect': 'OK', 'assert_type': '=='}
+2021-10-12 11:20:20.601 | INFO     | tools.handler_assert:assert_req:27 - 提取实际结果的jsonpath表达式：$..msg
+2021-10-12 11:20:20.601 | INFO     | tools.handler_assert:assert_req:28 - 响应数据：
+{'code': 0, 'msg': 'OK', 'data': {'id': 1236918855, 'leave_amount': 9504810.09, 'mobile_phone': '15133181962', 'reg_name': 'peter', 'reg_time': '2021-09-26 14:53:00.0', 'type': 1}, 'copyright': 'Copyright 柠檬班 © 2017-2020 湖南省零檬信息技术有限公司 All Rights Reserved'}
+2021-10-12 11:20:20.602 | INFO     | tools.handler_assert:assert_req:30 - 实际结果：OK
+2021-10-12 11:20:20.602 | INFO     | tools.handler_assert:assert_req:31 - 期望结果：OK
+2021-10-12 11:20:20.602 | INFO     | tools.handler_assert:assert_req:35 - 断言成功。
+2021-10-12 11:20:20.602 | INFO     | tools.handler_assert:assert_req:26 - 断言表达式、期望结果和比对方式为：
+{'actual': '$..leave_amount', 'expect': 9504810.09, 'assert_type': '=='}
+2021-10-12 11:20:20.603 | INFO     | tools.handler_assert:assert_req:27 - 提取实际结果的jsonpath表达式：$..leave_amount
+2021-10-12 11:20:20.603 | INFO     | tools.handler_assert:assert_req:28 - 响应数据：
+{'code': 0, 'msg': 'OK', 'data': {'id': 1236918855, 'leave_amount': 9504810.09, 'mobile_phone': '15133181962', 'reg_name': 'peter', 'reg_time': '2021-09-26 14:53:00.0', 'type': 1}, 'copyright': 'Copyright 柠檬班 © 2017-2020 湖南省零檬信息技术有限公司 All Rights Reserved'}
+2021-10-12 11:20:20.603 | INFO     | tools.handler_assert:assert_req:30 - 实际结果：9504810.09
+2021-10-12 11:20:20.604 | INFO     | tools.handler_assert:assert_req:31 - 期望结果：9504810.09
+2021-10-12 11:20:20.604 | INFO     | tools.handler_assert:assert_req:35 - 断言成功。
+2021-10-12 11:20:20.606 | INFO     | tools.handler_replace:variable_replace:18 - case数据类型：<class 'dict'>
+2021-10-12 11:20:20.607 | INFO     | tools.handler_replace:variable_replace:19 - case数据转换后的类型：<class 'str'>
+2021-10-12 11:20:20.607 | INFO     | tools.handler_replace:variable_replace:23 - 正则获取变量列表：
+['member_id']
+2021-10-12 11:20:20.614 | INFO     | tools.handler_replace:variable_replace:45 - 用例中所有变量替换后最终显示数据：
+{'id': 6, 'title': '充值边界值两位小数：500000.01', 'url': '/member/recharge', 'method': 'POST', 'data': '{\n    "member_id":1236918855,\n    "amount":500000.01\n}', 'extract': None, 'assert_excpt': '[\n  {"actual":"$..code","expect":2,"assert_type":"=="},\n  {"actual":"$..msg","expect":"余额必须大于0并且小于或者等于500000","assert_type":"=="}\n]', 'bug': None}
+2021-10-12 11:20:20.615 | INFO     | tools.handler_nmb_request:send_request:37 - 请求接口：
+http://8.129.91.152:8766/futureloan/member/recharge
+2021-10-12 11:20:20.615 | INFO     | tools.handler_nmb_request:send_request:38 - 请求方式：POST
+2021-10-12 11:20:20.615 | INFO     | tools.handler_nmb_request:send_request:39 - 请求body体数据：
+{
+    "member_id":1236918855,
+    "amount":500000.01
+}
+2021-10-12 11:20:20.616 | INFO     | tools.handler_nmb_request:send_request:40 - 请求headers：
+{'X-Lemonban-Media-Type': 'lemonban.v2', 'content-type': 'application/json', 'authorization': 'Bearer eyJhbGciOiJIUzUxMiJ9.eyJtZW1iZXJfaWQiOjEyMzY5MTg4NTUsImV4cCI6MTYzNDAwOTEyMH0.4Iibb0aA8cW-SRmALTTlS7bSxiVfcmYHveZ1ICfrmxY9-dLYpTJE0wWJjimugIe0jU432lvb7UzlaBC68lN8AA'}
+2021-10-12 11:20:20.692 | INFO     | tools.handler_nmb_request:send_request:46 - http响应状态码：200
+2021-10-12 11:20:20.692 | INFO     | tools.handler_nmb_request:send_request:47 - 响应body体：
+{"code":2,"msg":"余额必须大于0并且小于或者等于500000","data":null,"copyright":"Copyright 柠檬班 © 2017-2020 湖南省零檬信息技术有限公司 All Rights Reserved"}
+2021-10-12 11:20:20.693 | INFO     | tools.handler_assert:assert_req:26 - 断言表达式、期望结果和比对方式为：
+{'actual': '$..code', 'expect': 2, 'assert_type': '=='}
+2021-10-12 11:20:20.693 | INFO     | tools.handler_assert:assert_req:27 - 提取实际结果的jsonpath表达式：$..code
+2021-10-12 11:20:20.693 | INFO     | tools.handler_assert:assert_req:28 - 响应数据：
+{'code': 2, 'msg': '余额必须大于0并且小于或者等于500000', 'data': None, 'copyright': 'Copyright 柠檬班 © 2017-2020 湖南省零檬信息技术有限公司 All Rights Reserved'}
+2021-10-12 11:20:20.693 | INFO     | tools.handler_assert:assert_req:30 - 实际结果：2
+2021-10-12 11:20:20.694 | INFO     | tools.handler_assert:assert_req:31 - 期望结果：2
+2021-10-12 11:20:20.694 | INFO     | tools.handler_assert:assert_req:35 - 断言成功。
+2021-10-12 11:20:20.694 | INFO     | tools.handler_assert:assert_req:26 - 断言表达式、期望结果和比对方式为：
+{'actual': '$..msg', 'expect': '余额必须大于0并且小于或者等于500000', 'assert_type': '=='}
+2021-10-12 11:20:20.694 | INFO     | tools.handler_assert:assert_req:27 - 提取实际结果的jsonpath表达式：$..msg
+2021-10-12 11:20:20.694 | INFO     | tools.handler_assert:assert_req:28 - 响应数据：
+{'code': 2, 'msg': '余额必须大于0并且小于或者等于500000', 'data': None, 'copyright': 'Copyright 柠檬班 © 2017-2020 湖南省零檬信息技术有限公司 All Rights Reserved'}
+2021-10-12 11:20:20.694 | INFO     | tools.handler_assert:assert_req:30 - 实际结果：余额必须大于0并且小于或者等于500000
+2021-10-12 11:20:20.695 | INFO     | tools.handler_assert:assert_req:31 - 期望结果：余额必须大于0并且小于或者等于500000
+2021-10-12 11:20:20.695 | INFO     | tools.handler_assert:assert_req:35 - 断言成功。
+2021-10-12 11:20:20.697 | INFO     | tools.handler_replace:variable_replace:18 - case数据类型：<class 'dict'>
+2021-10-12 11:20:20.697 | INFO     | tools.handler_replace:variable_replace:19 - case数据转换后的类型：<class 'str'>
+2021-10-12 11:20:20.697 | INFO     | tools.handler_replace:variable_replace:23 - 正则获取变量列表：
+['member_id']
+2021-10-12 11:20:20.697 | INFO     | tools.handler_replace:variable_replace:45 - 用例中所有变量替换后最终显示数据：
+{'id': 7, 'title': '充值三位小数：400.555', 'url': '/member/recharge', 'method': 'POST', 'data': '{\n    "member_id":1236918855,\n    "amount":400.555\n}', 'extract': None, 'assert_excpt': '[\n  {"actual":"$..code","expect":2,"assert_type":"=="},\n  {"actual":"$..msg","expect":"余额小数超过两位","assert_type":"=="}\n]', 'bug': None}
+2021-10-12 11:20:20.697 | INFO     | tools.handler_nmb_request:send_request:37 - 请求接口：
+http://8.129.91.152:8766/futureloan/member/recharge
+2021-10-12 11:20:20.706 | INFO     | tools.handler_nmb_request:send_request:38 - 请求方式：POST
+2021-10-12 11:20:20.706 | INFO     | tools.handler_nmb_request:send_request:39 - 请求body体数据：
+{
+    "member_id":1236918855,
+    "amount":400.555
+}
+2021-10-12 11:20:20.707 | INFO     | tools.handler_nmb_request:send_request:40 - 请求headers：
+{'X-Lemonban-Media-Type': 'lemonban.v2', 'content-type': 'application/json', 'authorization': 'Bearer eyJhbGciOiJIUzUxMiJ9.eyJtZW1iZXJfaWQiOjEyMzY5MTg4NTUsImV4cCI6MTYzNDAwOTEyMH0.4Iibb0aA8cW-SRmALTTlS7bSxiVfcmYHveZ1ICfrmxY9-dLYpTJE0wWJjimugIe0jU432lvb7UzlaBC68lN8AA'}
+2021-10-12 11:20:20.783 | INFO     | tools.handler_nmb_request:send_request:46 - http响应状态码：200
+2021-10-12 11:20:20.784 | INFO     | tools.handler_nmb_request:send_request:47 - 响应body体：
+{"code":2,"msg":"余额小数超过两位","data":null,"copyright":"Copyright 柠檬班 © 2017-2020 湖南省零檬信息技术有限公司 All Rights Reserved"}
+2021-10-12 11:20:20.784 | INFO     | tools.handler_assert:assert_req:26 - 断言表达式、期望结果和比对方式为：
+{'actual': '$..code', 'expect': 2, 'assert_type': '=='}
+2021-10-12 11:20:20.784 | INFO     | tools.handler_assert:assert_req:27 - 提取实际结果的jsonpath表达式：$..code
+2021-10-12 11:20:20.785 | INFO     | tools.handler_assert:assert_req:28 - 响应数据：
+{'code': 2, 'msg': '余额小数超过两位', 'data': None, 'copyright': 'Copyright 柠檬班 © 2017-2020 湖南省零檬信息技术有限公司 All Rights Reserved'}
+2021-10-12 11:20:20.785 | INFO     | tools.handler_assert:assert_req:30 - 实际结果：2
+2021-10-12 11:20:20.785 | INFO     | tools.handler_assert:assert_req:31 - 期望结果：2
+2021-10-12 11:20:20.786 | INFO     | tools.handler_assert:assert_req:35 - 断言成功。
+2021-10-12 11:20:20.786 | INFO     | tools.handler_assert:assert_req:26 - 断言表达式、期望结果和比对方式为：
+{'actual': '$..msg', 'expect': '余额小数超过两位', 'assert_type': '=='}
+2021-10-12 11:20:20.786 | INFO     | tools.handler_assert:assert_req:27 - 提取实际结果的jsonpath表达式：$..msg
+2021-10-12 11:20:20.786 | INFO     | tools.handler_assert:assert_req:28 - 响应数据：
+{'code': 2, 'msg': '余额小数超过两位', 'data': None, 'copyright': 'Copyright 柠檬班 © 2017-2020 湖南省零檬信息技术有限公司 All Rights Reserved'}
+2021-10-12 11:20:20.786 | INFO     | tools.handler_assert:assert_req:30 - 实际结果：余额小数超过两位
+2021-10-12 11:20:20.786 | INFO     | tools.handler_assert:assert_req:31 - 期望结果：余额小数超过两位
+2021-10-12 11:20:20.787 | INFO     | tools.handler_assert:assert_req:35 - 断言成功。
+2021-10-12 11:20:20.788 | INFO     | tools.handler_replace:variable_replace:18 - case数据类型：<class 'dict'>
+2021-10-12 11:20:20.789 | INFO     | tools.handler_replace:variable_replace:19 - case数据转换后的类型：<class 'str'>
+2021-10-12 11:20:20.789 | INFO     | tools.handler_replace:variable_replace:23 - 正则获取变量列表：
+['member_id', 'leave_amount']
+2021-10-12 11:20:20.790 | INFO     | tools.handler_replace:variable_replace:45 - 用例中所有变量替换后最终显示数据：
+{'id': 8, 'title': '充值整数500000', 'url': '/member/recharge', 'method': 'POST', 'data': '{\n    "member_id":1236918855,\n    "amount":500000\n}', 'extract': None, 'assert_excpt': '[\n  {"actual":"$..code","expect":0,"assert_type":"=="},\n  {"actual":"$..msg","expect":"OK","assert_type":"=="},\n{"actual":"$..leave_amount","expect":round(9504810.09+500000,2),"assert_type":"=="}\n]', 'bug': None}
+2021-10-12 11:20:20.790 | INFO     | tools.handler_nmb_request:send_request:37 - 请求接口：
+http://8.129.91.152:8766/futureloan/member/recharge
+2021-10-12 11:20:20.798 | INFO     | tools.handler_nmb_request:send_request:38 - 请求方式：POST
+2021-10-12 11:20:20.798 | INFO     | tools.handler_nmb_request:send_request:39 - 请求body体数据：
+{
+    "member_id":1236918855,
+    "amount":500000
+}
+2021-10-12 11:20:20.799 | INFO     | tools.handler_nmb_request:send_request:40 - 请求headers：
+{'X-Lemonban-Media-Type': 'lemonban.v2', 'content-type': 'application/json', 'authorization': 'Bearer eyJhbGciOiJIUzUxMiJ9.eyJtZW1iZXJfaWQiOjEyMzY5MTg4NTUsImV4cCI6MTYzNDAwOTEyMH0.4Iibb0aA8cW-SRmALTTlS7bSxiVfcmYHveZ1ICfrmxY9-dLYpTJE0wWJjimugIe0jU432lvb7UzlaBC68lN8AA'}
+2021-10-12 11:20:20.885 | INFO     | tools.handler_nmb_request:send_request:46 - http响应状态码：200
+2021-10-12 11:20:20.886 | INFO     | tools.handler_nmb_request:send_request:47 - 响应body体：
+{"code":0,"msg":"OK","data":{"id":1236918855,"leave_amount":1.000481009E7,"mobile_phone":"15133181962","reg_name":"peter","reg_time":"2021-09-26 14:53:00.0","type":1},"copyright":"Copyright 柠檬班 © 2017-2020 湖南省零檬信息技术有限公司 All Rights Reserved"}
+2021-10-12 11:20:20.886 | INFO     | tools.handler_assert:assert_req:26 - 断言表达式、期望结果和比对方式为：
+{'actual': '$..code', 'expect': 0, 'assert_type': '=='}
+2021-10-12 11:20:20.887 | INFO     | tools.handler_assert:assert_req:27 - 提取实际结果的jsonpath表达式：$..code
+2021-10-12 11:20:20.887 | INFO     | tools.handler_assert:assert_req:28 - 响应数据：
+{'code': 0, 'msg': 'OK', 'data': {'id': 1236918855, 'leave_amount': 10004810.09, 'mobile_phone': '15133181962', 'reg_name': 'peter', 'reg_time': '2021-09-26 14:53:00.0', 'type': 1}, 'copyright': 'Copyright 柠檬班 © 2017-2020 湖南省零檬信息技术有限公司 All Rights Reserved'}
+2021-10-12 11:20:20.887 | INFO     | tools.handler_assert:assert_req:30 - 实际结果：0
+2021-10-12 11:20:20.888 | INFO     | tools.handler_assert:assert_req:31 - 期望结果：0
+2021-10-12 11:20:20.888 | INFO     | tools.handler_assert:assert_req:35 - 断言成功。
+2021-10-12 11:20:20.888 | INFO     | tools.handler_assert:assert_req:26 - 断言表达式、期望结果和比对方式为：
+{'actual': '$..msg', 'expect': 'OK', 'assert_type': '=='}
+2021-10-12 11:20:20.888 | INFO     | tools.handler_assert:assert_req:27 - 提取实际结果的jsonpath表达式：$..msg
+2021-10-12 11:20:20.889 | INFO     | tools.handler_assert:assert_req:28 - 响应数据：
+{'code': 0, 'msg': 'OK', 'data': {'id': 1236918855, 'leave_amount': 10004810.09, 'mobile_phone': '15133181962', 'reg_name': 'peter', 'reg_time': '2021-09-26 14:53:00.0', 'type': 1}, 'copyright': 'Copyright 柠檬班 © 2017-2020 湖南省零檬信息技术有限公司 All Rights Reserved'}
+2021-10-12 11:20:20.889 | INFO     | tools.handler_assert:assert_req:30 - 实际结果：OK
+2021-10-12 11:20:20.889 | INFO     | tools.handler_assert:assert_req:31 - 期望结果：OK
+2021-10-12 11:20:20.890 | INFO     | tools.handler_assert:assert_req:35 - 断言成功。
+2021-10-12 11:20:20.890 | INFO     | tools.handler_assert:assert_req:26 - 断言表达式、期望结果和比对方式为：
+{'actual': '$..leave_amount', 'expect': 10004810.09, 'assert_type': '=='}
+2021-10-12 11:20:20.890 | INFO     | tools.handler_assert:assert_req:27 - 提取实际结果的jsonpath表达式：$..leave_amount
+2021-10-12 11:20:20.890 | INFO     | tools.handler_assert:assert_req:28 - 响应数据：
+{'code': 0, 'msg': 'OK', 'data': {'id': 1236918855, 'leave_amount': 10004810.09, 'mobile_phone': '15133181962', 'reg_name': 'peter', 'reg_time': '2021-09-26 14:53:00.0', 'type': 1}, 'copyright': 'Copyright 柠檬班 © 2017-2020 湖南省零檬信息技术有限公司 All Rights Reserved'}
+2021-10-12 11:20:20.891 | INFO     | tools.handler_assert:assert_req:30 - 实际结果：10004810.09
+2021-10-12 11:20:20.893 | INFO     | tools.handler_assert:assert_req:31 - 期望结果：10004810.09
+2021-10-12 11:20:20.894 | INFO     | tools.handler_assert:assert_req:35 - 断言成功。
+2021-10-12 11:20:20.897 | INFO     | tools.handler_replace:variable_replace:18 - case数据类型：<class 'dict'>
+2021-10-12 11:20:20.897 | INFO     | tools.handler_replace:variable_replace:19 - case数据转换后的类型：<class 'str'>
+2021-10-12 11:20:20.897 | INFO     | tools.handler_replace:variable_replace:23 - 正则获取变量列表：
+[]
+2021-10-12 11:20:20.897 | INFO     | tools.handler_replace:variable_replace:45 - 用例中所有变量替换后最终显示数据：
+{'id': 9, 'title': '输入错误的member_id', 'url': '/member/recharge', 'method': 'POST', 'data': '{\n    "member_id":1234567890123456,\n    "amount":1\n}', 'extract': None, 'assert_excpt': '[\n  {"actual":"$..code","expect":1007,"assert_type":"=="},\n  {"actual":"$..msg","expect":"无权限访问，请检查参数","assert_type":"=="}\n]', 'bug': None}
+2021-10-12 11:20:20.898 | INFO     | tools.handler_nmb_request:send_request:37 - 请求接口：
+http://8.129.91.152:8766/futureloan/member/recharge
+2021-10-12 11:20:20.898 | INFO     | tools.handler_nmb_request:send_request:38 - 请求方式：POST
+2021-10-12 11:20:20.898 | INFO     | tools.handler_nmb_request:send_request:39 - 请求body体数据：
+{
+    "member_id":1234567890123456,
+    "amount":1
+}
+2021-10-12 11:20:20.898 | INFO     | tools.handler_nmb_request:send_request:40 - 请求headers：
+{'X-Lemonban-Media-Type': 'lemonban.v2', 'content-type': 'application/json', 'authorization': 'Bearer eyJhbGciOiJIUzUxMiJ9.eyJtZW1iZXJfaWQiOjEyMzY5MTg4NTUsImV4cCI6MTYzNDAwOTEyMH0.4Iibb0aA8cW-SRmALTTlS7bSxiVfcmYHveZ1ICfrmxY9-dLYpTJE0wWJjimugIe0jU432lvb7UzlaBC68lN8AA'}
+2021-10-12 11:20:20.973 | INFO     | tools.handler_nmb_request:send_request:46 - http响应状态码：200
+2021-10-12 11:20:20.973 | INFO     | tools.handler_nmb_request:send_request:47 - 响应body体：
+{"code":1007,"msg":"无权限访问，请检查参数","data":null,"copyright":"Copyright 柠檬班 © 2017-2020 湖南省零檬信息技术有限公司 All Rights Reserved"}
+2021-10-12 11:20:20.974 | INFO     | tools.handler_assert:assert_req:26 - 断言表达式、期望结果和比对方式为：
+{'actual': '$..code', 'expect': 1007, 'assert_type': '=='}
+2021-10-12 11:20:20.974 | INFO     | tools.handler_assert:assert_req:27 - 提取实际结果的jsonpath表达式：$..code
+2021-10-12 11:20:20.974 | INFO     | tools.handler_assert:assert_req:28 - 响应数据：
+{'code': 1007, 'msg': '无权限访问，请检查参数', 'data': None, 'copyright': 'Copyright 柠檬班 © 2017-2020 湖南省零檬信息技术有限公司 All Rights Reserved'}
+2021-10-12 11:20:20.975 | INFO     | tools.handler_assert:assert_req:30 - 实际结果：1007
+2021-10-12 11:20:20.975 | INFO     | tools.handler_assert:assert_req:31 - 期望结果：1007
+2021-10-12 11:20:20.975 | INFO     | tools.handler_assert:assert_req:35 - 断言成功。
+2021-10-12 11:20:20.975 | INFO     | tools.handler_assert:assert_req:26 - 断言表达式、期望结果和比对方式为：
+{'actual': '$..msg', 'expect': '无权限访问，请检查参数', 'assert_type': '=='}
+2021-10-12 11:20:20.975 | INFO     | tools.handler_assert:assert_req:27 - 提取实际结果的jsonpath表达式：$..msg
+2021-10-12 11:20:20.976 | INFO     | tools.handler_assert:assert_req:28 - 响应数据：
+{'code': 1007, 'msg': '无权限访问，请检查参数', 'data': None, 'copyright': 'Copyright 柠檬班 © 2017-2020 湖南省零檬信息技术有限公司 All Rights Reserved'}
+2021-10-12 11:20:20.976 | INFO     | tools.handler_assert:assert_req:30 - 实际结果：无权限访问，请检查参数
+2021-10-12 11:20:20.976 | INFO     | tools.handler_assert:assert_req:31 - 期望结果：无权限访问，请检查参数
+2021-10-12 11:20:20.976 | INFO     | tools.handler_assert:assert_req:35 - 断言成功。

@@ -1,0 +1,878 @@
+2021-10-12 11:41:31.632 | DEBUG    | test_add:test_case:46 - 用例标题：新建资料库数据
+2021-10-12 11:41:31.810 | INFO     | tools.handler_request_crm:send_request:37 - 请求接口：
+https://lesscodeapitest.bjx.cloud/form/api/v1/apps/1397851494203621378/values
+2021-10-12 11:41:31.810 | INFO     | tools.handler_request_crm:send_request:38 - 请求方式：POST
+2021-10-12 11:41:31.811 | INFO     | tools.handler_request_crm:send_request:39 - 请求body体数据：
+{
+ "form": [{
+  "_field_name_bigData_marketResources_dataBank": "12311",
+  "_field_stage_bigData_marketResources_dataBank": 1,
+  "_field_structure_bigData_marketResources_dataBank": ["1271358869290807296"],
+  "_field_uploadFiles_bigData_marketResources_dataBank": [{
+   "suffix": "xlsx",
+   "name": "1318830467776045057.xlsx",
+   "path": "https://lesscodeapitest.bjx.cloud/social-api/sys/common/view/files/20210923/689325c8a2b5cbacb9a9cb1163070cfd_1632362841919.xlsx",
+   "id": 1632362842783
+  }],
+  "_field_fileType_bigData_marketResources_dataBank": "xlsx",
+  "_field_fileSize_bigData_marketResources_dataBank": "9.75 KB"
+ }],
+ "formType": 1,
+ "status": 1
+}
+2021-10-12 11:41:31.821 | INFO     | tools.handler_request_crm:send_request:40 - 请求headers：
+{'admin-token': '2v0vv5f428q1nx4c0kg0vnztp5zf3ux9w8gdji5u1bd8vtvfgn', 'authorization': '59w25d5mb5ur6k1h910ookku8aq4fa2tk3adg6uqt29se84im0', 'content-type': 'application/json'}
+2021-10-12 11:41:32.252 | INFO     | tools.handler_request_crm:send_request:46 - http响应状态码：200
+2021-10-12 11:41:32.253 | INFO     | tools.handler_request_crm:send_request:47 - 响应body体：
+{"success":true,"message":"OK","code":0,"data":[{"_field_name_bigData_marketResources_dataBank":"12311","_field_stage_bigData_marketResources_dataBank":1,"_field_structure_bigData_marketResources_dataBank":["1271358869290807296"],"_field_uploadFiles_bigData_marketResources_dataBank":[{"suffix":"xlsx","name":"1318830467776045057.xlsx","path":"https://lesscodeapitest.bjx.cloud/social-api/sys/common/view/files/20210923/689325c8a2b5cbacb9a9cb1163070cfd_1632362841919.xlsx","id":"1632362842783"}],"_field_fileType_bigData_marketResources_dataBank":"xlsx","_field_fileSize_bigData_marketResources_dataBank":"9.75 KB","_field_id_bigData_marketResources_dataBank":"75","_field_uploadTime_bigData_marketResources_dataBank":null,"_field_uploadStaff_bigData_marketResources_dataBank":null,"_field_operation_bigData_marketResources_dataBank":null,"creator":"75","updator":"75","createTime":"2021-10-12 11:41:32","updateTime":"2021-10-12 11:41:32","delFlag":2,"status":1,"recycleFlag":2,"appIds":["1397851494203621378"],"id":"1447769377142308865","order":1507327.0}],"timestamp":1634010092574}
+2021-10-12 11:41:32.253 | INFO     | tools.handler_assert:assert_req:26 - 断言表达式、期望结果和比对方式为：
+{'actual': '$..code', 'expect': 0, 'assert_type': '=='}
+2021-10-12 11:41:32.254 | INFO     | tools.handler_assert:assert_req:27 - 提取实际结果的jsonpath表达式：$..code
+2021-10-12 11:41:32.255 | INFO     | tools.handler_assert:assert_req:28 - 响应数据：
+{'success': True, 'message': 'OK', 'code': 0, 'data': [{'_field_name_bigData_marketResources_dataBank': '12311', '_field_stage_bigData_marketResources_dataBank': 1, '_field_structure_bigData_marketResources_dataBank': ['1271358869290807296'], '_field_uploadFiles_bigData_marketResources_dataBank': [{'suffix': 'xlsx', 'name': '1318830467776045057.xlsx', 'path': 'https://lesscodeapitest.bjx.cloud/social-api/sys/common/view/files/20210923/689325c8a2b5cbacb9a9cb1163070cfd_1632362841919.xlsx', 'id': '1632362842783'}], '_field_fileType_bigData_marketResources_dataBank': 'xlsx', '_field_fileSize_bigData_marketResources_dataBank': '9.75 KB', '_field_id_bigData_marketResources_dataBank': '75', '_field_uploadTime_bigData_marketResources_dataBank': None, '_field_uploadStaff_bigData_marketResources_dataBank': None, '_field_operation_bigData_marketResources_dataBank': None, 'creator': '75', 'updator': '75', 'createTime': '2021-10-12 11:41:32', 'updateTime': '2021-10-12 11:41:32', 'delFlag': 2, 'status': 1, 'recycleFlag': 2, 'appIds': ['1397851494203621378'], 'id': '1447769377142308865', 'order': 1507327.0}], 'timestamp': 1634010092574}
+2021-10-12 11:41:32.255 | INFO     | tools.handler_assert:assert_req:30 - 实际结果：0
+2021-10-12 11:41:32.256 | INFO     | tools.handler_assert:assert_req:31 - 期望结果：0
+2021-10-12 11:41:32.256 | INFO     | tools.handler_assert:assert_req:35 - 断言成功。
+2021-10-12 11:41:32.256 | INFO     | tools.handler_assert:assert_req:26 - 断言表达式、期望结果和比对方式为：
+{'actual': '$..message', 'expect': 'OK', 'assert_type': '=='}
+2021-10-12 11:41:32.256 | INFO     | tools.handler_assert:assert_req:27 - 提取实际结果的jsonpath表达式：$..message
+2021-10-12 11:41:32.257 | INFO     | tools.handler_assert:assert_req:28 - 响应数据：
+{'success': True, 'message': 'OK', 'code': 0, 'data': [{'_field_name_bigData_marketResources_dataBank': '12311', '_field_stage_bigData_marketResources_dataBank': 1, '_field_structure_bigData_marketResources_dataBank': ['1271358869290807296'], '_field_uploadFiles_bigData_marketResources_dataBank': [{'suffix': 'xlsx', 'name': '1318830467776045057.xlsx', 'path': 'https://lesscodeapitest.bjx.cloud/social-api/sys/common/view/files/20210923/689325c8a2b5cbacb9a9cb1163070cfd_1632362841919.xlsx', 'id': '1632362842783'}], '_field_fileType_bigData_marketResources_dataBank': 'xlsx', '_field_fileSize_bigData_marketResources_dataBank': '9.75 KB', '_field_id_bigData_marketResources_dataBank': '75', '_field_uploadTime_bigData_marketResources_dataBank': None, '_field_uploadStaff_bigData_marketResources_dataBank': None, '_field_operation_bigData_marketResources_dataBank': None, 'creator': '75', 'updator': '75', 'createTime': '2021-10-12 11:41:32', 'updateTime': '2021-10-12 11:41:32', 'delFlag': 2, 'status': 1, 'recycleFlag': 2, 'appIds': ['1397851494203621378'], 'id': '1447769377142308865', 'order': 1507327.0}], 'timestamp': 1634010092574}
+2021-10-12 11:41:32.257 | INFO     | tools.handler_assert:assert_req:30 - 实际结果：OK
+2021-10-12 11:41:32.257 | INFO     | tools.handler_assert:assert_req:31 - 期望结果：OK
+2021-10-12 11:41:32.257 | INFO     | tools.handler_assert:assert_req:35 - 断言成功。
+2021-10-12 11:41:32.258 | INFO     | tools.handler_assert:assert_req:26 - 断言表达式、期望结果和比对方式为：
+{'actual': '$..success', 'expect': True, 'assert_type': '=='}
+2021-10-12 11:41:32.258 | INFO     | tools.handler_assert:assert_req:27 - 提取实际结果的jsonpath表达式：$..success
+2021-10-12 11:41:32.258 | INFO     | tools.handler_assert:assert_req:28 - 响应数据：
+{'success': True, 'message': 'OK', 'code': 0, 'data': [{'_field_name_bigData_marketResources_dataBank': '12311', '_field_stage_bigData_marketResources_dataBank': 1, '_field_structure_bigData_marketResources_dataBank': ['1271358869290807296'], '_field_uploadFiles_bigData_marketResources_dataBank': [{'suffix': 'xlsx', 'name': '1318830467776045057.xlsx', 'path': 'https://lesscodeapitest.bjx.cloud/social-api/sys/common/view/files/20210923/689325c8a2b5cbacb9a9cb1163070cfd_1632362841919.xlsx', 'id': '1632362842783'}], '_field_fileType_bigData_marketResources_dataBank': 'xlsx', '_field_fileSize_bigData_marketResources_dataBank': '9.75 KB', '_field_id_bigData_marketResources_dataBank': '75', '_field_uploadTime_bigData_marketResources_dataBank': None, '_field_uploadStaff_bigData_marketResources_dataBank': None, '_field_operation_bigData_marketResources_dataBank': None, 'creator': '75', 'updator': '75', 'createTime': '2021-10-12 11:41:32', 'updateTime': '2021-10-12 11:41:32', 'delFlag': 2, 'status': 1, 'recycleFlag': 2, 'appIds': ['1397851494203621378'], 'id': '1447769377142308865', 'order': 1507327.0}], 'timestamp': 1634010092574}
+2021-10-12 11:41:32.258 | INFO     | tools.handler_assert:assert_req:30 - 实际结果：True
+2021-10-12 11:41:32.258 | INFO     | tools.handler_assert:assert_req:31 - 期望结果：True
+2021-10-12 11:41:32.259 | INFO     | tools.handler_assert:assert_req:35 - 断言成功。
+2021-10-12 11:41:32.278 | DEBUG    | test_add:test_case:46 - 用例标题：新建邮箱列表数据
+2021-10-12 11:41:32.440 | INFO     | tools.handler_request_crm:send_request:37 - 请求接口：
+https://lesscodeapitest.bjx.cloud/form/api/v1/apps/1374598195115515905/values
+2021-10-12 11:41:32.441 | INFO     | tools.handler_request_crm:send_request:38 - 请求方式：POST
+2021-10-12 11:41:32.441 | INFO     | tools.handler_request_crm:send_request:39 - 请求body体数据：
+{
+ "form": [{
+  "_field_1_bigData_marketResources_email": "pjin@gmail.com",
+  "_field_2_bigData_marketResources_email": "123456",
+  "_field_3_bigData_marketResources_email": "http://fang.net/",
+  "_field_5_bigData_marketResources_email": "1",
+  "_field_7_bigData_marketResources_email": "这是密保问题",
+  "_field_8_bigData_marketResources_email": "这是注册来源",
+  "_field_9_bigData_marketResources_email": "+86 13374734002"
+ }],
+ "formType": 1,
+ "status": 1
+}
+2021-10-12 11:41:32.441 | INFO     | tools.handler_request_crm:send_request:40 - 请求headers：
+{'admin-token': '28133eq7uiigc06il0br4iqza8x19f7q7ng6w05gcen0j8m88y', 'authorization': '4dh1t6hv86gb4nog1jok6rkj425zu527qrzqvsbdj3ww90b61g', 'content-type': 'application/json'}
+2021-10-12 11:41:32.794 | INFO     | tools.handler_request_crm:send_request:46 - http响应状态码：200
+2021-10-12 11:41:32.799 | INFO     | tools.handler_request_crm:send_request:47 - 响应body体：
+{"success":true,"message":"OK","code":0,"data":[{"_field_1_bigData_marketResources_email":"pjin@gmail.com","_field_2_bigData_marketResources_email":"123456","_field_3_bigData_marketResources_email":"http://fang.net/","_field_5_bigData_marketResources_email":"1","_field_7_bigData_marketResources_email":"这是密保问题","_field_8_bigData_marketResources_email":"这是注册来源","_field_9_bigData_marketResources_email":"+86 13374734002","_field_4_bigData_marketResources_email":null,"_field_6_bigData_marketResources_email":null,"_field_10_bigData_marketResources_email":null,"creator":"75","updator":"75","createTime":"2021-10-12 11:41:32","updateTime":"2021-10-12 11:41:32","delFlag":2,"status":1,"recycleFlag":2,"appIds":["1374598195115515905"],"id":"1447769379394650113","order":917503.0}],"timestamp":1634010093114}
+2021-10-12 11:41:32.799 | INFO     | tools.handler_assert:assert_req:26 - 断言表达式、期望结果和比对方式为：
+{'actual': '$..code', 'expect': 0, 'assert_type': '=='}
+2021-10-12 11:41:32.800 | INFO     | tools.handler_assert:assert_req:27 - 提取实际结果的jsonpath表达式：$..code
+2021-10-12 11:41:32.800 | INFO     | tools.handler_assert:assert_req:28 - 响应数据：
+{'success': True, 'message': 'OK', 'code': 0, 'data': [{'_field_1_bigData_marketResources_email': 'pjin@gmail.com', '_field_2_bigData_marketResources_email': '123456', '_field_3_bigData_marketResources_email': 'http://fang.net/', '_field_5_bigData_marketResources_email': '1', '_field_7_bigData_marketResources_email': '这是密保问题', '_field_8_bigData_marketResources_email': '这是注册来源', '_field_9_bigData_marketResources_email': '+86 13374734002', '_field_4_bigData_marketResources_email': None, '_field_6_bigData_marketResources_email': None, '_field_10_bigData_marketResources_email': None, 'creator': '75', 'updator': '75', 'createTime': '2021-10-12 11:41:32', 'updateTime': '2021-10-12 11:41:32', 'delFlag': 2, 'status': 1, 'recycleFlag': 2, 'appIds': ['1374598195115515905'], 'id': '1447769379394650113', 'order': 917503.0}], 'timestamp': 1634010093114}
+2021-10-12 11:41:32.800 | INFO     | tools.handler_assert:assert_req:30 - 实际结果：0
+2021-10-12 11:41:32.800 | INFO     | tools.handler_assert:assert_req:31 - 期望结果：0
+2021-10-12 11:41:32.801 | INFO     | tools.handler_assert:assert_req:35 - 断言成功。
+2021-10-12 11:41:32.801 | INFO     | tools.handler_assert:assert_req:26 - 断言表达式、期望结果和比对方式为：
+{'actual': '$..message', 'expect': 'OK', 'assert_type': '=='}
+2021-10-12 11:41:32.801 | INFO     | tools.handler_assert:assert_req:27 - 提取实际结果的jsonpath表达式：$..message
+2021-10-12 11:41:32.801 | INFO     | tools.handler_assert:assert_req:28 - 响应数据：
+{'success': True, 'message': 'OK', 'code': 0, 'data': [{'_field_1_bigData_marketResources_email': 'pjin@gmail.com', '_field_2_bigData_marketResources_email': '123456', '_field_3_bigData_marketResources_email': 'http://fang.net/', '_field_5_bigData_marketResources_email': '1', '_field_7_bigData_marketResources_email': '这是密保问题', '_field_8_bigData_marketResources_email': '这是注册来源', '_field_9_bigData_marketResources_email': '+86 13374734002', '_field_4_bigData_marketResources_email': None, '_field_6_bigData_marketResources_email': None, '_field_10_bigData_marketResources_email': None, 'creator': '75', 'updator': '75', 'createTime': '2021-10-12 11:41:32', 'updateTime': '2021-10-12 11:41:32', 'delFlag': 2, 'status': 1, 'recycleFlag': 2, 'appIds': ['1374598195115515905'], 'id': '1447769379394650113', 'order': 917503.0}], 'timestamp': 1634010093114}
+2021-10-12 11:41:32.802 | INFO     | tools.handler_assert:assert_req:30 - 实际结果：OK
+2021-10-12 11:41:32.802 | INFO     | tools.handler_assert:assert_req:31 - 期望结果：OK
+2021-10-12 11:41:32.802 | INFO     | tools.handler_assert:assert_req:35 - 断言成功。
+2021-10-12 11:41:32.802 | INFO     | tools.handler_assert:assert_req:26 - 断言表达式、期望结果和比对方式为：
+{'actual': '$..success', 'expect': True, 'assert_type': '=='}
+2021-10-12 11:41:32.803 | INFO     | tools.handler_assert:assert_req:27 - 提取实际结果的jsonpath表达式：$..success
+2021-10-12 11:41:32.803 | INFO     | tools.handler_assert:assert_req:28 - 响应数据：
+{'success': True, 'message': 'OK', 'code': 0, 'data': [{'_field_1_bigData_marketResources_email': 'pjin@gmail.com', '_field_2_bigData_marketResources_email': '123456', '_field_3_bigData_marketResources_email': 'http://fang.net/', '_field_5_bigData_marketResources_email': '1', '_field_7_bigData_marketResources_email': '这是密保问题', '_field_8_bigData_marketResources_email': '这是注册来源', '_field_9_bigData_marketResources_email': '+86 13374734002', '_field_4_bigData_marketResources_email': None, '_field_6_bigData_marketResources_email': None, '_field_10_bigData_marketResources_email': None, 'creator': '75', 'updator': '75', 'createTime': '2021-10-12 11:41:32', 'updateTime': '2021-10-12 11:41:32', 'delFlag': 2, 'status': 1, 'recycleFlag': 2, 'appIds': ['1374598195115515905'], 'id': '1447769379394650113', 'order': 917503.0}], 'timestamp': 1634010093114}
+2021-10-12 11:41:32.803 | INFO     | tools.handler_assert:assert_req:30 - 实际结果：True
+2021-10-12 11:41:32.803 | INFO     | tools.handler_assert:assert_req:31 - 期望结果：True
+2021-10-12 11:41:32.803 | INFO     | tools.handler_assert:assert_req:35 - 断言成功。
+2021-10-12 11:42:12.798 | DEBUG    | test_login:test_case:31 - 用例标题：正常登陆
+2021-10-12 11:42:12.987 | INFO     | tools.handler_request_crm:send_request:37 - 请求接口：
+https://lesscodeapitest.bjx.cloud/usercenter/api/v1/user/login
+2021-10-12 11:42:12.988 | INFO     | tools.handler_request_crm:send_request:38 - 请求方式：POST
+2021-10-12 11:42:12.988 | INFO     | tools.handler_request_crm:send_request:39 - 请求body体数据：
+{
+ "loginName": "zhangzaizai",
+ "password": "zZ12345678",
+ "loginType": 2
+}
+2021-10-12 11:42:12.989 | INFO     | tools.handler_request_crm:send_request:40 - 请求headers：
+{'admin-token': '54lzyblw30nzti7zm6bgrvz2l0f1sh6a0kkxy6v9kk49fikqk5', 'authorization': '27qoir4ao8hjrgb69th42obb3bxwoq7mbhq9umkmcsqyz4eifr', 'content-type': 'application/json'}
+2021-10-12 11:42:13.069 | INFO     | tools.handler_request_crm:send_request:46 - http响应状态码：200
+2021-10-12 11:42:13.069 | INFO     | tools.handler_request_crm:send_request:47 - 响应body体：
+{"code":0,"message":"","data":{"token":"4nvjvjvipw747n1zcfqhcm8lurqhp7k5n782s5eepo0efkg54b","userId":"75","orgId":"202505060582035456","orgName":"testcustomer","orgCode":"","name":"张崽崽","avatar":"","needInitOrg":false}}
+2021-10-12 11:42:13.069 | INFO     | tools.handler_assert:assert_req:26 - 断言表达式、期望结果和比对方式为：
+{'actual': '$..code', 'expect': 0, 'assert_type': '=='}
+2021-10-12 11:42:13.071 | INFO     | tools.handler_assert:assert_req:27 - 提取实际结果的jsonpath表达式：$..code
+2021-10-12 11:42:13.071 | INFO     | tools.handler_assert:assert_req:28 - 响应数据：
+{'code': 0, 'message': '', 'data': {'token': '4nvjvjvipw747n1zcfqhcm8lurqhp7k5n782s5eepo0efkg54b', 'userId': '75', 'orgId': '202505060582035456', 'orgName': 'testcustomer', 'orgCode': '', 'name': '张崽崽', 'avatar': '', 'needInitOrg': False}}
+2021-10-12 11:42:13.071 | INFO     | tools.handler_assert:assert_req:30 - 实际结果：0
+2021-10-12 11:42:13.072 | INFO     | tools.handler_assert:assert_req:31 - 期望结果：0
+2021-10-12 11:42:13.073 | INFO     | tools.handler_assert:assert_req:35 - 断言成功。
+2021-10-12 11:42:13.073 | INFO     | tools.handler_assert:assert_req:26 - 断言表达式、期望结果和比对方式为：
+{'actual': '$..message', 'expect': '', 'assert_type': '=='}
+2021-10-12 11:42:13.073 | INFO     | tools.handler_assert:assert_req:27 - 提取实际结果的jsonpath表达式：$..message
+2021-10-12 11:42:13.074 | INFO     | tools.handler_assert:assert_req:28 - 响应数据：
+{'code': 0, 'message': '', 'data': {'token': '4nvjvjvipw747n1zcfqhcm8lurqhp7k5n782s5eepo0efkg54b', 'userId': '75', 'orgId': '202505060582035456', 'orgName': 'testcustomer', 'orgCode': '', 'name': '张崽崽', 'avatar': '', 'needInitOrg': False}}
+2021-10-12 11:42:13.075 | INFO     | tools.handler_assert:assert_req:30 - 实际结果：
+2021-10-12 11:42:13.076 | INFO     | tools.handler_assert:assert_req:31 - 期望结果：
+2021-10-12 11:42:13.077 | INFO     | tools.handler_assert:assert_req:35 - 断言成功。
+2021-10-12 11:42:13.094 | DEBUG    | test_login:test_case:31 - 用例标题：用户名过长
+2021-10-12 11:42:13.277 | INFO     | tools.handler_request_crm:send_request:37 - 请求接口：
+https://lesscodeapitest.bjx.cloud/usercenter/api/v1/user/login
+2021-10-12 11:42:13.277 | INFO     | tools.handler_request_crm:send_request:38 - 请求方式：POST
+2021-10-12 11:42:13.278 | INFO     | tools.handler_request_crm:send_request:39 - 请求body体数据：
+{
+ "loginName": "zhangzaizaiz",
+ "password": "zZ12345678",
+ "loginType": 2
+}
+2021-10-12 11:42:13.278 | INFO     | tools.handler_request_crm:send_request:40 - 请求headers：
+{'admin-token': '2nemjj3q50714072tucrny3atv617ljqc3nr78rrfwl1efizvn', 'authorization': '2hd694jbtjln0bxnj74409l6odb6v0233qe8kfozxnz0thq069', 'content-type': 'application/json'}
+2021-10-12 11:42:13.348 | INFO     | tools.handler_request_crm:send_request:46 - http响应状态码：200
+2021-10-12 11:42:13.348 | INFO     | tools.handler_request_crm:send_request:47 - 响应body体：
+{"code":202016,"message":"用户未注册，请先注册或填写其他账号"}
+2021-10-12 11:42:13.349 | INFO     | tools.handler_assert:assert_req:26 - 断言表达式、期望结果和比对方式为：
+{'actual': '$..code', 'expect': 202016, 'assert_type': '=='}
+2021-10-12 11:42:13.349 | INFO     | tools.handler_assert:assert_req:27 - 提取实际结果的jsonpath表达式：$..code
+2021-10-12 11:42:13.349 | INFO     | tools.handler_assert:assert_req:28 - 响应数据：
+{'code': 202016, 'message': '用户未注册，请先注册或填写其他账号'}
+2021-10-12 11:42:13.349 | INFO     | tools.handler_assert:assert_req:30 - 实际结果：202016
+2021-10-12 11:42:13.350 | INFO     | tools.handler_assert:assert_req:31 - 期望结果：202016
+2021-10-12 11:42:13.350 | INFO     | tools.handler_assert:assert_req:35 - 断言成功。
+2021-10-12 11:42:13.350 | INFO     | tools.handler_assert:assert_req:26 - 断言表达式、期望结果和比对方式为：
+{'actual': '$..message', 'expect': '用户未注册，请先注册或填写其他账号', 'assert_type': '=='}
+2021-10-12 11:42:13.350 | INFO     | tools.handler_assert:assert_req:27 - 提取实际结果的jsonpath表达式：$..message
+2021-10-12 11:42:13.351 | INFO     | tools.handler_assert:assert_req:28 - 响应数据：
+{'code': 202016, 'message': '用户未注册，请先注册或填写其他账号'}
+2021-10-12 11:42:13.351 | INFO     | tools.handler_assert:assert_req:30 - 实际结果：用户未注册，请先注册或填写其他账号
+2021-10-12 11:42:13.351 | INFO     | tools.handler_assert:assert_req:31 - 期望结果：用户未注册，请先注册或填写其他账号
+2021-10-12 11:42:13.352 | INFO     | tools.handler_assert:assert_req:35 - 断言成功。
+2021-10-12 11:42:13.358 | DEBUG    | test_login:test_case:31 - 用例标题：用户名过短
+2021-10-12 11:42:13.522 | INFO     | tools.handler_request_crm:send_request:37 - 请求接口：
+https://lesscodeapitest.bjx.cloud/usercenter/api/v1/user/login
+2021-10-12 11:42:13.522 | INFO     | tools.handler_request_crm:send_request:38 - 请求方式：POST
+2021-10-12 11:42:13.522 | INFO     | tools.handler_request_crm:send_request:39 - 请求body体数据：
+{
+ "loginName": "zhangzaiza",
+ "password": "zZ12345678",
+ "loginType": 2
+}
+2021-10-12 11:42:13.522 | INFO     | tools.handler_request_crm:send_request:40 - 请求headers：
+{'admin-token': '572449zf66pohk7zj4j4aoizty6x6dqcdojluu6nfmxrkbsrsw', 'authorization': '4x5lmdsoc2q5m3bo6x202yk6uwqllqv3c0xwbdp0av090qt7x9', 'content-type': 'application/json'}
+2021-10-12 11:42:13.594 | INFO     | tools.handler_request_crm:send_request:46 - http响应状态码：200
+2021-10-12 11:42:13.595 | INFO     | tools.handler_request_crm:send_request:47 - 响应body体：
+{"code":202016,"message":"用户未注册，请先注册或填写其他账号"}
+2021-10-12 11:42:13.595 | INFO     | tools.handler_assert:assert_req:26 - 断言表达式、期望结果和比对方式为：
+{'actual': '$..code', 'expect': 202016, 'assert_type': '=='}
+2021-10-12 11:42:13.595 | INFO     | tools.handler_assert:assert_req:27 - 提取实际结果的jsonpath表达式：$..code
+2021-10-12 11:42:13.596 | INFO     | tools.handler_assert:assert_req:28 - 响应数据：
+{'code': 202016, 'message': '用户未注册，请先注册或填写其他账号'}
+2021-10-12 11:42:13.596 | INFO     | tools.handler_assert:assert_req:30 - 实际结果：202016
+2021-10-12 11:42:13.596 | INFO     | tools.handler_assert:assert_req:31 - 期望结果：202016
+2021-10-12 11:42:13.597 | INFO     | tools.handler_assert:assert_req:35 - 断言成功。
+2021-10-12 11:42:13.597 | INFO     | tools.handler_assert:assert_req:26 - 断言表达式、期望结果和比对方式为：
+{'actual': '$..message', 'expect': '用户未注册，请先注册或填写其他账号', 'assert_type': '=='}
+2021-10-12 11:42:13.597 | INFO     | tools.handler_assert:assert_req:27 - 提取实际结果的jsonpath表达式：$..message
+2021-10-12 11:42:13.597 | INFO     | tools.handler_assert:assert_req:28 - 响应数据：
+{'code': 202016, 'message': '用户未注册，请先注册或填写其他账号'}
+2021-10-12 11:42:13.598 | INFO     | tools.handler_assert:assert_req:30 - 实际结果：用户未注册，请先注册或填写其他账号
+2021-10-12 11:42:13.598 | INFO     | tools.handler_assert:assert_req:31 - 期望结果：用户未注册，请先注册或填写其他账号
+2021-10-12 11:42:13.598 | INFO     | tools.handler_assert:assert_req:35 - 断言成功。
+2021-10-12 11:42:13.603 | DEBUG    | test_login:test_case:31 - 用例标题：用户名输入错误
+2021-10-12 11:42:13.781 | INFO     | tools.handler_request_crm:send_request:37 - 请求接口：
+https://lesscodeapitest.bjx.cloud/usercenter/api/v1/user/login
+2021-10-12 11:42:13.782 | INFO     | tools.handler_request_crm:send_request:38 - 请求方式：POST
+2021-10-12 11:42:13.783 | INFO     | tools.handler_request_crm:send_request:39 - 请求body体数据：
+{
+ "loginName": "Zhangzaizai",
+ "password": "zZ12345678",
+ "loginType": 2
+}
+2021-10-12 11:42:13.783 | INFO     | tools.handler_request_crm:send_request:40 - 请求headers：
+{'admin-token': '66g7602ihmzvz8226mdb64fr4bdo8bkp2cnd1vhp94hp0ctgbf', 'authorization': '2rq6jynaa5d84iqv2pmz5fqfxcg22xl8bioofjh883e8bjuwne', 'content-type': 'application/json'}
+2021-10-12 11:42:13.854 | INFO     | tools.handler_request_crm:send_request:46 - http响应状态码：200
+2021-10-12 11:42:13.855 | INFO     | tools.handler_request_crm:send_request:47 - 响应body体：
+{"code":202016,"message":"用户未注册，请先注册或填写其他账号"}
+2021-10-12 11:42:13.855 | INFO     | tools.handler_assert:assert_req:26 - 断言表达式、期望结果和比对方式为：
+{'actual': '$..code', 'expect': 202016, 'assert_type': '=='}
+2021-10-12 11:42:13.856 | INFO     | tools.handler_assert:assert_req:27 - 提取实际结果的jsonpath表达式：$..code
+2021-10-12 11:42:13.856 | INFO     | tools.handler_assert:assert_req:28 - 响应数据：
+{'code': 202016, 'message': '用户未注册，请先注册或填写其他账号'}
+2021-10-12 11:42:13.856 | INFO     | tools.handler_assert:assert_req:30 - 实际结果：202016
+2021-10-12 11:42:13.857 | INFO     | tools.handler_assert:assert_req:31 - 期望结果：202016
+2021-10-12 11:42:13.857 | INFO     | tools.handler_assert:assert_req:35 - 断言成功。
+2021-10-12 11:42:13.858 | INFO     | tools.handler_assert:assert_req:26 - 断言表达式、期望结果和比对方式为：
+{'actual': '$..message', 'expect': '用户未注册，请先注册或填写其他账号', 'assert_type': '=='}
+2021-10-12 11:42:13.858 | INFO     | tools.handler_assert:assert_req:27 - 提取实际结果的jsonpath表达式：$..message
+2021-10-12 11:42:13.858 | INFO     | tools.handler_assert:assert_req:28 - 响应数据：
+{'code': 202016, 'message': '用户未注册，请先注册或填写其他账号'}
+2021-10-12 11:42:13.859 | INFO     | tools.handler_assert:assert_req:30 - 实际结果：用户未注册，请先注册或填写其他账号
+2021-10-12 11:42:13.859 | INFO     | tools.handler_assert:assert_req:31 - 期望结果：用户未注册，请先注册或填写其他账号
+2021-10-12 11:42:13.860 | INFO     | tools.handler_assert:assert_req:35 - 断言成功。
+2021-10-12 11:42:13.866 | DEBUG    | test_login:test_case:31 - 用例标题：用户名为空
+2021-10-12 11:42:14.053 | INFO     | tools.handler_request_crm:send_request:37 - 请求接口：
+https://lesscodeapitest.bjx.cloud/usercenter/api/v1/user/login
+2021-10-12 11:42:14.054 | INFO     | tools.handler_request_crm:send_request:38 - 请求方式：POST
+2021-10-12 11:42:14.054 | INFO     | tools.handler_request_crm:send_request:39 - 请求body体数据：
+{
+ "loginName": "",
+ "password": "zZ12345678",
+ "loginType": 2
+}
+2021-10-12 11:42:14.054 | INFO     | tools.handler_request_crm:send_request:40 - 请求headers：
+{'admin-token': '5en0uonihfcisf0kaghfraesjhlq1f52rtn54bnnw9oxnradcv', 'authorization': '4ao9wwe8eam7iylskdynddmvqqykeapzo5d1u6e9y0vb3jefy7', 'content-type': 'application/json'}
+2021-10-12 11:42:14.236 | INFO     | tools.handler_request_crm:send_request:46 - http响应状态码：200
+2021-10-12 11:42:14.237 | INFO     | tools.handler_request_crm:send_request:47 - 响应body体：
+{"code":202508,"message":"用户名或密码错误"}
+2021-10-12 11:42:14.237 | INFO     | tools.handler_assert:assert_req:26 - 断言表达式、期望结果和比对方式为：
+{'actual': '$..code', 'expect': 202508, 'assert_type': '=='}
+2021-10-12 11:42:14.238 | INFO     | tools.handler_assert:assert_req:27 - 提取实际结果的jsonpath表达式：$..code
+2021-10-12 11:42:14.238 | INFO     | tools.handler_assert:assert_req:28 - 响应数据：
+{'code': 202508, 'message': '用户名或密码错误'}
+2021-10-12 11:42:14.238 | INFO     | tools.handler_assert:assert_req:30 - 实际结果：202508
+2021-10-12 11:42:14.239 | INFO     | tools.handler_assert:assert_req:31 - 期望结果：202508
+2021-10-12 11:42:14.239 | INFO     | tools.handler_assert:assert_req:35 - 断言成功。
+2021-10-12 11:42:14.239 | INFO     | tools.handler_assert:assert_req:26 - 断言表达式、期望结果和比对方式为：
+{'actual': '$..message', 'expect': '用户名或密码错误', 'assert_type': '=='}
+2021-10-12 11:42:14.239 | INFO     | tools.handler_assert:assert_req:27 - 提取实际结果的jsonpath表达式：$..message
+2021-10-12 11:42:14.240 | INFO     | tools.handler_assert:assert_req:28 - 响应数据：
+{'code': 202508, 'message': '用户名或密码错误'}
+2021-10-12 11:42:14.240 | INFO     | tools.handler_assert:assert_req:30 - 实际结果：用户名或密码错误
+2021-10-12 11:42:14.240 | INFO     | tools.handler_assert:assert_req:31 - 期望结果：用户名或密码错误
+2021-10-12 11:42:14.241 | INFO     | tools.handler_assert:assert_req:35 - 断言成功。
+2021-10-12 11:42:14.246 | DEBUG    | test_login:test_case:31 - 用例标题：用户名输入李四的，密码输入王五的
+2021-10-12 11:42:14.410 | INFO     | tools.handler_request_crm:send_request:37 - 请求接口：
+https://lesscodeapitest.bjx.cloud/usercenter/api/v1/user/login
+2021-10-12 11:42:14.410 | INFO     | tools.handler_request_crm:send_request:38 - 请求方式：POST
+2021-10-12 11:42:14.411 | INFO     | tools.handler_request_crm:send_request:39 - 请求body体数据：
+{
+ "loginName": "lisi",
+ "password": "zZ12345678",
+ "loginType": 2
+}
+2021-10-12 11:42:14.411 | INFO     | tools.handler_request_crm:send_request:40 - 请求headers：
+{'admin-token': '548yfemn3sdama38yzjy8rt66y9gn3zqpropah8m7f89mesleb', 'authorization': '3g1tld4m41xxxffkuqch366e7i4mx5rtdn7abq97ryfsl90230', 'content-type': 'application/json'}
+2021-10-12 11:42:14.485 | INFO     | tools.handler_request_crm:send_request:46 - http响应状态码：200
+2021-10-12 11:42:14.486 | INFO     | tools.handler_request_crm:send_request:47 - 响应body体：
+{"code":202508,"message":"用户名或密码错误"}
+2021-10-12 11:42:14.486 | INFO     | tools.handler_assert:assert_req:26 - 断言表达式、期望结果和比对方式为：
+{'actual': '$..code', 'expect': 202508, 'assert_type': '=='}
+2021-10-12 11:42:14.486 | INFO     | tools.handler_assert:assert_req:27 - 提取实际结果的jsonpath表达式：$..code
+2021-10-12 11:42:14.487 | INFO     | tools.handler_assert:assert_req:28 - 响应数据：
+{'code': 202508, 'message': '用户名或密码错误'}
+2021-10-12 11:42:14.487 | INFO     | tools.handler_assert:assert_req:30 - 实际结果：202508
+2021-10-12 11:42:14.487 | INFO     | tools.handler_assert:assert_req:31 - 期望结果：202508
+2021-10-12 11:42:14.487 | INFO     | tools.handler_assert:assert_req:35 - 断言成功。
+2021-10-12 11:42:14.488 | INFO     | tools.handler_assert:assert_req:26 - 断言表达式、期望结果和比对方式为：
+{'actual': '$..message', 'expect': '用户名或密码错误', 'assert_type': '=='}
+2021-10-12 11:42:14.488 | INFO     | tools.handler_assert:assert_req:27 - 提取实际结果的jsonpath表达式：$..message
+2021-10-12 11:42:14.488 | INFO     | tools.handler_assert:assert_req:28 - 响应数据：
+{'code': 202508, 'message': '用户名或密码错误'}
+2021-10-12 11:42:14.489 | INFO     | tools.handler_assert:assert_req:30 - 实际结果：用户名或密码错误
+2021-10-12 11:42:14.489 | INFO     | tools.handler_assert:assert_req:31 - 期望结果：用户名或密码错误
+2021-10-12 11:42:14.489 | INFO     | tools.handler_assert:assert_req:35 - 断言成功。
+2021-10-12 11:42:14.494 | DEBUG    | test_login:test_case:31 - 用例标题：用户名输入未注册的
+2021-10-12 11:42:14.772 | INFO     | tools.handler_request_crm:send_request:37 - 请求接口：
+https://lesscodeapitest.bjx.cloud/usercenter/api/v1/user/login
+2021-10-12 11:42:14.773 | INFO     | tools.handler_request_crm:send_request:38 - 请求方式：POST
+2021-10-12 11:42:14.773 | INFO     | tools.handler_request_crm:send_request:39 - 请求body体数据：
+{
+ "loginName": "weizhuce",
+ "password": "zZ12345678",
+ "loginType": 2
+}
+2021-10-12 11:42:14.773 | INFO     | tools.handler_request_crm:send_request:40 - 请求headers：
+{'admin-token': '3ylaw4j38u49fz26nzxyx752poz8edp3opyt2t54n5fpq4t5nd', 'authorization': 'acqqdrcb3so6dem1a97o6qktwr4pifvqnmdj3z06754xcneuh', 'content-type': 'application/json'}
+2021-10-12 11:42:14.836 | INFO     | tools.handler_request_crm:send_request:46 - http响应状态码：200
+2021-10-12 11:42:14.836 | INFO     | tools.handler_request_crm:send_request:47 - 响应body体：
+{"code":202016,"message":"用户未注册，请先注册或填写其他账号"}
+2021-10-12 11:42:14.837 | INFO     | tools.handler_assert:assert_req:26 - 断言表达式、期望结果和比对方式为：
+{'actual': '$..code', 'expect': 202016, 'assert_type': '=='}
+2021-10-12 11:42:14.837 | INFO     | tools.handler_assert:assert_req:27 - 提取实际结果的jsonpath表达式：$..code
+2021-10-12 11:42:14.837 | INFO     | tools.handler_assert:assert_req:28 - 响应数据：
+{'code': 202016, 'message': '用户未注册，请先注册或填写其他账号'}
+2021-10-12 11:42:14.837 | INFO     | tools.handler_assert:assert_req:30 - 实际结果：202016
+2021-10-12 11:42:14.838 | INFO     | tools.handler_assert:assert_req:31 - 期望结果：202016
+2021-10-12 11:42:14.838 | INFO     | tools.handler_assert:assert_req:35 - 断言成功。
+2021-10-12 11:42:14.838 | INFO     | tools.handler_assert:assert_req:26 - 断言表达式、期望结果和比对方式为：
+{'actual': '$..message', 'expect': '用户未注册，请先注册或填写其他账号', 'assert_type': '=='}
+2021-10-12 11:42:14.838 | INFO     | tools.handler_assert:assert_req:27 - 提取实际结果的jsonpath表达式：$..message
+2021-10-12 11:42:14.839 | INFO     | tools.handler_assert:assert_req:28 - 响应数据：
+{'code': 202016, 'message': '用户未注册，请先注册或填写其他账号'}
+2021-10-12 11:42:14.839 | INFO     | tools.handler_assert:assert_req:30 - 实际结果：用户未注册，请先注册或填写其他账号
+2021-10-12 11:42:14.839 | INFO     | tools.handler_assert:assert_req:31 - 期望结果：用户未注册，请先注册或填写其他账号
+2021-10-12 11:42:14.839 | INFO     | tools.handler_assert:assert_req:35 - 断言成功。
+2021-10-12 11:42:14.847 | DEBUG    | test_login:test_case:31 - 用例标题：密码输入过长
+2021-10-12 11:42:15.013 | INFO     | tools.handler_request_crm:send_request:37 - 请求接口：
+https://lesscodeapitest.bjx.cloud/usercenter/api/v1/user/login
+2021-10-12 11:42:15.014 | INFO     | tools.handler_request_crm:send_request:38 - 请求方式：POST
+2021-10-12 11:42:15.014 | INFO     | tools.handler_request_crm:send_request:39 - 请求body体数据：
+{
+ "loginName": "zhangzaizai",
+ "password": "zZ123456789",
+ "loginType": 2
+}
+2021-10-12 11:42:15.014 | INFO     | tools.handler_request_crm:send_request:40 - 请求headers：
+{'admin-token': '52vk5k7swxryvpcdmo2vp58xl4tpq63hdgifmf6qzqjhirbs81', 'authorization': '5zx2fbp2gx8t7pd4r9aonop9qqa0k83gr2fpdps067b7qu9n1n', 'content-type': 'application/json'}
+2021-10-12 11:42:15.079 | INFO     | tools.handler_request_crm:send_request:46 - http响应状态码：200
+2021-10-12 11:42:15.079 | INFO     | tools.handler_request_crm:send_request:47 - 响应body体：
+{"code":202508,"message":"用户名或密码错误"}
+2021-10-12 11:42:15.080 | INFO     | tools.handler_assert:assert_req:26 - 断言表达式、期望结果和比对方式为：
+{'actual': '$..code', 'expect': 202508, 'assert_type': '=='}
+2021-10-12 11:42:15.080 | INFO     | tools.handler_assert:assert_req:27 - 提取实际结果的jsonpath表达式：$..code
+2021-10-12 11:42:15.080 | INFO     | tools.handler_assert:assert_req:28 - 响应数据：
+{'code': 202508, 'message': '用户名或密码错误'}
+2021-10-12 11:42:15.081 | INFO     | tools.handler_assert:assert_req:30 - 实际结果：202508
+2021-10-12 11:42:15.081 | INFO     | tools.handler_assert:assert_req:31 - 期望结果：202508
+2021-10-12 11:42:15.081 | INFO     | tools.handler_assert:assert_req:35 - 断言成功。
+2021-10-12 11:42:15.081 | INFO     | tools.handler_assert:assert_req:26 - 断言表达式、期望结果和比对方式为：
+{'actual': '$..message', 'expect': '用户名或密码错误', 'assert_type': '=='}
+2021-10-12 11:42:15.082 | INFO     | tools.handler_assert:assert_req:27 - 提取实际结果的jsonpath表达式：$..message
+2021-10-12 11:42:15.082 | INFO     | tools.handler_assert:assert_req:28 - 响应数据：
+{'code': 202508, 'message': '用户名或密码错误'}
+2021-10-12 11:42:15.082 | INFO     | tools.handler_assert:assert_req:30 - 实际结果：用户名或密码错误
+2021-10-12 11:42:15.082 | INFO     | tools.handler_assert:assert_req:31 - 期望结果：用户名或密码错误
+2021-10-12 11:42:15.083 | INFO     | tools.handler_assert:assert_req:35 - 断言成功。
+2021-10-12 11:42:15.088 | DEBUG    | test_login:test_case:31 - 用例标题：密码输入过短
+2021-10-12 11:42:15.248 | INFO     | tools.handler_request_crm:send_request:37 - 请求接口：
+https://lesscodeapitest.bjx.cloud/usercenter/api/v1/user/login
+2021-10-12 11:42:15.249 | INFO     | tools.handler_request_crm:send_request:38 - 请求方式：POST
+2021-10-12 11:42:15.249 | INFO     | tools.handler_request_crm:send_request:39 - 请求body体数据：
+{
+ "loginName": "zhangzaizai",
+ "password": "zZ1234567",
+ "loginType": 2
+}
+2021-10-12 11:42:15.249 | INFO     | tools.handler_request_crm:send_request:40 - 请求headers：
+{'admin-token': '3x1nu5cl3bl4uw26zlvpa6llovz7bh24yysvhrz389puhh92vw', 'authorization': '1m8ow99rz2ugxllc1xqskhnvmaufl4pzdwf2oil7e1421otxoz', 'content-type': 'application/json'}
+2021-10-12 11:42:15.310 | INFO     | tools.handler_request_crm:send_request:46 - http响应状态码：200
+2021-10-12 11:42:15.311 | INFO     | tools.handler_request_crm:send_request:47 - 响应body体：
+{"code":202508,"message":"用户名或密码错误"}
+2021-10-12 11:42:15.311 | INFO     | tools.handler_assert:assert_req:26 - 断言表达式、期望结果和比对方式为：
+{'actual': '$..code', 'expect': 202508, 'assert_type': '=='}
+2021-10-12 11:42:15.311 | INFO     | tools.handler_assert:assert_req:27 - 提取实际结果的jsonpath表达式：$..code
+2021-10-12 11:42:15.311 | INFO     | tools.handler_assert:assert_req:28 - 响应数据：
+{'code': 202508, 'message': '用户名或密码错误'}
+2021-10-12 11:42:15.311 | INFO     | tools.handler_assert:assert_req:30 - 实际结果：202508
+2021-10-12 11:42:15.312 | INFO     | tools.handler_assert:assert_req:31 - 期望结果：202508
+2021-10-12 11:42:15.312 | INFO     | tools.handler_assert:assert_req:35 - 断言成功。
+2021-10-12 11:42:15.312 | INFO     | tools.handler_assert:assert_req:26 - 断言表达式、期望结果和比对方式为：
+{'actual': '$..message', 'expect': '用户名或密码错误', 'assert_type': '=='}
+2021-10-12 11:42:15.312 | INFO     | tools.handler_assert:assert_req:27 - 提取实际结果的jsonpath表达式：$..message
+2021-10-12 11:42:15.312 | INFO     | tools.handler_assert:assert_req:28 - 响应数据：
+{'code': 202508, 'message': '用户名或密码错误'}
+2021-10-12 11:42:15.313 | INFO     | tools.handler_assert:assert_req:30 - 实际结果：用户名或密码错误
+2021-10-12 11:42:15.313 | INFO     | tools.handler_assert:assert_req:31 - 期望结果：用户名或密码错误
+2021-10-12 11:42:15.313 | INFO     | tools.handler_assert:assert_req:35 - 断言成功。
+2021-10-12 11:42:15.317 | DEBUG    | test_login:test_case:31 - 用例标题：密码输入错误的
+2021-10-12 11:42:15.476 | INFO     | tools.handler_request_crm:send_request:37 - 请求接口：
+https://lesscodeapitest.bjx.cloud/usercenter/api/v1/user/login
+2021-10-12 11:42:15.477 | INFO     | tools.handler_request_crm:send_request:38 - 请求方式：POST
+2021-10-12 11:42:15.477 | INFO     | tools.handler_request_crm:send_request:39 - 请求body体数据：
+{
+ "loginName": "zhangzaizai",
+ "password": "zz12345678",
+ "loginType": 2
+}
+2021-10-12 11:42:15.477 | INFO     | tools.handler_request_crm:send_request:40 - 请求headers：
+{'admin-token': '2288adsyu4xitk7hv3i00vhwrxpuehkhr50ahmz2tsd8kzc1wf', 'authorization': '1gh5t892dw9aquiszayepnz70gm6b7dushmza8kwb1kzpayxx', 'content-type': 'application/json'}
+2021-10-12 11:42:15.547 | INFO     | tools.handler_request_crm:send_request:46 - http响应状态码：200
+2021-10-12 11:42:15.548 | INFO     | tools.handler_request_crm:send_request:47 - 响应body体：
+{"code":202508,"message":"用户名或密码错误"}
+2021-10-12 11:42:15.548 | INFO     | tools.handler_assert:assert_req:26 - 断言表达式、期望结果和比对方式为：
+{'actual': '$..code', 'expect': 202508, 'assert_type': '=='}
+2021-10-12 11:42:15.549 | INFO     | tools.handler_assert:assert_req:27 - 提取实际结果的jsonpath表达式：$..code
+2021-10-12 11:42:15.549 | INFO     | tools.handler_assert:assert_req:28 - 响应数据：
+{'code': 202508, 'message': '用户名或密码错误'}
+2021-10-12 11:42:15.550 | INFO     | tools.handler_assert:assert_req:30 - 实际结果：202508
+2021-10-12 11:42:15.550 | INFO     | tools.handler_assert:assert_req:31 - 期望结果：202508
+2021-10-12 11:42:15.551 | INFO     | tools.handler_assert:assert_req:35 - 断言成功。
+2021-10-12 11:42:15.551 | INFO     | tools.handler_assert:assert_req:26 - 断言表达式、期望结果和比对方式为：
+{'actual': '$..message', 'expect': '用户名或密码错误', 'assert_type': '=='}
+2021-10-12 11:42:15.552 | INFO     | tools.handler_assert:assert_req:27 - 提取实际结果的jsonpath表达式：$..message
+2021-10-12 11:42:15.552 | INFO     | tools.handler_assert:assert_req:28 - 响应数据：
+{'code': 202508, 'message': '用户名或密码错误'}
+2021-10-12 11:42:15.552 | INFO     | tools.handler_assert:assert_req:30 - 实际结果：用户名或密码错误
+2021-10-12 11:42:15.553 | INFO     | tools.handler_assert:assert_req:31 - 期望结果：用户名或密码错误
+2021-10-12 11:42:15.553 | INFO     | tools.handler_assert:assert_req:35 - 断言成功。
+2021-10-12 11:42:15.561 | DEBUG    | test_login:test_case:31 - 用例标题：密码为空
+2021-10-12 11:42:15.720 | INFO     | tools.handler_request_crm:send_request:37 - 请求接口：
+https://lesscodeapitest.bjx.cloud/usercenter/api/v1/user/login
+2021-10-12 11:42:15.720 | INFO     | tools.handler_request_crm:send_request:38 - 请求方式：POST
+2021-10-12 11:42:15.721 | INFO     | tools.handler_request_crm:send_request:39 - 请求body体数据：
+{
+ "loginName": "zhangzaizai",
+ "password": "",
+ "loginType": 2
+}
+2021-10-12 11:42:15.721 | INFO     | tools.handler_request_crm:send_request:40 - 请求headers：
+{'admin-token': '4vkyl2pfljl1xym89scm8dlid3ihiozgpafymoa2osqp6joolq', 'authorization': '39h326kjwyx8em8qrjzqc1hh10uuyeriht1e0l1jsma1zt0wf3', 'content-type': 'application/json'}
+2021-10-12 11:42:15.798 | INFO     | tools.handler_request_crm:send_request:46 - http响应状态码：200
+2021-10-12 11:42:15.799 | INFO     | tools.handler_request_crm:send_request:47 - 响应body体：
+{"code":201404,"message":"请输入密码"}
+2021-10-12 11:42:15.799 | INFO     | tools.handler_assert:assert_req:26 - 断言表达式、期望结果和比对方式为：
+{'actual': '$..code', 'expect': 201404, 'assert_type': '=='}
+2021-10-12 11:42:15.799 | INFO     | tools.handler_assert:assert_req:27 - 提取实际结果的jsonpath表达式：$..code
+2021-10-12 11:42:15.799 | INFO     | tools.handler_assert:assert_req:28 - 响应数据：
+{'code': 201404, 'message': '请输入密码'}
+2021-10-12 11:42:15.800 | INFO     | tools.handler_assert:assert_req:30 - 实际结果：201404
+2021-10-12 11:42:15.800 | INFO     | tools.handler_assert:assert_req:31 - 期望结果：201404
+2021-10-12 11:42:15.800 | INFO     | tools.handler_assert:assert_req:35 - 断言成功。
+2021-10-12 11:42:15.800 | INFO     | tools.handler_assert:assert_req:26 - 断言表达式、期望结果和比对方式为：
+{'actual': '$..message', 'expect': '请输入密码', 'assert_type': '=='}
+2021-10-12 11:42:15.800 | INFO     | tools.handler_assert:assert_req:27 - 提取实际结果的jsonpath表达式：$..message
+2021-10-12 11:42:15.801 | INFO     | tools.handler_assert:assert_req:28 - 响应数据：
+{'code': 201404, 'message': '请输入密码'}
+2021-10-12 11:42:15.801 | INFO     | tools.handler_assert:assert_req:30 - 实际结果：请输入密码
+2021-10-12 11:42:15.801 | INFO     | tools.handler_assert:assert_req:31 - 期望结果：请输入密码
+2021-10-12 11:42:15.801 | INFO     | tools.handler_assert:assert_req:35 - 断言成功。
+2021-10-12 11:44:35.585 | DEBUG    | test_add:test_case:46 - 用例标题：新建资料库数据
+2021-10-12 11:44:35.761 | INFO     | tools.handler_request_crm:send_request:37 - 请求接口：
+https://lesscodeapitest.bjx.cloud/form/api/v1/apps/1397851494203621378/values
+2021-10-12 11:44:35.762 | INFO     | tools.handler_request_crm:send_request:38 - 请求方式：POST
+2021-10-12 11:44:35.762 | INFO     | tools.handler_request_crm:send_request:39 - 请求body体数据：
+{
+ "form": [{
+  "_field_name_bigData_marketResources_dataBank": "12311",
+  "_field_stage_bigData_marketResources_dataBank": 1,
+  "_field_structure_bigData_marketResources_dataBank": ["1271358869290807296"],
+  "_field_uploadFiles_bigData_marketResources_dataBank": [{
+   "suffix": "xlsx",
+   "name": "1318830467776045057.xlsx",
+   "path": "https://lesscodeapitest.bjx.cloud/social-api/sys/common/view/files/20210923/689325c8a2b5cbacb9a9cb1163070cfd_1632362841919.xlsx",
+   "id": 1632362842783
+  }],
+  "_field_fileType_bigData_marketResources_dataBank": "xlsx",
+  "_field_fileSize_bigData_marketResources_dataBank": "9.75 KB"
+ }],
+ "formType": 1,
+ "status": 1
+}
+2021-10-12 11:44:35.762 | INFO     | tools.handler_request_crm:send_request:40 - 请求headers：
+{'admin-token': '16pqvrfbncuvqjv4kp5n130q1s7328397qe6wsjfzgwkmjb6d3', 'authorization': '49ozxgcy69f19xgxg9by7lw5dlmhd7ae9qvz8ulazoejh74anp', 'content-type': 'application/json'}
+2021-10-12 11:44:36.179 | INFO     | tools.handler_request_crm:send_request:46 - http响应状态码：200
+2021-10-12 11:44:36.180 | INFO     | tools.handler_request_crm:send_request:47 - 响应body体：
+{"success":true,"message":"OK","code":0,"data":[{"_field_name_bigData_marketResources_dataBank":"12311","_field_stage_bigData_marketResources_dataBank":1,"_field_structure_bigData_marketResources_dataBank":["1271358869290807296"],"_field_uploadFiles_bigData_marketResources_dataBank":[{"suffix":"xlsx","name":"1318830467776045057.xlsx","path":"https://lesscodeapitest.bjx.cloud/social-api/sys/common/view/files/20210923/689325c8a2b5cbacb9a9cb1163070cfd_1632362841919.xlsx","id":"1632362842783"}],"_field_fileType_bigData_marketResources_dataBank":"xlsx","_field_fileSize_bigData_marketResources_dataBank":"9.75 KB","_field_id_bigData_marketResources_dataBank":"76","_field_uploadTime_bigData_marketResources_dataBank":null,"_field_uploadStaff_bigData_marketResources_dataBank":null,"_field_operation_bigData_marketResources_dataBank":null,"creator":"75","updator":"75","createTime":"2021-10-12 11:44:36","updateTime":"2021-10-12 11:44:36","delFlag":2,"status":1,"recycleFlag":2,"appIds":["1397851494203621378"],"id":"1447770148663558146","order":1572863.0}],"timestamp":1634010276503}
+2021-10-12 11:44:36.180 | INFO     | tools.handler_assert:assert_req:26 - 断言表达式、期望结果和比对方式为：
+{'actual': '$..code', 'expect': 0, 'assert_type': '=='}
+2021-10-12 11:44:36.182 | INFO     | tools.handler_assert:assert_req:27 - 提取实际结果的jsonpath表达式：$..code
+2021-10-12 11:44:36.182 | INFO     | tools.handler_assert:assert_req:28 - 响应数据：
+{'success': True, 'message': 'OK', 'code': 0, 'data': [{'_field_name_bigData_marketResources_dataBank': '12311', '_field_stage_bigData_marketResources_dataBank': 1, '_field_structure_bigData_marketResources_dataBank': ['1271358869290807296'], '_field_uploadFiles_bigData_marketResources_dataBank': [{'suffix': 'xlsx', 'name': '1318830467776045057.xlsx', 'path': 'https://lesscodeapitest.bjx.cloud/social-api/sys/common/view/files/20210923/689325c8a2b5cbacb9a9cb1163070cfd_1632362841919.xlsx', 'id': '1632362842783'}], '_field_fileType_bigData_marketResources_dataBank': 'xlsx', '_field_fileSize_bigData_marketResources_dataBank': '9.75 KB', '_field_id_bigData_marketResources_dataBank': '76', '_field_uploadTime_bigData_marketResources_dataBank': None, '_field_uploadStaff_bigData_marketResources_dataBank': None, '_field_operation_bigData_marketResources_dataBank': None, 'creator': '75', 'updator': '75', 'createTime': '2021-10-12 11:44:36', 'updateTime': '2021-10-12 11:44:36', 'delFlag': 2, 'status': 1, 'recycleFlag': 2, 'appIds': ['1397851494203621378'], 'id': '1447770148663558146', 'order': 1572863.0}], 'timestamp': 1634010276503}
+2021-10-12 11:44:36.183 | INFO     | tools.handler_assert:assert_req:30 - 实际结果：0
+2021-10-12 11:44:36.183 | INFO     | tools.handler_assert:assert_req:31 - 期望结果：0
+2021-10-12 11:44:36.183 | INFO     | tools.handler_assert:assert_req:35 - 断言成功。
+2021-10-12 11:44:36.183 | INFO     | tools.handler_assert:assert_req:26 - 断言表达式、期望结果和比对方式为：
+{'actual': '$..message', 'expect': 'OK', 'assert_type': '=='}
+2021-10-12 11:44:36.184 | INFO     | tools.handler_assert:assert_req:27 - 提取实际结果的jsonpath表达式：$..message
+2021-10-12 11:44:36.184 | INFO     | tools.handler_assert:assert_req:28 - 响应数据：
+{'success': True, 'message': 'OK', 'code': 0, 'data': [{'_field_name_bigData_marketResources_dataBank': '12311', '_field_stage_bigData_marketResources_dataBank': 1, '_field_structure_bigData_marketResources_dataBank': ['1271358869290807296'], '_field_uploadFiles_bigData_marketResources_dataBank': [{'suffix': 'xlsx', 'name': '1318830467776045057.xlsx', 'path': 'https://lesscodeapitest.bjx.cloud/social-api/sys/common/view/files/20210923/689325c8a2b5cbacb9a9cb1163070cfd_1632362841919.xlsx', 'id': '1632362842783'}], '_field_fileType_bigData_marketResources_dataBank': 'xlsx', '_field_fileSize_bigData_marketResources_dataBank': '9.75 KB', '_field_id_bigData_marketResources_dataBank': '76', '_field_uploadTime_bigData_marketResources_dataBank': None, '_field_uploadStaff_bigData_marketResources_dataBank': None, '_field_operation_bigData_marketResources_dataBank': None, 'creator': '75', 'updator': '75', 'createTime': '2021-10-12 11:44:36', 'updateTime': '2021-10-12 11:44:36', 'delFlag': 2, 'status': 1, 'recycleFlag': 2, 'appIds': ['1397851494203621378'], 'id': '1447770148663558146', 'order': 1572863.0}], 'timestamp': 1634010276503}
+2021-10-12 11:44:36.196 | INFO     | tools.handler_assert:assert_req:30 - 实际结果：OK
+2021-10-12 11:44:36.196 | INFO     | tools.handler_assert:assert_req:31 - 期望结果：OK
+2021-10-12 11:44:36.197 | INFO     | tools.handler_assert:assert_req:35 - 断言成功。
+2021-10-12 11:44:36.197 | INFO     | tools.handler_assert:assert_req:26 - 断言表达式、期望结果和比对方式为：
+{'actual': '$..success', 'expect': True, 'assert_type': '=='}
+2021-10-12 11:44:36.197 | INFO     | tools.handler_assert:assert_req:27 - 提取实际结果的jsonpath表达式：$..success
+2021-10-12 11:44:36.197 | INFO     | tools.handler_assert:assert_req:28 - 响应数据：
+{'success': True, 'message': 'OK', 'code': 0, 'data': [{'_field_name_bigData_marketResources_dataBank': '12311', '_field_stage_bigData_marketResources_dataBank': 1, '_field_structure_bigData_marketResources_dataBank': ['1271358869290807296'], '_field_uploadFiles_bigData_marketResources_dataBank': [{'suffix': 'xlsx', 'name': '1318830467776045057.xlsx', 'path': 'https://lesscodeapitest.bjx.cloud/social-api/sys/common/view/files/20210923/689325c8a2b5cbacb9a9cb1163070cfd_1632362841919.xlsx', 'id': '1632362842783'}], '_field_fileType_bigData_marketResources_dataBank': 'xlsx', '_field_fileSize_bigData_marketResources_dataBank': '9.75 KB', '_field_id_bigData_marketResources_dataBank': '76', '_field_uploadTime_bigData_marketResources_dataBank': None, '_field_uploadStaff_bigData_marketResources_dataBank': None, '_field_operation_bigData_marketResources_dataBank': None, 'creator': '75', 'updator': '75', 'createTime': '2021-10-12 11:44:36', 'updateTime': '2021-10-12 11:44:36', 'delFlag': 2, 'status': 1, 'recycleFlag': 2, 'appIds': ['1397851494203621378'], 'id': '1447770148663558146', 'order': 1572863.0}], 'timestamp': 1634010276503}
+2021-10-12 11:44:36.197 | INFO     | tools.handler_assert:assert_req:30 - 实际结果：True
+2021-10-12 11:44:36.198 | INFO     | tools.handler_assert:assert_req:31 - 期望结果：True
+2021-10-12 11:44:36.198 | INFO     | tools.handler_assert:assert_req:35 - 断言成功。
+2021-10-12 11:44:36.200 | DEBUG    | test_add:test_case:46 - 用例标题：新建邮箱列表数据
+2021-10-12 11:44:36.362 | INFO     | tools.handler_request_crm:send_request:37 - 请求接口：
+https://lesscodeapitest.bjx.cloud/form/api/v1/apps/1374598195115515905/values
+2021-10-12 11:44:36.362 | INFO     | tools.handler_request_crm:send_request:38 - 请求方式：POST
+2021-10-12 11:44:36.362 | INFO     | tools.handler_request_crm:send_request:39 - 请求body体数据：
+{
+ "form": [{
+  "_field_1_bigData_marketResources_email": "ozou@gmail.com",
+  "_field_2_bigData_marketResources_email": "123456",
+  "_field_3_bigData_marketResources_email": "http://99.cn/",
+  "_field_5_bigData_marketResources_email": "1",
+  "_field_7_bigData_marketResources_email": "这是密保问题",
+  "_field_8_bigData_marketResources_email": "这是注册来源",
+  "_field_9_bigData_marketResources_email": "+86 13696238657"
+ }],
+ "formType": 1,
+ "status": 1
+}
+2021-10-12 11:44:36.363 | INFO     | tools.handler_request_crm:send_request:40 - 请求headers：
+{'admin-token': '22ekjoa71vda4228xzfcqhh8ra0k7enwen4ecm5608i87unijv', 'authorization': '3tkz2xtg02ngrojt7a6oilxjrmb2mutzzz8bb86n65spy2caec', 'content-type': 'application/json'}
+2021-10-12 11:44:36.738 | INFO     | tools.handler_request_crm:send_request:46 - http响应状态码：200
+2021-10-12 11:44:36.742 | INFO     | tools.handler_request_crm:send_request:47 - 响应body体：
+{"success":true,"message":"OK","code":0,"data":[{"_field_1_bigData_marketResources_email":"ozou@gmail.com","_field_2_bigData_marketResources_email":"123456","_field_3_bigData_marketResources_email":"http://99.cn/","_field_5_bigData_marketResources_email":"1","_field_7_bigData_marketResources_email":"这是密保问题","_field_8_bigData_marketResources_email":"这是注册来源","_field_9_bigData_marketResources_email":"+86 13696238657","_field_4_bigData_marketResources_email":null,"_field_6_bigData_marketResources_email":null,"_field_10_bigData_marketResources_email":null,"creator":"75","updator":"75","createTime":"2021-10-12 11:44:36","updateTime":"2021-10-12 11:44:36","delFlag":2,"status":1,"recycleFlag":2,"appIds":["1374598195115515905"],"id":"1447770150735544321","order":983039.0}],"timestamp":1634010277023}
+2021-10-12 11:44:36.742 | INFO     | tools.handler_assert:assert_req:26 - 断言表达式、期望结果和比对方式为：
+{'actual': '$..code', 'expect': 0, 'assert_type': '=='}
+2021-10-12 11:44:36.742 | INFO     | tools.handler_assert:assert_req:27 - 提取实际结果的jsonpath表达式：$..code
+2021-10-12 11:44:36.742 | INFO     | tools.handler_assert:assert_req:28 - 响应数据：
+{'success': True, 'message': 'OK', 'code': 0, 'data': [{'_field_1_bigData_marketResources_email': 'ozou@gmail.com', '_field_2_bigData_marketResources_email': '123456', '_field_3_bigData_marketResources_email': 'http://99.cn/', '_field_5_bigData_marketResources_email': '1', '_field_7_bigData_marketResources_email': '这是密保问题', '_field_8_bigData_marketResources_email': '这是注册来源', '_field_9_bigData_marketResources_email': '+86 13696238657', '_field_4_bigData_marketResources_email': None, '_field_6_bigData_marketResources_email': None, '_field_10_bigData_marketResources_email': None, 'creator': '75', 'updator': '75', 'createTime': '2021-10-12 11:44:36', 'updateTime': '2021-10-12 11:44:36', 'delFlag': 2, 'status': 1, 'recycleFlag': 2, 'appIds': ['1374598195115515905'], 'id': '1447770150735544321', 'order': 983039.0}], 'timestamp': 1634010277023}
+2021-10-12 11:44:36.743 | INFO     | tools.handler_assert:assert_req:30 - 实际结果：0
+2021-10-12 11:44:36.743 | INFO     | tools.handler_assert:assert_req:31 - 期望结果：0
+2021-10-12 11:44:36.743 | INFO     | tools.handler_assert:assert_req:35 - 断言成功。
+2021-10-12 11:44:36.743 | INFO     | tools.handler_assert:assert_req:26 - 断言表达式、期望结果和比对方式为：
+{'actual': '$..message', 'expect': 'OK', 'assert_type': '=='}
+2021-10-12 11:44:36.743 | INFO     | tools.handler_assert:assert_req:27 - 提取实际结果的jsonpath表达式：$..message
+2021-10-12 11:44:36.744 | INFO     | tools.handler_assert:assert_req:28 - 响应数据：
+{'success': True, 'message': 'OK', 'code': 0, 'data': [{'_field_1_bigData_marketResources_email': 'ozou@gmail.com', '_field_2_bigData_marketResources_email': '123456', '_field_3_bigData_marketResources_email': 'http://99.cn/', '_field_5_bigData_marketResources_email': '1', '_field_7_bigData_marketResources_email': '这是密保问题', '_field_8_bigData_marketResources_email': '这是注册来源', '_field_9_bigData_marketResources_email': '+86 13696238657', '_field_4_bigData_marketResources_email': None, '_field_6_bigData_marketResources_email': None, '_field_10_bigData_marketResources_email': None, 'creator': '75', 'updator': '75', 'createTime': '2021-10-12 11:44:36', 'updateTime': '2021-10-12 11:44:36', 'delFlag': 2, 'status': 1, 'recycleFlag': 2, 'appIds': ['1374598195115515905'], 'id': '1447770150735544321', 'order': 983039.0}], 'timestamp': 1634010277023}
+2021-10-12 11:44:36.745 | INFO     | tools.handler_assert:assert_req:30 - 实际结果：OK
+2021-10-12 11:44:36.745 | INFO     | tools.handler_assert:assert_req:31 - 期望结果：OK
+2021-10-12 11:44:36.746 | INFO     | tools.handler_assert:assert_req:35 - 断言成功。
+2021-10-12 11:44:36.746 | INFO     | tools.handler_assert:assert_req:26 - 断言表达式、期望结果和比对方式为：
+{'actual': '$..success', 'expect': True, 'assert_type': '=='}
+2021-10-12 11:44:36.746 | INFO     | tools.handler_assert:assert_req:27 - 提取实际结果的jsonpath表达式：$..success
+2021-10-12 11:44:36.746 | INFO     | tools.handler_assert:assert_req:28 - 响应数据：
+{'success': True, 'message': 'OK', 'code': 0, 'data': [{'_field_1_bigData_marketResources_email': 'ozou@gmail.com', '_field_2_bigData_marketResources_email': '123456', '_field_3_bigData_marketResources_email': 'http://99.cn/', '_field_5_bigData_marketResources_email': '1', '_field_7_bigData_marketResources_email': '这是密保问题', '_field_8_bigData_marketResources_email': '这是注册来源', '_field_9_bigData_marketResources_email': '+86 13696238657', '_field_4_bigData_marketResources_email': None, '_field_6_bigData_marketResources_email': None, '_field_10_bigData_marketResources_email': None, 'creator': '75', 'updator': '75', 'createTime': '2021-10-12 11:44:36', 'updateTime': '2021-10-12 11:44:36', 'delFlag': 2, 'status': 1, 'recycleFlag': 2, 'appIds': ['1374598195115515905'], 'id': '1447770150735544321', 'order': 983039.0}], 'timestamp': 1634010277023}
+2021-10-12 11:44:36.747 | INFO     | tools.handler_assert:assert_req:30 - 实际结果：True
+2021-10-12 11:44:36.747 | INFO     | tools.handler_assert:assert_req:31 - 期望结果：True
+2021-10-12 11:44:36.747 | INFO     | tools.handler_assert:assert_req:35 - 断言成功。
+2021-10-12 11:44:36.749 | DEBUG    | test_login:test_case:31 - 用例标题：正常登陆
+2021-10-12 11:44:36.921 | INFO     | tools.handler_request_crm:send_request:37 - 请求接口：
+https://lesscodeapitest.bjx.cloud/usercenter/api/v1/user/login
+2021-10-12 11:44:36.922 | INFO     | tools.handler_request_crm:send_request:38 - 请求方式：POST
+2021-10-12 11:44:36.922 | INFO     | tools.handler_request_crm:send_request:39 - 请求body体数据：
+{
+ "loginName": "zhangzaizai",
+ "password": "zZ12345678",
+ "loginType": 2
+}
+2021-10-12 11:44:36.922 | INFO     | tools.handler_request_crm:send_request:40 - 请求headers：
+{'admin-token': '5wdgt6snbgj7hv67j2pu8grh5wxhsc86526zow8xs1c12l1vi4', 'authorization': 'ykpy3nsafuixvfcpt5a6g4l7qa96i92akicyskyq3wnr1oh9x', 'content-type': 'application/json'}
+2021-10-12 11:44:37.000 | INFO     | tools.handler_request_crm:send_request:46 - http响应状态码：200
+2021-10-12 11:44:37.000 | INFO     | tools.handler_request_crm:send_request:47 - 响应body体：
+{"code":0,"message":"","data":{"token":"hbmro7g87sqb5u5uozwnk6hg3bopt8f2r37atg51i8maw18um","userId":"75","orgId":"202505060582035456","orgName":"testcustomer","orgCode":"","name":"张崽崽","avatar":"","needInitOrg":false}}
+2021-10-12 11:44:37.001 | INFO     | tools.handler_assert:assert_req:26 - 断言表达式、期望结果和比对方式为：
+{'actual': '$..code', 'expect': 0, 'assert_type': '=='}
+2021-10-12 11:44:37.001 | INFO     | tools.handler_assert:assert_req:27 - 提取实际结果的jsonpath表达式：$..code
+2021-10-12 11:44:37.001 | INFO     | tools.handler_assert:assert_req:28 - 响应数据：
+{'code': 0, 'message': '', 'data': {'token': 'hbmro7g87sqb5u5uozwnk6hg3bopt8f2r37atg51i8maw18um', 'userId': '75', 'orgId': '202505060582035456', 'orgName': 'testcustomer', 'orgCode': '', 'name': '张崽崽', 'avatar': '', 'needInitOrg': False}}
+2021-10-12 11:44:37.002 | INFO     | tools.handler_assert:assert_req:30 - 实际结果：0
+2021-10-12 11:44:37.002 | INFO     | tools.handler_assert:assert_req:31 - 期望结果：0
+2021-10-12 11:44:37.002 | INFO     | tools.handler_assert:assert_req:35 - 断言成功。
+2021-10-12 11:44:37.002 | INFO     | tools.handler_assert:assert_req:26 - 断言表达式、期望结果和比对方式为：
+{'actual': '$..message', 'expect': '', 'assert_type': '=='}
+2021-10-12 11:44:37.003 | INFO     | tools.handler_assert:assert_req:27 - 提取实际结果的jsonpath表达式：$..message
+2021-10-12 11:44:37.003 | INFO     | tools.handler_assert:assert_req:28 - 响应数据：
+{'code': 0, 'message': '', 'data': {'token': 'hbmro7g87sqb5u5uozwnk6hg3bopt8f2r37atg51i8maw18um', 'userId': '75', 'orgId': '202505060582035456', 'orgName': 'testcustomer', 'orgCode': '', 'name': '张崽崽', 'avatar': '', 'needInitOrg': False}}
+2021-10-12 11:44:37.003 | INFO     | tools.handler_assert:assert_req:30 - 实际结果：
+2021-10-12 11:44:37.003 | INFO     | tools.handler_assert:assert_req:31 - 期望结果：
+2021-10-12 11:44:37.003 | INFO     | tools.handler_assert:assert_req:35 - 断言成功。
+2021-10-12 11:44:37.005 | DEBUG    | test_login:test_case:31 - 用例标题：用户名过长
+2021-10-12 11:44:37.186 | INFO     | tools.handler_request_crm:send_request:37 - 请求接口：
+https://lesscodeapitest.bjx.cloud/usercenter/api/v1/user/login
+2021-10-12 11:44:37.186 | INFO     | tools.handler_request_crm:send_request:38 - 请求方式：POST
+2021-10-12 11:44:37.187 | INFO     | tools.handler_request_crm:send_request:39 - 请求body体数据：
+{
+ "loginName": "zhangzaizaiz",
+ "password": "zZ12345678",
+ "loginType": 2
+}
+2021-10-12 11:44:37.187 | INFO     | tools.handler_request_crm:send_request:40 - 请求headers：
+{'admin-token': '54sja4o8vbsb1lukoq9ig1rh0hernafrmlma2o8ck1s0bomp7a', 'authorization': '1llstxvhcs6lahobzw3cdu39cgcizj8k971nzp2uwyqsyq3d5o', 'content-type': 'application/json'}
+2021-10-12 11:44:37.267 | INFO     | tools.handler_request_crm:send_request:46 - http响应状态码：200
+2021-10-12 11:44:37.267 | INFO     | tools.handler_request_crm:send_request:47 - 响应body体：
+{"code":202016,"message":"用户未注册，请先注册或填写其他账号"}
+2021-10-12 11:44:37.268 | INFO     | tools.handler_assert:assert_req:26 - 断言表达式、期望结果和比对方式为：
+{'actual': '$..code', 'expect': 202016, 'assert_type': '=='}
+2021-10-12 11:44:37.268 | INFO     | tools.handler_assert:assert_req:27 - 提取实际结果的jsonpath表达式：$..code
+2021-10-12 11:44:37.268 | INFO     | tools.handler_assert:assert_req:28 - 响应数据：
+{'code': 202016, 'message': '用户未注册，请先注册或填写其他账号'}
+2021-10-12 11:44:37.269 | INFO     | tools.handler_assert:assert_req:30 - 实际结果：202016
+2021-10-12 11:44:37.269 | INFO     | tools.handler_assert:assert_req:31 - 期望结果：202016
+2021-10-12 11:44:37.270 | INFO     | tools.handler_assert:assert_req:35 - 断言成功。
+2021-10-12 11:44:37.270 | INFO     | tools.handler_assert:assert_req:26 - 断言表达式、期望结果和比对方式为：
+{'actual': '$..message', 'expect': '用户未注册，请先注册或填写其他账号', 'assert_type': '=='}
+2021-10-12 11:44:37.270 | INFO     | tools.handler_assert:assert_req:27 - 提取实际结果的jsonpath表达式：$..message
+2021-10-12 11:44:37.271 | INFO     | tools.handler_assert:assert_req:28 - 响应数据：
+{'code': 202016, 'message': '用户未注册，请先注册或填写其他账号'}
+2021-10-12 11:44:37.271 | INFO     | tools.handler_assert:assert_req:30 - 实际结果：用户未注册，请先注册或填写其他账号
+2021-10-12 11:44:37.272 | INFO     | tools.handler_assert:assert_req:31 - 期望结果：用户未注册，请先注册或填写其他账号
+2021-10-12 11:44:37.272 | INFO     | tools.handler_assert:assert_req:35 - 断言成功。
+2021-10-12 11:44:37.275 | DEBUG    | test_login:test_case:31 - 用例标题：用户名过短
+2021-10-12 11:44:37.443 | INFO     | tools.handler_request_crm:send_request:37 - 请求接口：
+https://lesscodeapitest.bjx.cloud/usercenter/api/v1/user/login
+2021-10-12 11:44:37.444 | INFO     | tools.handler_request_crm:send_request:38 - 请求方式：POST
+2021-10-12 11:44:37.444 | INFO     | tools.handler_request_crm:send_request:39 - 请求body体数据：
+{
+ "loginName": "zhangzaiza",
+ "password": "zZ12345678",
+ "loginType": 2
+}
+2021-10-12 11:44:37.444 | INFO     | tools.handler_request_crm:send_request:40 - 请求headers：
+{'admin-token': '386m5lh6ty763rqdhfdjugklpp9ktxzarp8fgz1s6tvpgz5qy4', 'authorization': '2enm80wva9z5u2qqgii7fhv03u8bjaudy6k2gggwfb4re08fc0', 'content-type': 'application/json'}
+2021-10-12 11:44:37.525 | INFO     | tools.handler_request_crm:send_request:46 - http响应状态码：200
+2021-10-12 11:44:37.525 | INFO     | tools.handler_request_crm:send_request:47 - 响应body体：
+{"code":202016,"message":"用户未注册，请先注册或填写其他账号"}
+2021-10-12 11:44:37.525 | INFO     | tools.handler_assert:assert_req:26 - 断言表达式、期望结果和比对方式为：
+{'actual': '$..code', 'expect': 202016, 'assert_type': '=='}
+2021-10-12 11:44:37.525 | INFO     | tools.handler_assert:assert_req:27 - 提取实际结果的jsonpath表达式：$..code
+2021-10-12 11:44:37.526 | INFO     | tools.handler_assert:assert_req:28 - 响应数据：
+{'code': 202016, 'message': '用户未注册，请先注册或填写其他账号'}
+2021-10-12 11:44:37.526 | INFO     | tools.handler_assert:assert_req:30 - 实际结果：202016
+2021-10-12 11:44:37.526 | INFO     | tools.handler_assert:assert_req:31 - 期望结果：202016
+2021-10-12 11:44:37.526 | INFO     | tools.handler_assert:assert_req:35 - 断言成功。
+2021-10-12 11:44:37.527 | INFO     | tools.handler_assert:assert_req:26 - 断言表达式、期望结果和比对方式为：
+{'actual': '$..message', 'expect': '用户未注册，请先注册或填写其他账号', 'assert_type': '=='}
+2021-10-12 11:44:37.527 | INFO     | tools.handler_assert:assert_req:27 - 提取实际结果的jsonpath表达式：$..message
+2021-10-12 11:44:37.527 | INFO     | tools.handler_assert:assert_req:28 - 响应数据：
+{'code': 202016, 'message': '用户未注册，请先注册或填写其他账号'}
+2021-10-12 11:44:37.527 | INFO     | tools.handler_assert:assert_req:30 - 实际结果：用户未注册，请先注册或填写其他账号
+2021-10-12 11:44:37.527 | INFO     | tools.handler_assert:assert_req:31 - 期望结果：用户未注册，请先注册或填写其他账号
+2021-10-12 11:44:37.528 | INFO     | tools.handler_assert:assert_req:35 - 断言成功。
+2021-10-12 11:44:37.529 | DEBUG    | test_login:test_case:31 - 用例标题：用户名输入错误
+2021-10-12 11:44:37.697 | INFO     | tools.handler_request_crm:send_request:37 - 请求接口：
+https://lesscodeapitest.bjx.cloud/usercenter/api/v1/user/login
+2021-10-12 11:44:37.697 | INFO     | tools.handler_request_crm:send_request:38 - 请求方式：POST
+2021-10-12 11:44:37.697 | INFO     | tools.handler_request_crm:send_request:39 - 请求body体数据：
+{
+ "loginName": "Zhangzaizai",
+ "password": "zZ12345678",
+ "loginType": 2
+}
+2021-10-12 11:44:37.698 | INFO     | tools.handler_request_crm:send_request:40 - 请求headers：
+{'admin-token': 'fz1fm3alss2f728o79g1ytfoilmu122qs8am348jpsunc1eiq', 'authorization': '0r2t1ov4n1k596tulo9rs08h2itvdpooee3x1fb5pd368ak9d', 'content-type': 'application/json'}
+2021-10-12 11:44:37.762 | INFO     | tools.handler_request_crm:send_request:46 - http响应状态码：200
+2021-10-12 11:44:37.762 | INFO     | tools.handler_request_crm:send_request:47 - 响应body体：
+{"code":202016,"message":"用户未注册，请先注册或填写其他账号"}
+2021-10-12 11:44:37.763 | INFO     | tools.handler_assert:assert_req:26 - 断言表达式、期望结果和比对方式为：
+{'actual': '$..code', 'expect': 202016, 'assert_type': '=='}
+2021-10-12 11:44:37.763 | INFO     | tools.handler_assert:assert_req:27 - 提取实际结果的jsonpath表达式：$..code
+2021-10-12 11:44:37.763 | INFO     | tools.handler_assert:assert_req:28 - 响应数据：
+{'code': 202016, 'message': '用户未注册，请先注册或填写其他账号'}
+2021-10-12 11:44:37.764 | INFO     | tools.handler_assert:assert_req:30 - 实际结果：202016
+2021-10-12 11:44:37.764 | INFO     | tools.handler_assert:assert_req:31 - 期望结果：202016
+2021-10-12 11:44:37.764 | INFO     | tools.handler_assert:assert_req:35 - 断言成功。
+2021-10-12 11:44:37.764 | INFO     | tools.handler_assert:assert_req:26 - 断言表达式、期望结果和比对方式为：
+{'actual': '$..message', 'expect': '用户未注册，请先注册或填写其他账号', 'assert_type': '=='}
+2021-10-12 11:44:37.765 | INFO     | tools.handler_assert:assert_req:27 - 提取实际结果的jsonpath表达式：$..message
+2021-10-12 11:44:37.765 | INFO     | tools.handler_assert:assert_req:28 - 响应数据：
+{'code': 202016, 'message': '用户未注册，请先注册或填写其他账号'}
+2021-10-12 11:44:37.765 | INFO     | tools.handler_assert:assert_req:30 - 实际结果：用户未注册，请先注册或填写其他账号
+2021-10-12 11:44:37.765 | INFO     | tools.handler_assert:assert_req:31 - 期望结果：用户未注册，请先注册或填写其他账号
+2021-10-12 11:44:37.765 | INFO     | tools.handler_assert:assert_req:35 - 断言成功。
+2021-10-12 11:44:37.768 | DEBUG    | test_login:test_case:31 - 用例标题：用户名为空
+2021-10-12 11:44:37.936 | INFO     | tools.handler_request_crm:send_request:37 - 请求接口：
+https://lesscodeapitest.bjx.cloud/usercenter/api/v1/user/login
+2021-10-12 11:44:37.936 | INFO     | tools.handler_request_crm:send_request:38 - 请求方式：POST
+2021-10-12 11:44:37.937 | INFO     | tools.handler_request_crm:send_request:39 - 请求body体数据：
+{
+ "loginName": "",
+ "password": "zZ12345678",
+ "loginType": 2
+}
+2021-10-12 11:44:37.937 | INFO     | tools.handler_request_crm:send_request:40 - 请求headers：
+{'admin-token': '2h4my26rw0awqsw28en5cdko9yg4yhi9e4utccbyadtifo7fsv', 'authorization': 'qx1vxojpyriyv3oi3vtb9mp8wky5llwidbh6t3nadkal3wj66', 'content-type': 'application/json'}
+2021-10-12 11:44:38.083 | INFO     | tools.handler_request_crm:send_request:46 - http响应状态码：200
+2021-10-12 11:44:38.083 | INFO     | tools.handler_request_crm:send_request:47 - 响应body体：
+{"code":202508,"message":"用户名或密码错误"}
+2021-10-12 11:44:38.083 | INFO     | tools.handler_assert:assert_req:26 - 断言表达式、期望结果和比对方式为：
+{'actual': '$..code', 'expect': 202508, 'assert_type': '=='}
+2021-10-12 11:44:38.084 | INFO     | tools.handler_assert:assert_req:27 - 提取实际结果的jsonpath表达式：$..code
+2021-10-12 11:44:38.084 | INFO     | tools.handler_assert:assert_req:28 - 响应数据：
+{'code': 202508, 'message': '用户名或密码错误'}
+2021-10-12 11:44:38.084 | INFO     | tools.handler_assert:assert_req:30 - 实际结果：202508
+2021-10-12 11:44:38.085 | INFO     | tools.handler_assert:assert_req:31 - 期望结果：202508
+2021-10-12 11:44:38.085 | INFO     | tools.handler_assert:assert_req:35 - 断言成功。
+2021-10-12 11:44:38.085 | INFO     | tools.handler_assert:assert_req:26 - 断言表达式、期望结果和比对方式为：
+{'actual': '$..message', 'expect': '用户名或密码错误', 'assert_type': '=='}
+2021-10-12 11:44:38.086 | INFO     | tools.handler_assert:assert_req:27 - 提取实际结果的jsonpath表达式：$..message
+2021-10-12 11:44:38.086 | INFO     | tools.handler_assert:assert_req:28 - 响应数据：
+{'code': 202508, 'message': '用户名或密码错误'}
+2021-10-12 11:44:38.086 | INFO     | tools.handler_assert:assert_req:30 - 实际结果：用户名或密码错误
+2021-10-12 11:44:38.087 | INFO     | tools.handler_assert:assert_req:31 - 期望结果：用户名或密码错误
+2021-10-12 11:44:38.087 | INFO     | tools.handler_assert:assert_req:35 - 断言成功。
+2021-10-12 11:44:38.089 | DEBUG    | test_login:test_case:31 - 用例标题：用户名输入李四的，密码输入王五的
+2021-10-12 11:44:38.258 | INFO     | tools.handler_request_crm:send_request:37 - 请求接口：
+https://lesscodeapitest.bjx.cloud/usercenter/api/v1/user/login
+2021-10-12 11:44:38.259 | INFO     | tools.handler_request_crm:send_request:38 - 请求方式：POST
+2021-10-12 11:44:38.259 | INFO     | tools.handler_request_crm:send_request:39 - 请求body体数据：
+{
+ "loginName": "lisi",
+ "password": "zZ12345678",
+ "loginType": 2
+}
+2021-10-12 11:44:38.259 | INFO     | tools.handler_request_crm:send_request:40 - 请求headers：
+{'admin-token': 'dqycuf0f1z0n10ihcbne9r5p1m6f97h2n33s2oig09zv929lc', 'authorization': '5mmamz4kms9eulr6s33yhd3nj7h1tofesv7l51otdlf8dyorv0', 'content-type': 'application/json'}
+2021-10-12 11:44:38.328 | INFO     | tools.handler_request_crm:send_request:46 - http响应状态码：200
+2021-10-12 11:44:38.329 | INFO     | tools.handler_request_crm:send_request:47 - 响应body体：
+{"code":202508,"message":"用户名或密码错误"}
+2021-10-12 11:44:38.329 | INFO     | tools.handler_assert:assert_req:26 - 断言表达式、期望结果和比对方式为：
+{'actual': '$..code', 'expect': 202508, 'assert_type': '=='}
+2021-10-12 11:44:38.329 | INFO     | tools.handler_assert:assert_req:27 - 提取实际结果的jsonpath表达式：$..code
+2021-10-12 11:44:38.329 | INFO     | tools.handler_assert:assert_req:28 - 响应数据：
+{'code': 202508, 'message': '用户名或密码错误'}
+2021-10-12 11:44:38.330 | INFO     | tools.handler_assert:assert_req:30 - 实际结果：202508
+2021-10-12 11:44:38.330 | INFO     | tools.handler_assert:assert_req:31 - 期望结果：202508
+2021-10-12 11:44:38.330 | INFO     | tools.handler_assert:assert_req:35 - 断言成功。
+2021-10-12 11:44:38.330 | INFO     | tools.handler_assert:assert_req:26 - 断言表达式、期望结果和比对方式为：
+{'actual': '$..message', 'expect': '用户名或密码错误', 'assert_type': '=='}
+2021-10-12 11:44:38.331 | INFO     | tools.handler_assert:assert_req:27 - 提取实际结果的jsonpath表达式：$..message
+2021-10-12 11:44:38.331 | INFO     | tools.handler_assert:assert_req:28 - 响应数据：
+{'code': 202508, 'message': '用户名或密码错误'}
+2021-10-12 11:44:38.331 | INFO     | tools.handler_assert:assert_req:30 - 实际结果：用户名或密码错误
+2021-10-12 11:44:38.331 | INFO     | tools.handler_assert:assert_req:31 - 期望结果：用户名或密码错误
+2021-10-12 11:44:38.332 | INFO     | tools.handler_assert:assert_req:35 - 断言成功。
+2021-10-12 11:44:38.334 | DEBUG    | test_login:test_case:31 - 用例标题：用户名输入未注册的
+2021-10-12 11:44:38.497 | INFO     | tools.handler_request_crm:send_request:37 - 请求接口：
+https://lesscodeapitest.bjx.cloud/usercenter/api/v1/user/login
+2021-10-12 11:44:38.497 | INFO     | tools.handler_request_crm:send_request:38 - 请求方式：POST
+2021-10-12 11:44:38.497 | INFO     | tools.handler_request_crm:send_request:39 - 请求body体数据：
+{
+ "loginName": "weizhuce",
+ "password": "zZ12345678",
+ "loginType": 2
+}
+2021-10-12 11:44:38.498 | INFO     | tools.handler_request_crm:send_request:40 - 请求headers：
+{'admin-token': '2psu8ghykx9hny102lo4197obbc3pl8xdwbh1mhkqw5zd65io4', 'authorization': '3xkyb25wkqqu7szk2vg0gxl29h57m3w2jc7pc1gfbiyhtizowz', 'content-type': 'application/json'}
+2021-10-12 11:44:38.587 | INFO     | tools.handler_request_crm:send_request:46 - http响应状态码：200
+2021-10-12 11:44:38.587 | INFO     | tools.handler_request_crm:send_request:47 - 响应body体：
+{"code":202016,"message":"用户未注册，请先注册或填写其他账号"}
+2021-10-12 11:44:38.588 | INFO     | tools.handler_assert:assert_req:26 - 断言表达式、期望结果和比对方式为：
+{'actual': '$..code', 'expect': 202016, 'assert_type': '=='}
+2021-10-12 11:44:38.588 | INFO     | tools.handler_assert:assert_req:27 - 提取实际结果的jsonpath表达式：$..code
+2021-10-12 11:44:38.588 | INFO     | tools.handler_assert:assert_req:28 - 响应数据：
+{'code': 202016, 'message': '用户未注册，请先注册或填写其他账号'}
+2021-10-12 11:44:38.588 | INFO     | tools.handler_assert:assert_req:30 - 实际结果：202016
+2021-10-12 11:44:38.589 | INFO     | tools.handler_assert:assert_req:31 - 期望结果：202016
+2021-10-12 11:44:38.589 | INFO     | tools.handler_assert:assert_req:35 - 断言成功。
+2021-10-12 11:44:38.589 | INFO     | tools.handler_assert:assert_req:26 - 断言表达式、期望结果和比对方式为：
+{'actual': '$..message', 'expect': '用户未注册，请先注册或填写其他账号', 'assert_type': '=='}
+2021-10-12 11:44:38.589 | INFO     | tools.handler_assert:assert_req:27 - 提取实际结果的jsonpath表达式：$..message
+2021-10-12 11:44:38.590 | INFO     | tools.handler_assert:assert_req:28 - 响应数据：
+{'code': 202016, 'message': '用户未注册，请先注册或填写其他账号'}
+2021-10-12 11:44:38.590 | INFO     | tools.handler_assert:assert_req:30 - 实际结果：用户未注册，请先注册或填写其他账号
+2021-10-12 11:44:38.590 | INFO     | tools.handler_assert:assert_req:31 - 期望结果：用户未注册，请先注册或填写其他账号
+2021-10-12 11:44:38.590 | INFO     | tools.handler_assert:assert_req:35 - 断言成功。
+2021-10-12 11:44:38.593 | DEBUG    | test_login:test_case:31 - 用例标题：密码输入过长
+2021-10-12 11:44:38.753 | INFO     | tools.handler_request_crm:send_request:37 - 请求接口：
+https://lesscodeapitest.bjx.cloud/usercenter/api/v1/user/login
+2021-10-12 11:44:38.753 | INFO     | tools.handler_request_crm:send_request:38 - 请求方式：POST
+2021-10-12 11:44:38.754 | INFO     | tools.handler_request_crm:send_request:39 - 请求body体数据：
+{
+ "loginName": "zhangzaizai",
+ "password": "zZ123456789",
+ "loginType": 2
+}
+2021-10-12 11:44:38.754 | INFO     | tools.handler_request_crm:send_request:40 - 请求headers：
+{'admin-token': 'dsptg8l8wncz2c8l2six80cblo8jl688jyl2u20je9vy70zlc', 'authorization': 'wjsxh3dacciafs431ei98up124l28arl6hockuiar65coxklt', 'content-type': 'application/json'}
+2021-10-12 11:44:38.822 | INFO     | tools.handler_request_crm:send_request:46 - http响应状态码：200
+2021-10-12 11:44:38.823 | INFO     | tools.handler_request_crm:send_request:47 - 响应body体：
+{"code":202508,"message":"用户名或密码错误"}
+2021-10-12 11:44:38.823 | INFO     | tools.handler_assert:assert_req:26 - 断言表达式、期望结果和比对方式为：
+{'actual': '$..code', 'expect': 202508, 'assert_type': '=='}
+2021-10-12 11:44:38.823 | INFO     | tools.handler_assert:assert_req:27 - 提取实际结果的jsonpath表达式：$..code
+2021-10-12 11:44:38.823 | INFO     | tools.handler_assert:assert_req:28 - 响应数据：
+{'code': 202508, 'message': '用户名或密码错误'}
+2021-10-12 11:44:38.823 | INFO     | tools.handler_assert:assert_req:30 - 实际结果：202508
+2021-10-12 11:44:38.824 | INFO     | tools.handler_assert:assert_req:31 - 期望结果：202508
+2021-10-12 11:44:38.824 | INFO     | tools.handler_assert:assert_req:35 - 断言成功。
+2021-10-12 11:44:38.824 | INFO     | tools.handler_assert:assert_req:26 - 断言表达式、期望结果和比对方式为：
+{'actual': '$..message', 'expect': '用户名或密码错误', 'assert_type': '=='}
+2021-10-12 11:44:38.824 | INFO     | tools.handler_assert:assert_req:27 - 提取实际结果的jsonpath表达式：$..message
+2021-10-12 11:44:38.825 | INFO     | tools.handler_assert:assert_req:28 - 响应数据：
+{'code': 202508, 'message': '用户名或密码错误'}
+2021-10-12 11:44:38.825 | INFO     | tools.handler_assert:assert_req:30 - 实际结果：用户名或密码错误
+2021-10-12 11:44:38.825 | INFO     | tools.handler_assert:assert_req:31 - 期望结果：用户名或密码错误
+2021-10-12 11:44:38.825 | INFO     | tools.handler_assert:assert_req:35 - 断言成功。
+2021-10-12 11:44:38.828 | DEBUG    | test_login:test_case:31 - 用例标题：密码输入过短
+2021-10-12 11:44:38.994 | INFO     | tools.handler_request_crm:send_request:37 - 请求接口：
+https://lesscodeapitest.bjx.cloud/usercenter/api/v1/user/login
+2021-10-12 11:44:38.994 | INFO     | tools.handler_request_crm:send_request:38 - 请求方式：POST
+2021-10-12 11:44:38.995 | INFO     | tools.handler_request_crm:send_request:39 - 请求body体数据：
+{
+ "loginName": "zhangzaizai",
+ "password": "zZ1234567",
+ "loginType": 2
+}
+2021-10-12 11:44:38.995 | INFO     | tools.handler_request_crm:send_request:40 - 请求headers：
+{'admin-token': '4bpzmult4ys282fzj7cpnhga5v1ycl457vrbrcnh1xgzpg0w6d', 'authorization': '6bn59nu68s7bse16yf6a9men85onn4xkyjp0whr7virv6xkytk', 'content-type': 'application/json'}
+2021-10-12 11:44:39.067 | INFO     | tools.handler_request_crm:send_request:46 - http响应状态码：200
+2021-10-12 11:44:39.068 | INFO     | tools.handler_request_crm:send_request:47 - 响应body体：
+{"code":202508,"message":"用户名或密码错误"}
+2021-10-12 11:44:39.068 | INFO     | tools.handler_assert:assert_req:26 - 断言表达式、期望结果和比对方式为：
+{'actual': '$..code', 'expect': 202508, 'assert_type': '=='}
+2021-10-12 11:44:39.069 | INFO     | tools.handler_assert:assert_req:27 - 提取实际结果的jsonpath表达式：$..code
+2021-10-12 11:44:39.069 | INFO     | tools.handler_assert:assert_req:28 - 响应数据：
+{'code': 202508, 'message': '用户名或密码错误'}
+2021-10-12 11:44:39.069 | INFO     | tools.handler_assert:assert_req:30 - 实际结果：202508
+2021-10-12 11:44:39.069 | INFO     | tools.handler_assert:assert_req:31 - 期望结果：202508
+2021-10-12 11:44:39.070 | INFO     | tools.handler_assert:assert_req:35 - 断言成功。
+2021-10-12 11:44:39.070 | INFO     | tools.handler_assert:assert_req:26 - 断言表达式、期望结果和比对方式为：
+{'actual': '$..message', 'expect': '用户名或密码错误', 'assert_type': '=='}
+2021-10-12 11:44:39.070 | INFO     | tools.handler_assert:assert_req:27 - 提取实际结果的jsonpath表达式：$..message
+2021-10-12 11:44:39.070 | INFO     | tools.handler_assert:assert_req:28 - 响应数据：
+{'code': 202508, 'message': '用户名或密码错误'}
+2021-10-12 11:44:39.070 | INFO     | tools.handler_assert:assert_req:30 - 实际结果：用户名或密码错误
+2021-10-12 11:44:39.070 | INFO     | tools.handler_assert:assert_req:31 - 期望结果：用户名或密码错误
+2021-10-12 11:44:39.071 | INFO     | tools.handler_assert:assert_req:35 - 断言成功。
+2021-10-12 11:44:39.073 | DEBUG    | test_login:test_case:31 - 用例标题：密码输入错误的
+2021-10-12 11:44:39.254 | INFO     | tools.handler_request_crm:send_request:37 - 请求接口：
+https://lesscodeapitest.bjx.cloud/usercenter/api/v1/user/login
+2021-10-12 11:44:39.254 | INFO     | tools.handler_request_crm:send_request:38 - 请求方式：POST
+2021-10-12 11:44:39.254 | INFO     | tools.handler_request_crm:send_request:39 - 请求body体数据：
+{
+ "loginName": "zhangzaizai",
+ "password": "zz12345678",
+ "loginType": 2
+}
+2021-10-12 11:44:39.254 | INFO     | tools.handler_request_crm:send_request:40 - 请求headers：
+{'admin-token': '2hrzhvj2a2m5yh54s5acgl5s0rrn5lk5iiserm1i657mj16qnp', 'authorization': '5ag5gcdvomlw0x5aezs2o3lorzphgnbm6lnq5a24g8y413czxe', 'content-type': 'application/json'}
+2021-10-12 11:44:39.321 | INFO     | tools.handler_request_crm:send_request:46 - http响应状态码：200
+2021-10-12 11:44:39.322 | INFO     | tools.handler_request_crm:send_request:47 - 响应body体：
+{"code":202508,"message":"用户名或密码错误"}
+2021-10-12 11:44:39.322 | INFO     | tools.handler_assert:assert_req:26 - 断言表达式、期望结果和比对方式为：
+{'actual': '$..code', 'expect': 202508, 'assert_type': '=='}
+2021-10-12 11:44:39.322 | INFO     | tools.handler_assert:assert_req:27 - 提取实际结果的jsonpath表达式：$..code
+2021-10-12 11:44:39.322 | INFO     | tools.handler_assert:assert_req:28 - 响应数据：
+{'code': 202508, 'message': '用户名或密码错误'}
+2021-10-12 11:44:39.323 | INFO     | tools.handler_assert:assert_req:30 - 实际结果：202508
+2021-10-12 11:44:39.324 | INFO     | tools.handler_assert:assert_req:31 - 期望结果：202508
+2021-10-12 11:44:39.324 | INFO     | tools.handler_assert:assert_req:35 - 断言成功。
+2021-10-12 11:44:39.325 | INFO     | tools.handler_assert:assert_req:26 - 断言表达式、期望结果和比对方式为：
+{'actual': '$..message', 'expect': '用户名或密码错误', 'assert_type': '=='}
+2021-10-12 11:44:39.325 | INFO     | tools.handler_assert:assert_req:27 - 提取实际结果的jsonpath表达式：$..message
+2021-10-12 11:44:39.325 | INFO     | tools.handler_assert:assert_req:28 - 响应数据：
+{'code': 202508, 'message': '用户名或密码错误'}
+2021-10-12 11:44:39.326 | INFO     | tools.handler_assert:assert_req:30 - 实际结果：用户名或密码错误
+2021-10-12 11:44:39.326 | INFO     | tools.handler_assert:assert_req:31 - 期望结果：用户名或密码错误
+2021-10-12 11:44:39.327 | INFO     | tools.handler_assert:assert_req:35 - 断言成功。
+2021-10-12 11:44:39.329 | DEBUG    | test_login:test_case:31 - 用例标题：密码为空
+2021-10-12 11:44:39.506 | INFO     | tools.handler_request_crm:send_request:37 - 请求接口：
+https://lesscodeapitest.bjx.cloud/usercenter/api/v1/user/login
+2021-10-12 11:44:39.506 | INFO     | tools.handler_request_crm:send_request:38 - 请求方式：POST
+2021-10-12 11:44:39.507 | INFO     | tools.handler_request_crm:send_request:39 - 请求body体数据：
+{
+ "loginName": "zhangzaizai",
+ "password": "",
+ "loginType": 2
+}
+2021-10-12 11:44:39.507 | INFO     | tools.handler_request_crm:send_request:40 - 请求headers：
+{'admin-token': 'tm4ree4enrwergrqxt9pwprr32gzkna7pifc7jj8uqgr89j3g', 'authorization': '50qec4gnzbey9cmcffl5bzskp2d5y0aqkrla981vgc8xh8sdly', 'content-type': 'application/json'}
+2021-10-12 11:44:39.571 | INFO     | tools.handler_request_crm:send_request:46 - http响应状态码：200
+2021-10-12 11:44:39.572 | INFO     | tools.handler_request_crm:send_request:47 - 响应body体：
+{"code":201404,"message":"请输入密码"}
+2021-10-12 11:44:39.572 | INFO     | tools.handler_assert:assert_req:26 - 断言表达式、期望结果和比对方式为：
+{'actual': '$..code', 'expect': 201404, 'assert_type': '=='}
+2021-10-12 11:44:39.572 | INFO     | tools.handler_assert:assert_req:27 - 提取实际结果的jsonpath表达式：$..code
+2021-10-12 11:44:39.573 | INFO     | tools.handler_assert:assert_req:28 - 响应数据：
+{'code': 201404, 'message': '请输入密码'}
+2021-10-12 11:44:39.573 | INFO     | tools.handler_assert:assert_req:30 - 实际结果：201404
+2021-10-12 11:44:39.574 | INFO     | tools.handler_assert:assert_req:31 - 期望结果：201404
+2021-10-12 11:44:39.574 | INFO     | tools.handler_assert:assert_req:35 - 断言成功。
+2021-10-12 11:44:39.574 | INFO     | tools.handler_assert:assert_req:26 - 断言表达式、期望结果和比对方式为：
+{'actual': '$..message', 'expect': '请输入密码', 'assert_type': '=='}
+2021-10-12 11:44:39.575 | INFO     | tools.handler_assert:assert_req:27 - 提取实际结果的jsonpath表达式：$..message
+2021-10-12 11:44:39.575 | INFO     | tools.handler_assert:assert_req:28 - 响应数据：
+{'code': 201404, 'message': '请输入密码'}
+2021-10-12 11:44:39.576 | INFO     | tools.handler_assert:assert_req:30 - 实际结果：请输入密码
+2021-10-12 11:44:39.576 | INFO     | tools.handler_assert:assert_req:31 - 期望结果：请输入密码
+2021-10-12 11:44:39.576 | INFO     | tools.handler_assert:assert_req:35 - 断言成功。
